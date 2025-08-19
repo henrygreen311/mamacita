@@ -1,7 +1,6 @@
 // sporty-session-firefox.js
 const { firefox } = require('playwright');
 const fs = require('fs');
-const { spawn } = require('child_process');
 
 const SESSION_FILE = 'session.json';
 const BASE_URL = 'https://www.sportybet.com/ng/m/';
@@ -19,17 +18,6 @@ async function dismissPopup(page) {
     });
     console.log("Popup/overlay cleared.");
   } catch {}
-}
-
-// --- Main runner ---
-function runMain() {
-  console.log("Starting main.js...");
-  const child = spawn('node', ['main.js'], { stdio: 'inherit' });
-
-  child.on('close', (code) => {
-    console.log(`main.js exited with code ${code}, restarting in 5s...`);
-    setTimeout(runMain, 5000);
-  });
 }
 
 (async () => {
@@ -52,8 +40,7 @@ function runMain() {
     } else {
       console.log("Valid session. Logged in successfully.");
       await browser.close();
-      runMain();
-      return;
+      return; // â stop here, don't run main.js
     }
   }
 
@@ -80,9 +67,9 @@ function runMain() {
     console.log("Session saved to", SESSION_FILE);
 
     await browser.close();
-    runMain();
+    return; // â stop here, don't run main.js
   } catch (err) {
     console.log("Login failed or timeout reached:", err.message);
     await browser.close();
   }
-})();
+}
