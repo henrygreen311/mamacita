@@ -174,10 +174,10 @@ async function runFlow(page) {
       const text = (await item.textContent()).trim();
       if (text !== 'My Events') {
         await item.click();
-        console.log(`Clicked country tab: ${text}`);
+        //console.log(`Clicked country tab: ${text}`);
         await page.waitForTimeout(1500);
       } else {
-        console.log(`Skipped country tab: ${text}`);
+        //console.log(`Skipped country tab: ${text}`);
       }
     }
 
