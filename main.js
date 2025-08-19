@@ -221,8 +221,11 @@ async function runFlow(page) {
   if (!fs.existsSync(SESSION_FILE)) {
     console.log("No session file found. Running sporty.js to create one...");
     exec('node sporty.js', (err, stdout) => {
-      if (err) console.error("Error running sporty.js:", err);
-      else console.log(stdout);
+      if (err) {
+        console.error("Error running sporty.js:", err);
+      } else {
+        console.log(stdout);
+      }
     });
     return;
   }
