@@ -118,30 +118,30 @@ async function runFlow(page) {
     const randomIndex = Math.floor(Math.random() * maxIndex);
     const chosenEvent = events[randomIndex];
 
-    console.log(`Selected event index: ${randomIndex + 1}`);
+    //console.log(`Selected event index: ${randomIndex + 1}`);
     const outcome = await chosenEvent.$('div[data-op="iv-outcome"]');
     if (!outcome) throw new Error("No iv-outcome found inside chosen event");
     await outcome.click();
-    console.log("Clicked over 1.5");
+    //console.log("Clicked over 1.5");
 
     const bottomContainer = await page.waitForSelector('div.nav-bottom-container', { timeout: 10000 });
     const rightBtn = await bottomContainer.$('div.btn.right');
     if (rightBtn) {
       await rightBtn.click();
-      console.log("Clicked the 'Place Bet' button.");
+      //console.log("Clicked the 'Place Bet' button.");
     }
 
     const confirmContainer = await page.waitForSelector('#confirm-pop__bottom', { timeout: 10000 });
     const confirmBtn = await confirmContainer.$('#confirm-btn');
     if (confirmBtn) {
       await confirmBtn.click();
-      console.log("Clicked the 'Confirm' button.");
+      //console.log("Clicked the 'Confirm' button.");
     }
 
     const kickOffBtn = await page.waitForSelector('span[data-op="iv-openbet-kick-off-button"]', { timeout: 10000 });
     if (kickOffBtn) {
       await kickOffBtn.click();
-      console.log("Clicked the 'Kick Off' button.");
+      //console.log("Clicked the 'Kick Off' button.");
     }
 
     try {
@@ -149,7 +149,7 @@ async function runFlow(page) {
       await skipButton.waitFor({ state: 'visible', timeout: 15000 });
       if (await skipButton.evaluate(node => !!node.isConnected)) {
         await skipButton.click();
-        console.log('Clicked Skip to Result button.');
+        //console.log('Clicked Skip to Result button.');
       }
     } catch {
       console.log('Skip to Result button not found, continuing...');
@@ -165,7 +165,7 @@ async function runFlow(page) {
           const parent = document.querySelector('div.main');
           if (parent) parent.style.display = 'none';
         });
-        console.log('Blocked "YOU WON" popup.');
+        //console.log('Blocked "YOU WON" popup.');
       }
 
       const newWinPopup = await page.$('#winngin-pop');
@@ -220,7 +220,7 @@ async function runFlow(page) {
         const data = await response.json();
         fs.writeFileSync(fixtureFile, JSON.stringify(data, null, 2));
         fixtureCache = null;
-        console.log(`Fixture data saved to ${fixtureFile}`);
+        //console.log(`Fixture data saved to ${fixtureFile}`);
       } catch (err) {
         console.error('Error saving fixture response:', err);
       }
@@ -267,7 +267,7 @@ async function runFlow(page) {
 
           if (updated) {
             fs.writeFileSync(resultFile, JSON.stringify(savedResults, null, 2));
-            console.log(` Updated results written to ${resultFile}`);
+            //console.log(` Updated results written to ${resultFile}`);
           }
         }
       } catch (err) {
