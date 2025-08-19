@@ -68,11 +68,11 @@ async function dismissPopup(page) {
   
   try {  
     await page.waitForSelector(overlaySelector, { timeout: 5000 });  
-    //console.log("Popup detected. Removing overlay...");  
+    console.log("Popup detected. Removing overlay...");  
   
     if (await page.$(tryItSelector)) {  
       await page.click(tryItSelector);  
-      //console.log('Clicked "Try it" button.');  
+      console.log('Clicked "Try it" button.');  
     }  
   
     await page.evaluate(() => {  
@@ -80,10 +80,10 @@ async function dismissPopup(page) {
         .forEach(el => el.remove());  
     });  
   
-    //console.log("Popup removed.");  
+    console.log("Popup removed.");  
     await page.waitForTimeout(5000);  
   } catch {  
-    //console.log("No popup detected.");  
+    console.log("No popup detected.");  
   }  
 }  
   
@@ -92,13 +92,13 @@ async function safeClick(page, selector, label) {
   try {  
     await page.waitForSelector(selector, { timeout: 10000 });  
     await page.click(selector, { timeout: 10000 });  
-    //console.log(`Clicked ${label}.`);  
+    console.log(`Clicked ${label}.`);  
   } catch (err) {  
     if (err.message.includes('intercepts pointer events')) {  
-      //console.log(`${label} blocked by popup, dismissing...`);  
+      console.log(`${label} blocked by popup, dismissing...`);  
       await dismissPopup(page);  
       await page.click(selector);  
-      //console.log(`Clicked ${label} after dismissing popup.`);  
+      console.log(`Clicked ${label} after dismissing popup.`);  
     } else {  
       throw err;  
     }  
@@ -139,27 +139,27 @@ async function runFlow(page) {
     const outcome = await chosenEvent.$('div[data-op="iv-outcome"]');
     if (!outcome) throw new Error("No iv-outcome found inside chosen event");
     await outcome.click();
-    //console.log("Clicked over 1.5");
+    console.log("Clicked over 1.5");
 
     // Place bet
     const bottomContainer = await page.waitForSelector('div.nav-bottom-container', { timeout: 10000 });
     const rightBtn = await bottomContainer.$('div.btn.right');
     if (rightBtn) {
       await rightBtn.click();
-      //console.log("Clicked the 'Place Bet' button.");
+      console.log("Clicked the 'Place Bet' button.");
     }
 
     const confirmContainer = await page.waitForSelector('#confirm-pop__bottom', { timeout: 10000 });
     const confirmBtn = await confirmContainer.$('#confirm-btn');
     if (confirmBtn) {
       await confirmBtn.click();
-      //console.log("Clicked the 'Confirm' button.");
+      console.log("Clicked the 'Confirm' button.");
     }
 
     const kickOffBtn = await page.waitForSelector('span[data-op="iv-openbet-kick-off-button"]', { timeout: 10000 });
     if (kickOffBtn) {
       await kickOffBtn.click();
-      //console.log("Clicked the 'Kick Off' button.");
+      console.log("Clicked the 'Kick Off' button.");
     }
 
     // Skip to result
@@ -168,7 +168,7 @@ async function runFlow(page) {
       await skipButton.waitFor({ state: 'visible', timeout: 15000 });
       if (await skipButton.evaluate(node => !!node.isConnected)) {
         await skipButton.click();
-        //console.log('Clicked Skip to Result button.');
+        console.log('Clicked Skip to Result button.');
       }
     } catch {
       console.log('Skip to Result button not found, continuing...');
@@ -193,7 +193,7 @@ async function runFlow(page) {
           const popup = document.querySelector('#winngin-pop');
           if (popup) popup.remove();
         });
-        //console.log('Blocked "winngin-pop" popup.');
+        console.log('Blocked "winngin-pop" popup.');
       }
     } catch (err) {
       console.log('Error checking or blocking popups:', err);
@@ -286,7 +286,7 @@ async function runFlow(page) {
   
           if (updated) {  
             fs.writeFileSync(resultFile, JSON.stringify(savedResults, null, 2));  
-            //console.log(` Updated results written to ${resultFile}`);  
+            console.log(` Updated results written to ${resultFile}`);  
           }  
         }  
       } catch (err) {  
