@@ -28,11 +28,7 @@ function loadFixture() {
 function getOver15Probability(homeCode, awayCode) {
   const fx = loadFixture();
   if (!fx) return null;
-
-  const events = fx.wrapEventList && Array.isArray(fx.wrapEventList.value)
-    ? fx.wrapEventList.value
-    : [];
-
+  const events = fx.wrapEventList && Array.isArray(fx.wrapEventList.value) ? fx.wrapEventList.value : [];
   const match = events.find(ev => ev.F === homeCode && ev.B === awayCode);
   if (!match) return null;
 
@@ -47,38 +43,21 @@ function getOver15Probability(homeCode, awayCode) {
   return null;
 }
 
-// --- NEW: Wait for fixture file at least once ---
-async function waitForFixture(timeoutMs = 20000) {
-  const start = Date.now();
-  while (!fs.existsSync(fixtureFile)) {
-    if (Date.now() - start > timeoutMs) {
-      throw new Error(`Timed out waiting for fixture.json at ${fixtureFile}`);
-    }
-    console.log("Waiting for fixture.json...");
-    await new Promise(res => setTimeout(res, 1000));
-  }
-  console.log("fixture.json found. Proceeding...");
-}
-
 // --- Dismiss popup helper ---
 async function dismissPopup(page) {
   const overlaySelector = 'div.dialog-wrapper, div.dialog-mask';
   const tryItSelector = 'text="Try it"';
-
   try {
     await page.waitForSelector(overlaySelector, { timeout: 5000 });
     console.log("Popup detected. Removing overlay...");
-
     if (await page.$(tryItSelector)) {
       await page.click(tryItSelector);
       console.log('Clicked "Try it" button.');
     }
-
     await page.evaluate(() => {
       document.querySelectorAll('div.dialog-wrapper, div.dialog-mask')
         .forEach(el => el.remove());
     });
-
     console.log("Popup removed.");
     await page.waitForTimeout(5000);
   } catch {
@@ -86,19 +65,18 @@ async function dismissPopup(page) {
   }
 }
 
-// --- Safe click helper ---
+// --- Safe click helper (skip after retries) ---
 async function safeClick(page, selector, label) {
   let attempts = 0;
   while (attempts < 3) {
     try {
-      await page.waitForSelector(selector, { timeout: 15000 }); // longer wait
+      await page.waitForSelector(selector, { timeout: 15000 });
       await page.click(selector, { timeout: 5000 });
       console.log(`Clicked ${label}.`);
-      return true; // success
+      return true;
     } catch (err) {
       attempts++;
       console.warn(`Failed to click ${label}, attempt ${attempts}: ${err.message}`);
-
       if (err.message.includes('intercepts pointer events')) {
         console.log(`${label} blocked by popup, dismissing...`);
         await dismissPopup(page);
@@ -109,31 +87,21 @@ async function safeClick(page, selector, label) {
       }
     }
   }
-
   console.error(`Skipping ${label} after ${attempts} failed attempts.`);
-  return false; // tell caller it failed, but donât crash
+  return false;
 }
 
-// --- Main flow (interactions) ---
+// --- Main flow ---
 async function runFlow(page) {
   try {
-    // Clear any popups before starting
     await dismissPopup(page);
 
-    // Step 1: Navigate market tabs
-    if (!(await safeClick(page, 'li[data-op="iv-market-tabs"]:has-text("O/U")', "O/U tab"))) {
-      console.log("Skipping O/U tab step.");
-    }
+    // Market navigation
+    if (!(await safeClick(page, 'li[data-op="iv-market-tabs"]:has-text("O/U")', "O/U tab"))) return;
+    if (!(await safeClick(page, 'span:has-text("Near")', "Near"))) return;
+    if (!(await safeClick(page, 'div.specifier-select-item:has-text("1.5")', "1.5"))) return;
 
-    if (!(await safeClick(page, 'span:has-text("Near")', "Near"))) {
-      console.log("Skipping Near step.");
-    }
-
-    if (!(await safeClick(page, 'div.specifier-select-item:has-text("1.5")', "1.5"))) {
-      console.log("Skipping 1.5 step.");
-    }
-
-    // Step 2: Event list (optional)
+    // Events
     let events = [];
     try {
       await page.waitForSelector('div.event-list.spacer-market', { timeout: 10000 });
@@ -149,19 +117,16 @@ async function runFlow(page) {
       return;
     }
 
-    const randomIndex = Math.floor(Math.random() * maxIndex);
-    const chosenEvent = events[randomIndex];
-
+    const chosenEvent = events[Math.floor(Math.random() * maxIndex)];
     const outcome = await chosenEvent.$('div[data-op="iv-outcome"]');
-    if (outcome) {
-      await outcome.click();
-      console.log("Clicked over 1.5 outcome.");
-    } else {
+    if (!outcome) {
       console.log("No outcome found, skipping bet.");
       return;
     }
+    await outcome.click();
+    console.log("Clicked over 1.5 outcome.");
 
-    // Step 3: Place bet button
+    // Place Bet
     const bottomContainer = await page.waitForSelector('div.nav-bottom-container', { timeout: 10000 }).catch(() => null);
     if (bottomContainer) {
       const rightBtn = await bottomContainer.$('div.btn.right');
@@ -171,7 +136,7 @@ async function runFlow(page) {
       }
     }
 
-    // Step 4: Confirm bet
+    // Confirm
     const confirmContainer = await page.waitForSelector('#confirm-pop__bottom', { timeout: 10000 }).catch(() => null);
     if (confirmContainer) {
       const confirmBtn = await confirmContainer.$('#confirm-btn');
@@ -181,14 +146,14 @@ async function runFlow(page) {
       }
     }
 
-    // Step 5: Kick off
+    // Kick Off
     const kickOffBtn = await page.waitForSelector('span[data-op="iv-openbet-kick-off-button"]', { timeout: 10000 }).catch(() => null);
     if (kickOffBtn) {
       await kickOffBtn.click();
       console.log("Clicked the 'Kick Off' button.");
     }
 
-    // Step 6: Skip to result
+    // Skip to Result
     try {
       const skipButton = page.locator('span[data-op="iv-quick-games-skip-to-result"]');
       await skipButton.waitFor({ state: 'visible', timeout: 15000 });
@@ -200,7 +165,7 @@ async function runFlow(page) {
       console.log('Skip to Result button not found, continuing...');
     }
 
-    // Step 7: Handle popups
+    // Handle popups
     try {
       const winPopup = await page.$('div.main__bg');
       if (winPopup) {
@@ -212,7 +177,6 @@ async function runFlow(page) {
         });
         console.log('Blocked "YOU WON" popup.');
       }
-
       const newWinPopup = await page.$('#winngin-pop');
       if (newWinPopup) {
         await page.evaluate(() => {
@@ -225,39 +189,7 @@ async function runFlow(page) {
       console.log('Error checking or blocking popups:', err.message);
     }
 
-    console.log("Flow finished successfully.");
-
-  } catch (err) {
-    console.error("Error during interactions:", err.message);
-  }
-}
-
-    // Handle popups
-    try {
-      const winPopup = await page.$('div.main__bg');
-      if (winPopup) {
-        await page.evaluate(() => {
-          const popup = document.querySelector('div.main__bg');
-          if (popup) popup.remove();
-          const parent = document.querySelector('div.main');
-          if (parent) parent.style.display = 'none';
-        });
-        //console.log('Blocked "YOU WON" popup.');
-      }
-
-      const newWinPopup = await page.$('#winngin-pop');
-      if (newWinPopup) {
-        await page.evaluate(() => {
-          const popup = document.querySelector('#winngin-pop');
-          if (popup) popup.remove();
-        });
-        console.log('Blocked "winngin-pop" popup.');
-      }
-    } catch (err) {
-      console.log('Error checking or blocking popups:', err);
-    }
-
-    // Country tabs
+    // Cycle country tabs
     const countryItems = await page.$$('div.country-subheader li.sport-type-item.m-snap-nav-item');
     for (const item of countryItems) {
       const text = (await item.textContent()).trim();
@@ -269,7 +201,7 @@ async function runFlow(page) {
 
     console.log(`All done. Results saved in ${resultFile}, fixture in ${fixtureFile}`);
   } catch (err) {
-    console.error("Error during interactions:", err);
+    console.error("Error during interactions:", err.message);
   }
 }
 
@@ -288,32 +220,26 @@ async function runFlow(page) {
   let context = await browser.newContext({ storageState: SESSION_FILE });
   let page = await context.newPage();
 
-  //Attach API listeners *before* first navigation
+  // Attach API listeners before navigation
   page.on('response', async (response) => {
     const url = response.url();
-
-    if (url.includes('/api/ng/instantwin/api/v2/iwqk/event/list_all_with_popular_markets')) {
+    if (url.includes('/event/list_all_with_popular_markets')) {
       try {
         const data = await response.json();
         fs.writeFileSync(fixtureFile, JSON.stringify(data, null, 2));
         fixtureCache = null;
-        //console.log(`Fixture data saved to ${fixtureFile}`);
       } catch (err) {
         console.error('Error saving fixture response:', err);
       }
     }
-
-    if (url.includes('/api/ng/instantwin/api/v2/iwqk/round/list_settle_events')) {
+    if (url.includes('/round/list_settle_events')) {
       try {
         const data = await response.json();
         if (Array.isArray(data)) {
           let savedResults = [];
           if (fs.existsSync(resultFile)) {
-            try {
-              savedResults = JSON.parse(fs.readFileSync(resultFile, 'utf-8'));
-            } catch { savedResults = []; }
+            try { savedResults = JSON.parse(fs.readFileSync(resultFile, 'utf-8')); } catch {}
           }
-
           let updated = false;
           for (const event of data) {
             const homeScore = parseInt(event.homeTeamScore, 10) || 0;
@@ -327,25 +253,19 @@ async function runFlow(page) {
                 awayTeamScore: String(event.awayTeamScore),
                 ...(probability ? { probability } : {})
               };
-
               const exists = savedResults.some(r =>
                 r.homeTeamName === resultObj.homeTeamName &&
                 r.awayTeamName === resultObj.awayTeamName &&
                 r.homeTeamScore === resultObj.homeTeamScore &&
                 r.awayTeamScore === resultObj.awayTeamScore
               );
-
               if (!exists) {
                 savedResults.push(resultObj);
                 updated = true;
               }
             }
           }
-
-          if (updated) {
-            fs.writeFileSync(resultFile, JSON.stringify(savedResults, null, 2));
-            //console.log(` Updated results written to ${resultFile}`);
-          }
+          if (updated) fs.writeFileSync(resultFile, JSON.stringify(savedResults, null, 2));
         }
       } catch (err) {
         console.error('Error parsing result API response:', err);
@@ -353,12 +273,10 @@ async function runFlow(page) {
     }
   });
 
-  // Navigate after attaching listeners
   await page.goto(CHECK_URL, { waitUntil: 'domcontentloaded' });
   await page.waitForTimeout(3000);
 
-  const loginBtn = await page.$('div[data-op="nav-login"]');
-  if (loginBtn) {
+  if (await page.$('div[data-op="nav-login"]')) {
     console.log("Not logged in. Running sporty.js to refresh session...");
     await browser.close();
     exec('node sporty.js', (err, stdout) => {
@@ -370,7 +288,7 @@ async function runFlow(page) {
 
   console.log("Session valid. Already logged in.");
 
-  //Instead of static waitForFixture, retry until fixture.json is saved
+  // Ensure fixture.json exists
   let retries = 0;
   while (!fs.existsSync(fixtureFile) && retries < 3) {
     console.log("Waiting for fixture.json (forcing refresh)...");
@@ -378,33 +296,30 @@ async function runFlow(page) {
     await page.waitForTimeout(5000);
     retries++;
   }
+  if (!fs.existsSync(fixtureFile)) throw new Error("Failed to capture fixture.json after retries.");
 
-  if (!fs.existsSync(fixtureFile)) {
-    throw new Error("Failed to capture fixture.json after retries.");
-  }
-
-  // Loop forever with recovery
+  // Loop forever
   while (true) {
     try {
       await runFlow(page);
     } catch (err) {
-      console.error(" runFlow failed:", err.message);
+      console.error("runFlow failed:", err.message);
     }
 
     try {
-      console.log(" Refreshing page and restarting...");
+      console.log("Refreshing page and restarting...");
       await page.reload({ waitUntil: 'domcontentloaded', timeout: 60000 });
       await page.waitForTimeout(5000);
     } catch (err) {
-      console.error(" Reload failed, recovering:", err.message);
+      console.error("Reload failed, recovering:", err.message);
       try {
         await page.goto(CHECK_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });
       } catch (gotoErr) {
-        console.error(" Hard fail, restarting browser context:", gotoErr.message);
+        console.error("Hard fail, restarting browser context:", gotoErr.message);
         context = await browser.newContext({ storageState: SESSION_FILE });
         page = await context.newPage();
         await page.goto(CHECK_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });
       }
     }
   }
-})(
+})();
