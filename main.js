@@ -1,4 +1,3 @@
-// sporty-check.js
 const { firefox } = require('playwright');
 const fs = require('fs');
 const { exec } = require('child_process');
@@ -46,6 +45,19 @@ function getOver15Probability(homeCode, awayCode) {
     }
   }
   return null;
+}
+
+// --- NEW: Wait for fixture file at least once ---
+async function waitForFixture(timeoutMs = 20000) {
+  const start = Date.now();
+  while (!fs.existsSync(fixtureFile)) {
+    if (Date.now() - start > timeoutMs) {
+      throw new Error(`Timed out waiting for fixture.json at ${fixtureFile}`);
+    }
+    console.log("Waiting for fixture.json...");
+    await new Promise(res => setTimeout(res, 1000));
+  }
+  console.log("fixture.json found. Proceeding...");
 }
 
 // --- Dismiss popup helper ---
@@ -174,10 +186,7 @@ async function runFlow(page) {
       const text = (await item.textContent()).trim();
       if (text !== 'My Events') {
         await item.click();
-        //console.log(`Clicked country tab: ${text}`);
         await page.waitForTimeout(1500);
-      } else {
-        //console.log(`Skipped country tab: ${text}`);
       }
     }
 
@@ -261,7 +270,7 @@ async function runFlow(page) {
 
           if (updated) {
             fs.writeFileSync(resultFile, JSON.stringify(savedResults, null, 2));
-            console.log(` Updated results written to ${resultFile}`);
+            console.log(` Updated results written to ${resultFile}`);
           }
         }
       } catch (err) {
@@ -283,24 +292,27 @@ async function runFlow(page) {
 
   console.log("Session valid. Already logged in.");
 
+  //Wait for fixture.json at least once before starting loop
+  await waitForFixture();
+
   // Loop forever with recovery
   while (true) {
     try {
       await runFlow(page);
     } catch (err) {
-      console.error(" runFlow failed:", err.message);
+      console.error(" runFlow failed:", err.message);
     }
 
     try {
-      console.log(" Refreshing page and restarting...");
+      console.log(" Refreshing page and restarting...");
       await page.reload({ waitUntil: 'domcontentloaded', timeout: 60000 });
       await page.waitForTimeout(5000);
     } catch (err) {
-      console.error(" Reload failed, recovering:", err.message);
+      console.error(" Reload failed, recovering:", err.message);
       try {
         await page.goto(CHECK_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });
       } catch (gotoErr) {
-        console.error(" Hard fail, restarting browser context:", gotoErr.message);
+        console.error(" Hard fail, restarting browser context:", gotoErr.message);
         context = await browser.newContext({ storageState: SESSION_FILE });
         page = await context.newPage();
         await page.goto(CHECK_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });
