@@ -31,20 +31,27 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Commit and push updated result.json if it exists and changed
+      - name: Commit and push updated JSON files if they exist and changed
         run: |
-          if [ -f result.json ]; then
-            git config user.name "github-actions"
-            git config user.email "github-actions@github.com"
-            git add result.json
-            if ! git diff --cached --quiet result.json; then
-              git commit -m "Update result.json after sporty run"
-              git push
-            else
-              echo "No changes in result.json, skipping commit."
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          FILES_CHANGED=false
+
+          for file in result.json session.json; do
+            if [ -f "$file" ]; then
+              git add "$file"
+              if ! git diff --cached --quiet "$file"; then
+                FILES_CHANGED=true
+              fi
             fi
+          done
+
+          if [ "$FILES_CHANGED" = true ]; then
+            git commit -m "Update result.json and/or session.json after sporty run"
+            git push
           else
-            echo "No result.json file found, skipping commit."
+            echo "No changes in result.json or session.json, skipping commit."
           fi
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
