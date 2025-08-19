@@ -18,7 +18,7 @@ function runMain() {
 }
 
 (async () => {
-  const browser = await firefox.launch({ headless: true });
+  const browser = await firefox.launch({ headless: false });
   let context;
 
   // Step 1: Try existing session
