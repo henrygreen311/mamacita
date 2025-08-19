@@ -1,137 +1,134 @@
-// sporty-check.js
-const { firefox } = require('playwright');
-const fs = require('fs');
-const { exec } = require('child_process');
-
-const SESSION_FILE = 'session.json';
-const CHECK_URL = 'https://www.sportybet.com/ng/m/instant-virtuals/quickgame';
-const resultFile = 'result.json';
-const fixtureFile = '/home/runner/work/mamacita/mamacita/fixture.json';
-
-// --- Fixture helpers ---
-let fixtureCache = null;
-
-function loadFixture() {
-  if (fixtureCache) return fixtureCache;
-  if (!fs.existsSync(fixtureFile)) {
-    console.warn(`fixture.json not found at ${fixtureFile}`);
-    return null;
-  }
-  try {
-    fixtureCache = JSON.parse(fs.readFileSync(fixtureFile, 'utf-8'));
-  } catch (e) {
-    console.warn('Could not parse fixture.json:', e.message);
-    fixtureCache = null;
-  }
-  return fixtureCache;
-}
-
-function getOver15Probability(homeCode, awayCode) {
-  const fx = loadFixture();
-  if (!fx) return null;
-
-  const events = fx.wrapEventList && Array.isArray(fx.wrapEventList.value)
-    ? fx.wrapEventList.value
-    : [];
-
-  const match = events.find(ev => ev.F === homeCode && ev.B === awayCode);
-  if (!match) return null;
-
-  for (const market of match.I || []) {
-    for (const out of market.R || []) {
-      if (out && typeof out.c === 'string' &&
-          out.c.trim().toLowerCase() === 'over 1.5' && out.e) {
-        return String(out.b);
-      }
-    }
-  }
-  return null;
-}
-
-// --- NEW: Wait for fixture file at least once ---
-async function waitForFixture(timeoutMs = 20000) {
-  const start = Date.now();
-  while (!fs.existsSync(fixtureFile)) {
-    if (Date.now() - start > timeoutMs) {
-      throw new Error(`Timed out waiting for fixture.json at ${fixtureFile}`);
-    }
-    //console.log("Waiting for fixture.json...");
-    await new Promise(res => setTimeout(res, 1000));
-  }
-  //console.log("fixture.json found. Proceeding...");
-}
-
-// --- Dismiss popup helper ---
-async function dismissPopup(page) {
-  const overlaySelector = 'div.dialog-wrapper, div.dialog-mask';
-  const tryItSelector = 'text="Try it"';
-
-  try {
-    await page.waitForSelector(overlaySelector, { timeout: 5000 });
-    //console.log("Popup detected. Removing overlay...");
-
-    if (await page.$(tryItSelector)) {
-      await page.click(tryItSelector);
-      //console.log('Clicked "Try it" button.');
-    }
-
-    await page.evaluate(() => {
-      document.querySelectorAll('div.dialog-wrapper, div.dialog-mask')
-        .forEach(el => el.remove());
-    });
-
-    //console.log("Popup removed.");
-    await page.waitForTimeout(5000);
-  } catch {
-    console.log("No popup detected.");
-  }
-}
-
-// --- Safe click helper with retries ---
-async function safeClick(page, selector, label, retries = 3) {
-  for (let i = 0; i < retries; i++) {
-    try {
-      await page.waitForSelector(selector, { timeout: 10000 });
-      await page.click(selector, { timeout: 10000 });
-      //console.log(`Clicked ${label}.`);
-      return;
-    } catch (err) {
-      if (err.message.includes('intercepts pointer events')) {
-        console.log(`${label} blocked by popup, dismissing...`);
-        await dismissPopup(page);
-      } else if (i < retries - 1) {
-        console.log(`Retry ${i + 1} for ${label}...`);
-        await page.waitForTimeout(2000);
-      } else {
-        throw err; // only fail after all retries
-      }
-    }
-  }
-}
-
+// sporty-check.js  
+const { firefox } = require('playwright');  
+const fs = require('fs');  
+const { exec } = require('child_process');  
+  
+const SESSION_FILE = 'session.json';  
+const CHECK_URL = 'https://www.sportybet.com/ng/m/instant-virtuals/quickgame';  
+const resultFile = 'result.json';  
+const fixtureFile = '/home/runner/work/mamacita/mamacita/fixture.json';  
+  
+// --- Fixture helpers ---  
+let fixtureCache = null;  
+  
+function loadFixture() {  
+  if (fixtureCache) return fixtureCache;  
+  if (!fs.existsSync(fixtureFile)) {  
+    console.warn(`fixture.json not found at ${fixtureFile}`);  
+    return null;  
+  }  
+  try {  
+    fixtureCache = JSON.parse(fs.readFileSync(fixtureFile, 'utf-8'));  
+  } catch (e) {  
+    console.warn('Could not parse fixture.json:', e.message);  
+    fixtureCache = null;  
+  }  
+  return fixtureCache;  
+}  
+  
+function getOver15Probability(homeCode, awayCode) {  
+  const fx = loadFixture();  
+  if (!fx) return null;  
+  
+  const events = fx.wrapEventList && Array.isArray(fx.wrapEventList.value)  
+    ? fx.wrapEventList.value  
+    : [];  
+  
+  const match = events.find(ev => ev.F === homeCode && ev.B === awayCode);  
+  if (!match) return null;  
+  
+  for (const market of match.I || []) {  
+    for (const out of market.R || []) {  
+      if (out && typeof out.c === 'string' &&  
+          out.c.trim().toLowerCase() === 'over 1.5' && out.e) {  
+        return String(out.b);  
+      }  
+    }  
+  }  
+  return null;  
+}  
+  
+// --- NEW: Wait for fixture file at least once ---  
+async function waitForFixture(timeoutMs = 20000) {  
+  const start = Date.now();  
+  while (!fs.existsSync(fixtureFile)) {  
+    if (Date.now() - start > timeoutMs) {  
+      throw new Error(`Timed out waiting for fixture.json at ${fixtureFile}`);  
+    }  
+    console.log("Waiting for fixture.json...");  
+    await new Promise(res => setTimeout(res, 1000));  
+  }  
+  console.log("fixture.json found. Proceeding...");  
+}  
+  
+// --- Dismiss popup helper ---  
+async function dismissPopup(page) {  
+  const overlaySelector = 'div.dialog-wrapper, div.dialog-mask';  
+  const tryItSelector = 'text="Try it"';  
+  
+  try {  
+    await page.waitForSelector(overlaySelector, { timeout: 5000 });  
+    //console.log("Popup detected. Removing overlay...");  
+  
+    if (await page.$(tryItSelector)) {  
+      await page.click(tryItSelector);  
+      //console.log('Clicked "Try it" button.');  
+    }  
+  
+    await page.evaluate(() => {  
+      document.querySelectorAll('div.dialog-wrapper, div.dialog-mask')  
+        .forEach(el => el.remove());  
+    });  
+  
+    //console.log("Popup removed.");  
+    await page.waitForTimeout(5000);  
+  } catch {  
+    //console.log("No popup detected.");  
+  }  
+}  
+  
+// --- Safe click helper ---  
+async function safeClick(page, selector, label) {  
+  try {  
+    await page.waitForSelector(selector, { timeout: 10000 });  
+    await page.click(selector, { timeout: 10000 });  
+    //console.log(`Clicked ${label}.`);  
+  } catch (err) {  
+    if (err.message.includes('intercepts pointer events')) {  
+      //console.log(`${label} blocked by popup, dismissing...`);  
+      await dismissPopup(page);  
+      await page.click(selector);  
+      //console.log(`Clicked ${label} after dismissing popup.`);  
+    } else {  
+      throw err;  
+    }  
+  }  
+}  
+  
 // --- Main flow (interactions) ---
 async function runFlow(page) {
   try {
     await dismissPopup(page);
-    await page.waitForTimeout(2000); // allow UI to settle
 
-    let ouClicked = false;
-    try {
-      // Try to find O/U tab
-      const ouTab = page.locator('li[data-op="iv-market-tabs"]').filter({ hasText: "O/U" });
-      await ouTab.first().waitFor({ state: 'visible', timeout: 8000 });
-      await ouTab.first().click();
-      console.log("Clicked O/U tab.");
-      ouClicked = true;
-    } catch {
-      console.log("O/U tab not found. Checking popup then skipping to Near...");
-      await dismissPopup(page); // ensure no overlay
+    // --- Step 1: Try O/U, fallback to Near ---
+    const ouTab = await page.$('li[data-op="iv-market-tabs"]:has-text("O/U")');
+    if (ouTab) {
+      await safeClick(page, 'li[data-op="iv-market-tabs"]:has-text("O/U")', "O/U tab");
+    } else {
+      console.log("O/U tab not found. Checking popup and skipping to 'Near'...");
+      await dismissPopup(page);
+      const nearBtn = await page.$('span:has-text("Near")');
+      if (nearBtn) {
+        await safeClick(page, 'span:has-text("Near")', "Near");
+      } else {
+        throw new Error("Neither O/U nor Near found â cannot continue flow.");
+      }
     }
 
-    // Now proceed to "Near"
-    await safeClick(page, 'span:has-text("Near")', "Near");
+    // --- Step 2: Always try 1.5 after Near ---
     await safeClick(page, 'div.specifier-select-item:has-text("1.5")', "1.5");
 
+    // --- Step 3: Continue normal flow ---
     await page.waitForSelector('div.event-list.spacer-market', { timeout: 10000 });
     const events = await page.$$('div.event-list.spacer-market');
     const maxIndex = Math.min(events.length, 10);
@@ -144,6 +141,7 @@ async function runFlow(page) {
     await outcome.click();
     //console.log("Clicked over 1.5");
 
+    // Place bet
     const bottomContainer = await page.waitForSelector('div.nav-bottom-container', { timeout: 10000 });
     const rightBtn = await bottomContainer.$('div.btn.right');
     if (rightBtn) {
@@ -164,6 +162,7 @@ async function runFlow(page) {
       //console.log("Clicked the 'Kick Off' button.");
     }
 
+    // Skip to result
     try {
       const skipButton = page.locator('span[data-op="iv-quick-games-skip-to-result"]');
       await skipButton.waitFor({ state: 'visible', timeout: 15000 });
@@ -215,141 +214,139 @@ async function runFlow(page) {
     console.error("Error during interactions:", err);
   }
 }
-
-// --- Bootstrap ---
-(async () => {
-  if (!fs.existsSync(SESSION_FILE)) {
-    console.log("No session file found. Running sporty.js to create one...");
-    exec('node sporty.js', (err, stdout) => {
-      if (err) {
-        console.error("Error running sporty.js:", err);
-      } else {
-        console.log(stdout);
-      }
-    });
-    return;
-  }
-
-  const browser = await firefox.launch({ headless: false });
-  let context = await browser.newContext({ storageState: SESSION_FILE });
-  let page = await context.newPage();
-
-  //Attach API listeners *before* first navigation
-  page.on('response', async (response) => {
-    const url = response.url();
-
-    if (url.includes('/api/ng/instantwin/api/v2/iwqk/event/list_all_with_popular_markets')) {
-      try {
-        const data = await response.json();
-        fs.writeFileSync(fixtureFile, JSON.stringify(data, null, 2));
-        fixtureCache = null;
-        console.log(`Fixture data saved to ${fixtureFile}`);
-      } catch (err) {
-        console.error('Error saving fixture response:', err);
-      }
-    }
-
-    if (url.includes('/api/ng/instantwin/api/v2/iwqk/round/list_settle_events')) {
-      try {
-        const data = await response.json();
-        if (Array.isArray(data)) {
-          let savedResults = [];
-          if (fs.existsSync(resultFile)) {
-            try {
-              savedResults = JSON.parse(fs.readFileSync(resultFile, 'utf-8'));
-            } catch { savedResults = []; }
-          }
-
-          let updated = false;
-          for (const event of data) {
-            const homeScore = parseInt(event.homeTeamScore, 10) || 0;
-            const awayScore = parseInt(event.awayTeamScore, 10) || 0;
-            if (homeScore + awayScore >= 2) {
-              const probability = getOver15Probability(event.homeTeamName, event.awayTeamName);
-              const resultObj = {
-                homeTeamName: event.homeTeamName,
-                awayTeamName: event.awayTeamName,
-                homeTeamScore: String(event.homeTeamScore),
-                awayTeamScore: String(event.awayTeamScore),
-                ...(probability ? { probability } : {})
-              };
-
-              const exists = savedResults.some(r =>
-                r.homeTeamName === resultObj.homeTeamName &&
-                r.awayTeamName === resultObj.awayTeamName &&
-                r.homeTeamScore === resultObj.homeTeamScore &&
-                r.awayTeamScore === resultObj.awayTeamScore
-              );
-
-              if (!exists) {
-                savedResults.push(resultObj);
-                updated = true;
-              }
-            }
-          }
-
-          if (updated) {
-            fs.writeFileSync(resultFile, JSON.stringify(savedResults, null, 2));
-            //console.log(` Updated results written to ${resultFile}`);
-          }
-        }
-      } catch (err) {
-        console.error('Error parsing result API response:', err);
-      }
-    }
-  });
-
-  // Navigate after attaching listeners
-  await page.goto(CHECK_URL, { waitUntil: 'domcontentloaded' });
-  await page.waitForTimeout(3000);
-
-  const loginBtn = await page.$('div[data-op="nav-login"]');
-  if (loginBtn) {
-    console.log("Not logged in. Running sporty.js to refresh session...");
-    await browser.close();
-    exec('node sporty.js', (err, stdout) => {
-      if (err) console.error("Error running sporty.js:", err);
-      else //console.log(stdout);
-    });
-    return;
-
-  console.log("Session valid. Already logged in.");
-
-  //Instead of static waitForFixture, retry until fixture.json is saved
-  let retries = 0;
-  while (!fs.existsSync(fixtureFile) && retries < 3) {
-    console.log("Waiting for fixture.json (forcing refresh)...");
-    await page.reload({ waitUntil: 'domcontentloaded' });
-    await page.waitForTimeout(5000);
-    retries++;
-  }
-
-  if (!fs.existsSync(fixtureFile)) {
-    throw new Error("Failed to capture fixture.json after retries.");
-  }
-
-  // Loop forever with recovery
-  while (true) {
-    try {
-      await runFlow(page);
-    } catch (err) {
-      console.error(" runFlow failed:", err.message);
-    }
-
-    try {
-      console.log(" Refreshing page and restarting...");
-      await page.reload({ waitUntil: 'domcontentloaded', timeout: 60000 });
-      await page.waitForTimeout(5000);
-    } catch (err) {
-      console.error(" Reload failed, recovering:", err.message);
-      try {
-        await page.goto(CHECK_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });
-      } catch (gotoErr) {
-        console.error(" Hard fail, restarting browser context:", gotoErr.message);
-        context = await browser.newContext({ storageState: SESSION_FILE });
-        page = await context.newPage();
-        await page.goto(CHECK_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });
-      }
-    }
-  }
+  
+// --- Bootstrap ---  
+(async () => {  
+  if (!fs.existsSync(SESSION_FILE)) {  
+    console.log("No session file found. Running sporty.js to create one...");  
+    exec('node sporty.js', (err, stdout) => {  
+  if (err) console.error("Error running sporty.js:", err);  
+  else { /* console.log(stdout); */ }  
+});  
+    return;  
+  }  
+  
+  const browser = await firefox.launch({ headless: false });  
+  let context = await browser.newContext({ storageState: SESSION_FILE });  
+  let page = await context.newPage();  
+  
+  //Attach API listeners *before* first navigation  
+  page.on('response', async (response) => {  
+    const url = response.url();  
+  
+    if (url.includes('/api/ng/instantwin/api/v2/iwqk/event/list_all_with_popular_markets')) {  
+      try {  
+        const data = await response.json();  
+        fs.writeFileSync(fixtureFile, JSON.stringify(data, null, 2));  
+        fixtureCache = null;  
+        console.log(`Fixture data saved to ${fixtureFile}`);  
+      } catch (err) {  
+        console.error('Error saving fixture response:', err);  
+      }  
+    }  
+  
+    if (url.includes('/api/ng/instantwin/api/v2/iwqk/round/list_settle_events')) {  
+      try {  
+        const data = await response.json();  
+        if (Array.isArray(data)) {  
+          let savedResults = [];  
+          if (fs.existsSync(resultFile)) {  
+            try {  
+              savedResults = JSON.parse(fs.readFileSync(resultFile, 'utf-8'));  
+            } catch { savedResults = []; }  
+          }  
+  
+          let updated = false;  
+          for (const event of data) {  
+            const homeScore = parseInt(event.homeTeamScore, 10) || 0;  
+            const awayScore = parseInt(event.awayTeamScore, 10) || 0;  
+            if (homeScore + awayScore >= 2) {  
+              const probability = getOver15Probability(event.homeTeamName, event.awayTeamName);  
+              const resultObj = {  
+                homeTeamName: event.homeTeamName,  
+                awayTeamName: event.awayTeamName,  
+                homeTeamScore: String(event.homeTeamScore),  
+                awayTeamScore: String(event.awayTeamScore),  
+                ...(probability ? { probability } : {})  
+              };  
+  
+              const exists = savedResults.some(r =>  
+                r.homeTeamName === resultObj.homeTeamName &&  
+                r.awayTeamName === resultObj.awayTeamName &&  
+                r.homeTeamScore === resultObj.homeTeamScore &&  
+                r.awayTeamScore === resultObj.awayTeamScore  
+              );  
+  
+              if (!exists) {  
+                savedResults.push(resultObj);  
+                updated = true;  
+              }  
+            }  
+          }  
+  
+          if (updated) {  
+            fs.writeFileSync(resultFile, JSON.stringify(savedResults, null, 2));  
+            //console.log(` Updated results written to ${resultFile}`);  
+          }  
+        }  
+      } catch (err) {  
+        console.error('Error parsing result API response:', err);  
+      }  
+    }  
+  });  
+  
+  // Navigate after attaching listeners  
+  await page.goto(CHECK_URL, { waitUntil: 'domcontentloaded' });  
+  await page.waitForTimeout(3000);  
+  
+  const loginBtn = await page.$('div[data-op="nav-login"]');  
+  if (loginBtn) {  
+    console.log("Not logged in. Running sporty.js to refresh session...");  
+    await browser.close();  
+    exec('node sporty.js', (err, stdout) => {  
+  if (err) console.error("Error running sporty.js:", err);  
+  else { /* console.log(stdout); */ }  
+});  
+    return;  
+  }  
+  
+  console.log("Session valid. Already logged in.");  
+  
+  //Instead of static waitForFixture, retry until fixture.json is saved  
+  let retries = 0;  
+  while (!fs.existsSync(fixtureFile) && retries < 3) {  
+    console.log("Waiting for fixture.json (forcing refresh)...");  
+    await page.reload({ waitUntil: 'domcontentloaded' });  
+    await page.waitForTimeout(5000);  
+    retries++;  
+  }  
+  
+  if (!fs.existsSync(fixtureFile)) {  
+    throw new Error("Failed to capture fixture.json after retries.");  
+  }  
+  
+  // Loop forever with recovery  
+  while (true) {  
+    try {  
+      await runFlow(page);  
+    } catch (err) {  
+      console.error(" runFlow failed:", err.message);  
+    }  
+  
+    try {  
+      console.log(" Refreshing page and restarting...");  
+      await page.reload({ waitUntil: 'domcontentloaded', timeout: 60000 });  
+      await page.waitForTimeout(5000);  
+    } catch (err) {  
+      console.error(" Reload failed, recovering:", err.message);  
+      try {  
+        await page.goto(CHECK_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });  
+      } catch (gotoErr) {  
+        console.error(" Hard fail, restarting browser context:", gotoErr.message);  
+        context = await browser.newContext({ storageState: SESSION_FILE });  
+        page = await context.newPage();  
+        await page.goto(CHECK_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });  
+      }  
+    }  
+  }  
 })();
