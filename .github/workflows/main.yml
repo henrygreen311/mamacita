@@ -1,0 +1,50 @@
+name: Sporty
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */4 * * *'  # Every 4 hours
+
+jobs:
+  sporty:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330  # 5h 30m max runtime
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: |
+          npm install playwright
+          npx playwright install firefox
+          npm install fs
+
+      - name: Run sporty.js
+        run: |
+          node sporty.js || true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and push updated result.json if it exists and changed
+        run: |
+          if [ -f result.json ]; then
+            git config user.name "github-actions"
+            git config user.email "github-actions@github.com"
+            git add result.json
+            if ! git diff --cached --quiet result.json; then
+              git commit -m "Update result.json after sporty run"
+              git push
+            else
+              echo "No changes in result.json, skipping commit."
+            fi
+          else
+            echo "No result.json file found, skipping commit."
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
