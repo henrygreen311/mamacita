@@ -3,10 +3,10 @@ const { firefox } = require('playwright');
 const fs = require('fs');
 const { exec } = require('child_process');
 
-const SESSION_FILE = '/home/runner/session.json';
+const SESSION_FILE = 'session.json';
 const CHECK_URL = 'https://www.sportybet.com/ng/m/instant-virtuals/quickgame';
 const resultFile = 'result.json';
-const fixtureFile = '/home/runner/fixture.json';
+const fixtureFile = 'fixture.json';
 
 // --- Fixture helpers ---
 let fixtureCache = null;
