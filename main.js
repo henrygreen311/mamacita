@@ -97,13 +97,11 @@ async function safeClick(page, selector, label, retries = 3) {
       return;
     } catch (err) {
       if (err.message.includes('intercepts pointer events')) {
-        //console.log(`${label} blocked by popup, dismissing...`);
+        console.log(`${label} blocked by popup, dismissing...`);
         await dismissPopup(page);
-        continue; // retry again
       } else if (i < retries - 1) {
         console.log(`Retry ${i + 1} for ${label}...`);
         await page.waitForTimeout(2000);
-        continue;
       } else {
         throw err; // only fail after all retries
       }
@@ -117,12 +115,20 @@ async function runFlow(page) {
     await dismissPopup(page);
     await page.waitForTimeout(2000); // allow UI to settle
 
-    // Flexible locator for O/U tab
-    const ouTab = page.locator('li[data-op="iv-market-tabs"]').filter({ hasText: "O/U" });
-    await ouTab.first().waitFor({ state: 'visible', timeout: 15000 });
-    await ouTab.first().click();
-    //console.log("Clicked O/U tab.");
+    let ouClicked = false;
+    try {
+      // Try to find O/U tab
+      const ouTab = page.locator('li[data-op="iv-market-tabs"]').filter({ hasText: "O/U" });
+      await ouTab.first().waitFor({ state: 'visible', timeout: 8000 });
+      await ouTab.first().click();
+      console.log("Clicked O/U tab.");
+      ouClicked = true;
+    } catch {
+      console.log("O/U tab not found. Checking popup then skipping to Near...");
+      await dismissPopup(page); // ensure no overlay
+    }
 
+    // Now proceed to "Near"
     await safeClick(page, 'span:has-text("Near")', "Near");
     await safeClick(page, 'div.specifier-select-item:has-text("1.5")', "1.5");
 
@@ -132,7 +138,7 @@ async function runFlow(page) {
     const randomIndex = Math.floor(Math.random() * maxIndex);
     const chosenEvent = events[randomIndex];
 
-    //console.log(`Selected event index: ${randomIndex + 1}`);
+    console.log(`Selected event index: ${randomIndex + 1}`);
     const outcome = await chosenEvent.$('div[data-op="iv-outcome"]');
     if (!outcome) throw new Error("No iv-outcome found inside chosen event");
     await outcome.click();
