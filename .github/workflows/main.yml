@@ -21,13 +21,15 @@ jobs:
 
       - name: Install dependencies
         run: |
+          sudo apt-get update
+          sudo apt-get install -y xvfb
           npm install playwright
           npx playwright install firefox
           npm install fs
 
-      - name: Run sporty.js
+      - name: Run sporty.js with xvfb
         run: |
-          node sporty.js || true
+          xvfb-run -a node sporty.js || true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
