@@ -8,17 +8,32 @@ const BASE_URL = 'https://www.sportybet.com/ng/m/';
 const MOBILE = '9120183273';
 const PASSWORD = 'Edmond99';
 
-// Run main.js with live logs
+const headless = process.env.HEADLESS !== "false";
+
+// --- Popup remover ---
+async function dismissPopup(page) {
+  try {
+    await page.evaluate(() => {
+      document.querySelectorAll('div.layout.mask, div.es-dialog-wrap, div.dialog-wrapper, div.dialog-mask')
+        .forEach(el => el.remove());
+    });
+    console.log("Popup/overlay cleared.");
+  } catch {}
+}
+
+// --- Main runner ---
 function runMain() {
   console.log("Starting main.js...");
-  const child = spawn('node', ['main.js'], { stdio: 'inherit' }); // live logs
+  const child = spawn('node', ['main.js'], { stdio: 'inherit' });
+
   child.on('close', (code) => {
-    console.log(`main.js exited with code ${code}`);
+    console.log(`main.js exited with code ${code}, restarting in 5s...`);
+    setTimeout(runMain, 5000);
   });
 }
 
 (async () => {
-  const browser = await firefox.launch({ headless: false });
+  const browser = await firefox.launch({ headless });
   let context;
 
   // Step 1: Try existing session
@@ -37,8 +52,8 @@ function runMain() {
     } else {
       console.log("Valid session. Logged in successfully.");
       await browser.close();
-      runMain();   // <-- launch main.js with logs
-      return;      // don't call process.exit()
+      runMain();
+      return;
     }
   }
 
@@ -49,6 +64,7 @@ function runMain() {
   await page.goto(BASE_URL, { waitUntil: 'domcontentloaded' });
   await page.waitForTimeout(2000);
 
+  await dismissPopup(page);
   await page.click('div[data-op="nav-login"]');
   await page.waitForSelector('input[placeholder="Mobile Number"]');
 
@@ -64,9 +80,9 @@ function runMain() {
     console.log("Session saved to", SESSION_FILE);
 
     await browser.close();
-    runMain();  // <-- launch main.js with logs
+    runMain();
   } catch (err) {
-    console.log("Login failed or timeout reached.");
+    console.log("Login failed or timeout reached:", err.message);
     await browser.close();
   }
 })();
