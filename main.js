@@ -71,14 +71,20 @@ async function safeClick(page, selector, label) {
   while (attempts < 3) {
     try {
       await page.waitForSelector(selector, { timeout: 15000 });
-      await page.click(selector, { timeout: 5000 });
-      //console.log(`Clicked ${label}.`);
-      return true;
+
+      // Always clear popups before clicking
+      await dismissPopup(page);
+
+      // Use force: true only on the last attempt
+      await page.click(selector, { timeout: 5000, force: attempts === 2 });
+      console.log(`Clicked ${label}.`);
+      return true; // success
     } catch (err) {
       attempts++;
       console.warn(`Failed to click ${label}, attempt ${attempts}: ${err.message}`);
+
       if (err.message.includes('intercepts pointer events')) {
-        console.log(`${label} blocked by popup, dismissing...`);
+        console.log(`${label} blocked by popup, dismissing again...`);
         await dismissPopup(page);
       } else {
         console.log(`Retrying ${label} after page reload...`);
@@ -87,6 +93,7 @@ async function safeClick(page, selector, label) {
       }
     }
   }
+
   console.error(`Skipping ${label} after ${attempts} failed attempts.`);
   return false;
 }
