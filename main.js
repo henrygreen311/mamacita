@@ -88,60 +88,99 @@ async function dismissPopup(page) {
 
 // --- Safe click helper ---
 async function safeClick(page, selector, label) {
-  try {
-    await page.waitForSelector(selector, { timeout: 10000 });
-    await page.click(selector, { timeout: 10000 });
-    console.log(`Clicked ${label}.`);
-  } catch (err) {
-    if (err.message.includes('intercepts pointer events')) {
-      console.log(`${label} blocked by popup, dismissing...`);
-      await dismissPopup(page);
-      await page.click(selector);
-      console.log(`Clicked ${label} after dismissing popup.`);
-    } else {
-      throw err;
+  let attempts = 0;
+  while (attempts < 3) {
+    try {
+      await page.waitForSelector(selector, { timeout: 15000 }); // longer wait
+      await page.click(selector, { timeout: 5000 });
+      console.log(`Clicked ${label}.`);
+      return true; // success
+    } catch (err) {
+      attempts++;
+      console.warn(`Failed to click ${label}, attempt ${attempts}: ${err.message}`);
+
+      if (err.message.includes('intercepts pointer events')) {
+        console.log(`${label} blocked by popup, dismissing...`);
+        await dismissPopup(page);
+      } else {
+        console.log(`Retrying ${label} after page reload...`);
+        await page.reload({ waitUntil: 'domcontentloaded', timeout: 60000 });
+        await page.waitForTimeout(3000);
+      }
     }
   }
+
+  console.error(`Skipping ${label} after ${attempts} failed attempts.`);
+  return false; // tell caller it failed, but donât crash
 }
 
 // --- Main flow (interactions) ---
 async function runFlow(page) {
   try {
     await dismissPopup(page);
-    await safeClick(page, 'li[data-op="iv-market-tabs"]:has-text("O/U")', "O/U tab");
-    await safeClick(page, 'span:has-text("Near")', "Near");
-    await safeClick(page, 'div.specifier-select-item:has-text("1.5")', "1.5");
 
-    await page.waitForSelector('div.event-list.spacer-market', { timeout: 10000 });
-    const events = await page.$$('div.event-list.spacer-market');
+    if (!(await safeClick(page, 'li[data-op="iv-market-tabs"]:has-text("O/U")', "O/U tab"))) {
+      console.log("Skipping O/U tab step.");
+    }
+
+    if (!(await safeClick(page, 'span:has-text("Near")', "Near"))) {
+      console.log("Skipping Near step.");
+    }
+
+    if (!(await safeClick(page, 'div.specifier-select-item:has-text("1.5")', "1.5"))) {
+      console.log("Skipping 1.5 step.");
+    }
+
+    // Try event list (only proceed if available)
+    let events = [];
+    try {
+      await page.waitForSelector('div.event-list.spacer-market', { timeout: 10000 });
+      events = await page.$$('div.event-list.spacer-market');
+    } catch {
+      console.log("No events found, skipping flow.");
+      return;
+    }
+
     const maxIndex = Math.min(events.length, 10);
+    if (maxIndex === 0) {
+      console.log("No events available, skipping.");
+      return;
+    }
+
     const randomIndex = Math.floor(Math.random() * maxIndex);
     const chosenEvent = events[randomIndex];
 
-    //console.log(`Selected event index: ${randomIndex + 1}`);
     const outcome = await chosenEvent.$('div[data-op="iv-outcome"]');
-    if (!outcome) throw new Error("No iv-outcome found inside chosen event");
-    await outcome.click();
-    //console.log("Clicked over 1.5");
-
-    const bottomContainer = await page.waitForSelector('div.nav-bottom-container', { timeout: 10000 });
-    const rightBtn = await bottomContainer.$('div.btn.right');
-    if (rightBtn) {
-      await rightBtn.click();
-      //console.log("Clicked the 'Place Bet' button.");
+    if (outcome) {
+      await outcome.click();
+      console.log("Clicked over 1.5 outcome.");
+    } else {
+      console.log("No outcome found, skipping bet.");
+      return;
     }
 
-    const confirmContainer = await page.waitForSelector('#confirm-pop__bottom', { timeout: 10000 });
-    const confirmBtn = await confirmContainer.$('#confirm-btn');
-    if (confirmBtn) {
-      await confirmBtn.click();
-      //console.log("Clicked the 'Confirm' button.");
+    const bottomContainer = await page.waitForSelector('div.nav-bottom-container', { timeout: 10000 }).catch(() => null);
+    if (bottomContainer) {
+      const rightBtn = await bottomContainer.$('div.btn.right');
+      if (rightBtn) {
+        await rightBtn.click();
+        console.log("Clicked the 'Place Bet' button.");
+      }
     }
 
-    const kickOffBtn = await page.waitForSelector('span[data-op="iv-openbet-kick-off-button"]', { timeout: 10000 });
+    const confirmContainer = await page.waitForSelector('#confirm-pop__bottom', { timeout: 10000 }).catch(() => null);
+    if (confirmContainer) {
+      const confirmBtn = await confirmContainer.$('#confirm-btn');
+      if (confirmBtn) {
+        await confirmBtn.click();
+        console.log("Clicked the 'Confirm' button.");
+      }
+    }
+
+    const kickOffBtn = await page.waitForSelector('span[data-op="iv-openbet-kick-off-button"]', { timeout: 10000 }).catch(() => null);
     if (kickOffBtn) {
       await kickOffBtn.click();
-      //console.log("Clicked the 'Kick Off' button.");
+      console.log("Clicked the 'Kick Off' button.");
     }
 
     try {
@@ -149,11 +188,16 @@ async function runFlow(page) {
       await skipButton.waitFor({ state: 'visible', timeout: 15000 });
       if (await skipButton.evaluate(node => !!node.isConnected)) {
         await skipButton.click();
-        //console.log('Clicked Skip to Result button.');
+        console.log('Clicked Skip to Result button.');
       }
     } catch {
       console.log('Skip to Result button not found, continuing...');
     }
+
+  } catch (err) {
+    console.error("Error during interactions:", err.message);
+  }
+}
 
     // Handle popups
     try {
@@ -330,4 +374,4 @@ async function runFlow(page) {
       }
     }
   }
-})();
+})(
