@@ -110,19 +110,19 @@ async function runFlow(page) {
   try {
     await dismissPopup(page);
 
-    // --- Step 1: Try O/U, fallback to Near ---
+    // --- Step 1: Try O/U and Near ---
     const ouTab = await page.$('li[data-op="iv-market-tabs"]:has-text("O/U")');
+    const nearBtn = await page.$('span:has-text("Near")');
+
     if (ouTab) {
       await safeClick(page, 'li[data-op="iv-market-tabs"]:has-text("O/U")', "O/U tab");
-    } else {
-      console.log("O/U tab not found. Checking popup and skipping to 'Near'...");
-      await dismissPopup(page);
-      const nearBtn = await page.$('span:has-text("Near")');
-      if (nearBtn) {
-        await safeClick(page, 'span:has-text("Near")', "Near");
-      } else {
-        throw new Error("Neither O/U nor Near found â cannot continue flow.");
-      }
+    }
+
+    if (nearBtn) {
+      await safeClick(page, 'span:has-text("Near")', "Near");
+    } else if (!ouTab) {
+      console.log("Neither O/U nor Near found â requesting restart...");
+      throw new Error("RestartTrigger"); // signal main loop to restart
     }
 
     // --- Step 2: Always try 1.5 after Near ---
@@ -211,6 +211,9 @@ async function runFlow(page) {
 
     console.log(`All done. Results saved in ${resultFile}, fixture in ${fixtureFile}`);
   } catch (err) {
+    if (err.message === "RestartTrigger") {
+      throw err; // bubble up for restart handling in main loop
+    }
     console.error("Error during interactions:", err);
   }
 }
@@ -326,27 +329,38 @@ async function runFlow(page) {
   }  
   
   // Loop forever with recovery  
-  while (true) {  
-    try {  
-      await runFlow(page);  
-    } catch (err) {  
+while (true) {  
+  try {  
+    await runFlow(page);  
+  } catch (err) {  
+    if (err.message === "RestartTrigger") {  
+      console.log(" O/U and Near missing forcing restart...");  
+      try {  
+        await page.reload({ waitUntil: 'domcontentloaded', timeout: 60000 });  
+        await page.waitForTimeout(5000);  
+        continue; // go back to runFlow after reload  
+      } catch (reloadErr) {  
+        console.error(" Reload failed during restart:", reloadErr.message);  
+      }  
+    } else {  
       console.error(" runFlow failed:", err.message);  
     }  
-  
+  }  
+
+  try {  
+    console.log(" Refreshing page and restarting...");  
+    await page.reload({ waitUntil: 'domcontentloaded', timeout: 60000 });  
+    await page.waitForTimeout(5000);  
+  } catch (err) {  
+    console.error(" Reload failed, recovering:", err.message);  
     try {  
-      console.log(" Refreshing page and restarting...");  
-      await page.reload({ waitUntil: 'domcontentloaded', timeout: 60000 });  
-      await page.waitForTimeout(5000);  
-    } catch (err) {  
-      console.error(" Reload failed, recovering:", err.message);  
-      try {  
-        await page.goto(CHECK_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });  
-      } catch (gotoErr) {  
-        console.error(" Hard fail, restarting browser context:", gotoErr.message);  
-        context = await browser.newContext({ storageState: SESSION_FILE });  
-        page = await context.newPage();  
-        await page.goto(CHECK_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });  
-      }  
+      await page.goto(CHECK_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });  
+    } catch (gotoErr) {  
+      console.error(" Hard fail, restarting browser context:", gotoErr.message);  
+      context = await browser.newContext({ storageState: SESSION_FILE });  
+      page = await context.newPage();  
+      await page.goto(CHECK_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });  
     }  
   }  
+}  
 })();
