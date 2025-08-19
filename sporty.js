@@ -40,7 +40,7 @@ async function dismissPopup(page) {
     } else {
       console.log("Valid session. Logged in successfully.");
       await browser.close();
-      return; // â stop here, don't run main.js
+      return; //stop here, don't run main.js
     }
   }
 
@@ -67,9 +67,9 @@ async function dismissPopup(page) {
     console.log("Session saved to", SESSION_FILE);
 
     await browser.close();
-    return; // â stop here, don't run main.js
+    return; //stop here, don't run main.js
   } catch (err) {
     console.log("Login failed or timeout reached:", err.message);
     await browser.close();
   }
-}
+})();
