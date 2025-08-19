@@ -43,51 +43,58 @@ function getOver15Probability(homeCode, awayCode) {
   return null;
 }
 
-// --- Dismiss popup helper ---
+// --- Improved Dismiss Popup Helper ---
 async function dismissPopup(page) {
   const overlaySelector = 'div.dialog-wrapper, div.dialog-mask';
   const tryItSelector = 'text="Try it"';
-  try {
-    await page.waitForSelector(overlaySelector, { timeout: 5000 });
-    //console.log("Popup detected. Removing overlay...");
+
+  let attempts = 0;
+  while (attempts < 5) {
+    const overlay = await page.$(overlaySelector);
+    if (!overlay) break; // no overlay anymore
+
+    console.log("Popup detected. Removing overlay...");
+
     if (await page.$(tryItSelector)) {
-      await page.click(tryItSelector);
-      //console.log('Clicked "Try it" button.');
+      await page.click(tryItSelector, { force: true });
+      console.log('Clicked "Try it" button.');
     }
+
     await page.evaluate(() => {
       document.querySelectorAll('div.dialog-wrapper, div.dialog-mask')
         .forEach(el => el.remove());
     });
-    //console.log("Popup removed.");
-    await page.waitForTimeout(5000);
-  } catch {
-    //console.log("No popup detected.");
+
+    await page.waitForTimeout(1000);
+    attempts++;
+  }
+
+  if (attempts > 0) {
+    console.log(`Popup cleared after ${attempts} attempt(s).`);
   }
 }
 
-// --- Safe click helper (skip after retries) ---
+// --- Safe Click with stronger popup handling ---
 async function safeClick(page, selector, label) {
   let attempts = 0;
   while (attempts < 3) {
     try {
-      await page.waitForSelector(selector, { timeout: 15000 });
-
-      // Always clear popups before clicking
+      // Always make sure no popup first
       await dismissPopup(page);
 
-      // Use force: true only on the last attempt
-      await page.click(selector, { timeout: 5000, force: attempts === 2 });
+      const el = await page.waitForSelector(selector, { timeout: 15000 });
+      await el.click({ timeout: 5000, force: attempts === 2 }); // force only last attempt
       console.log(`Clicked ${label}.`);
-      return true; // success
+      return true;
     } catch (err) {
       attempts++;
       console.warn(`Failed to click ${label}, attempt ${attempts}: ${err.message}`);
 
       if (err.message.includes('intercepts pointer events')) {
-        console.log(`${label} blocked by popup, dismissing again...`);
+        console.log(`${label} blocked again, clearing popup...`);
         await dismissPopup(page);
       } else {
-        console.log(`Retrying ${label} after page reload...`);
+        console.log(`Retrying ${label} after reload...`);
         await page.reload({ waitUntil: 'domcontentloaded', timeout: 60000 });
         await page.waitForTimeout(3000);
       }
