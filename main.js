@@ -117,8 +117,10 @@ async function safeClick(page, selector, label) {
 // --- Main flow (interactions) ---
 async function runFlow(page) {
   try {
+    // Clear any popups before starting
     await dismissPopup(page);
 
+    // Step 1: Navigate market tabs
     if (!(await safeClick(page, 'li[data-op="iv-market-tabs"]:has-text("O/U")', "O/U tab"))) {
       console.log("Skipping O/U tab step.");
     }
@@ -131,7 +133,7 @@ async function runFlow(page) {
       console.log("Skipping 1.5 step.");
     }
 
-    // Try event list (only proceed if available)
+    // Step 2: Event list (optional)
     let events = [];
     try {
       await page.waitForSelector('div.event-list.spacer-market', { timeout: 10000 });
@@ -159,6 +161,7 @@ async function runFlow(page) {
       return;
     }
 
+    // Step 3: Place bet button
     const bottomContainer = await page.waitForSelector('div.nav-bottom-container', { timeout: 10000 }).catch(() => null);
     if (bottomContainer) {
       const rightBtn = await bottomContainer.$('div.btn.right');
@@ -168,6 +171,7 @@ async function runFlow(page) {
       }
     }
 
+    // Step 4: Confirm bet
     const confirmContainer = await page.waitForSelector('#confirm-pop__bottom', { timeout: 10000 }).catch(() => null);
     if (confirmContainer) {
       const confirmBtn = await confirmContainer.$('#confirm-btn');
@@ -177,12 +181,14 @@ async function runFlow(page) {
       }
     }
 
+    // Step 5: Kick off
     const kickOffBtn = await page.waitForSelector('span[data-op="iv-openbet-kick-off-button"]', { timeout: 10000 }).catch(() => null);
     if (kickOffBtn) {
       await kickOffBtn.click();
       console.log("Clicked the 'Kick Off' button.");
     }
 
+    // Step 6: Skip to result
     try {
       const skipButton = page.locator('span[data-op="iv-quick-games-skip-to-result"]');
       await skipButton.waitFor({ state: 'visible', timeout: 15000 });
@@ -193,6 +199,33 @@ async function runFlow(page) {
     } catch {
       console.log('Skip to Result button not found, continuing...');
     }
+
+    // Step 7: Handle popups
+    try {
+      const winPopup = await page.$('div.main__bg');
+      if (winPopup) {
+        await page.evaluate(() => {
+          const popup = document.querySelector('div.main__bg');
+          if (popup) popup.remove();
+          const parent = document.querySelector('div.main');
+          if (parent) parent.style.display = 'none';
+        });
+        console.log('Blocked "YOU WON" popup.');
+      }
+
+      const newWinPopup = await page.$('#winngin-pop');
+      if (newWinPopup) {
+        await page.evaluate(() => {
+          const popup = document.querySelector('#winngin-pop');
+          if (popup) popup.remove();
+        });
+        console.log('Blocked "winngin-pop" popup.');
+      }
+    } catch (err) {
+      console.log('Error checking or blocking popups:', err.message);
+    }
+
+    console.log("Flow finished successfully.");
 
   } catch (err) {
     console.error("Error during interactions:", err.message);
