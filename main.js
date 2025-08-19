@@ -6,7 +6,7 @@ const { exec } = require('child_process');
 const SESSION_FILE = 'session.json';
 const CHECK_URL = 'https://www.sportybet.com/ng/m/instant-virtuals/quickgame';
 const resultFile = 'result.json';
-const fixtureFile = path.join(process.cwd(), 'fixture.json');
+const fixtureFile = '/home/runner/work/mamacita/mamacita/fixture.json';
 
 // --- Fixture helpers ---
 let fixtureCache = null;
