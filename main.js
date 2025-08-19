@@ -211,10 +211,7 @@ async function runFlow(page) {
   let context = await browser.newContext({ storageState: SESSION_FILE });
   let page = await context.newPage();
 
-  await page.goto(CHECK_URL, { waitUntil: 'domcontentloaded' });
-  await page.waitForTimeout(3000);
-
-  // Attach API listeners once
+  // ð Attach API listeners *before* first navigation
   page.on('response', async (response) => {
     const url = response.url();
 
@@ -279,6 +276,10 @@ async function runFlow(page) {
     }
   });
 
+  // Navigate after attaching listeners
+  await page.goto(CHECK_URL, { waitUntil: 'domcontentloaded' });
+  await page.waitForTimeout(3000);
+
   const loginBtn = await page.$('div[data-op="nav-login"]');
   if (loginBtn) {
     console.log("Not logged in. Running sporty.js to refresh session...");
@@ -292,8 +293,18 @@ async function runFlow(page) {
 
   console.log("Session valid. Already logged in.");
 
-  //Wait for fixture.json at least once before starting loop
-  await waitForFixture();
+  // ð Instead of static waitForFixture, retry until fixture.json is saved
+  let retries = 0;
+  while (!fs.existsSync(fixtureFile) && retries < 3) {
+    console.log("Waiting for fixture.json (forcing refresh)...");
+    await page.reload({ waitUntil: 'domcontentloaded' });
+    await page.waitForTimeout(5000);
+    retries++;
+  }
+
+  if (!fs.existsSync(fixtureFile)) {
+    throw new Error("Failed to capture fixture.json after retries.");
+  }
 
   // Loop forever with recovery
   while (true) {
@@ -319,4 +330,4 @@ async function runFlow(page) {
       }
     }
   }
-})();
+}
