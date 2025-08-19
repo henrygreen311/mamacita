@@ -211,7 +211,7 @@ async function runFlow(page) {
   let context = await browser.newContext({ storageState: SESSION_FILE });
   let page = await context.newPage();
 
-  // ð Attach API listeners *before* first navigation
+  //Attach API listeners *before* first navigation
   page.on('response', async (response) => {
     const url = response.url();
 
@@ -293,7 +293,7 @@ async function runFlow(page) {
 
   console.log("Session valid. Already logged in.");
 
-  // ð Instead of static waitForFixture, retry until fixture.json is saved
+  //Instead of static waitForFixture, retry until fixture.json is saved
   let retries = 0;
   while (!fs.existsSync(fixtureFile) && retries < 3) {
     console.log("Waiting for fixture.json (forcing refresh)...");
@@ -330,4 +330,4 @@ async function runFlow(page) {
       }
     }
   }
-}
+})();
