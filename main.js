@@ -312,7 +312,6 @@ async function runFlow(page) {
       else //console.log(stdout);
     });
     return;
-  }
 
   console.log("Session valid. Already logged in.");
 
