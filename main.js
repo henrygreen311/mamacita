@@ -53,7 +53,7 @@ async function dismissPopup(page) {
     const overlay = await page.$(overlaySelector);
     if (!overlay) break; // no overlay anymore
 
-    console.log("Popup detected. Removing overlay...");
+    //console.log("Popup detected. Removing overlay...");
 
     if (await page.$(tryItSelector)) {
       await page.click(tryItSelector, { force: true });
@@ -70,7 +70,7 @@ async function dismissPopup(page) {
   }
 
   if (attempts > 0) {
-    console.log(`Popup cleared after ${attempts} attempt(s).`);
+    //console.log(`Popup cleared after ${attempts} attempt(s).`);
   }
 }
 
@@ -84,14 +84,14 @@ async function safeClick(page, selector, label) {
 
       const el = await page.waitForSelector(selector, { timeout: 15000 });
       await el.click({ timeout: 5000, force: attempts === 2 }); // force only last attempt
-      console.log(`Clicked ${label}.`);
+      //console.log(`Clicked ${label}.`);
       return true;
     } catch (err) {
       attempts++;
       console.warn(`Failed to click ${label}, attempt ${attempts}: ${err.message}`);
 
       if (err.message.includes('intercepts pointer events')) {
-        console.log(`${label} blocked again, clearing popup...`);
+        //console.log(`${label} blocked again, clearing popup...`);
         await dismissPopup(page);
       } else {
         console.log(`Retrying ${label} after reload...`);
@@ -230,7 +230,7 @@ async function runFlow(page) {
     return;
   }
 
-  const browser = await firefox.launch({ headless: true });
+  const browser = await firefox.launch({ headless: false });
   let context = await browser.newContext({ storageState: SESSION_FILE });
   let page = await context.newPage();
 
