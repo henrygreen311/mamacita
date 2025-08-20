@@ -136414,5 +136414,6949 @@
     "homeTeamScore": "2",
     "awayTeamScore": "3",
     "probability": "0.618"
+  },
+  {
+    "homeTeamName": "WOL",
+    "awayTeamName": "CHE",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.8138"
+  },
+  {
+    "homeTeamName": "SUN",
+    "awayTeamName": "CRY",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.5803"
+  },
+  {
+    "homeTeamName": "MUN",
+    "awayTeamName": "AST",
+    "homeTeamScore": "4",
+    "awayTeamScore": "0",
+    "probability": "0.6598"
+  },
+  {
+    "homeTeamName": "BOU",
+    "awayTeamName": "NEW",
+    "homeTeamScore": "4",
+    "awayTeamScore": "2",
+    "probability": "0.8223"
+  },
+  {
+    "homeTeamName": "LEE",
+    "awayTeamName": "EVE",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.5219"
+  },
+  {
+    "homeTeamName": "ATM",
+    "awayTeamName": "RSO",
+    "homeTeamScore": "5",
+    "awayTeamScore": "0",
+    "probability": "0.5369"
+  },
+  {
+    "homeTeamName": "BMG",
+    "awayTeamName": "SGE",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6233"
+  },
+  {
+    "homeTeamName": "TSG",
+    "awayTeamName": "UNI",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.5889"
+  },
+  {
+    "homeTeamName": "CHE",
+    "awayTeamName": "POR",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6714"
+  },
+  {
+    "homeTeamName": "BVB",
+    "awayTeamName": "MUN",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6645"
+  },
+  {
+    "homeTeamName": "ARS",
+    "awayTeamName": "NAP",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.6761"
+  },
+  {
+    "homeTeamName": "FCB",
+    "awayTeamName": "JUV",
+    "homeTeamScore": "3",
+    "awayTeamScore": "3",
+    "probability": "0.6826"
+  },
+  {
+    "homeTeamName": "ACM",
+    "awayTeamName": "MCI",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6715"
+  },
+  {
+    "homeTeamName": "CIV",
+    "awayTeamName": "BFA",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.6379"
+  },
+  {
+    "homeTeamName": "GNQ",
+    "awayTeamName": "NAM",
+    "homeTeamScore": "5",
+    "awayTeamScore": "1",
+    "probability": "0.6694"
+  },
+  {
+    "homeTeamName": "SEN",
+    "awayTeamName": "DZA",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6601"
+  },
+  {
+    "homeTeamName": "NGA",
+    "awayTeamName": "MLI",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6978"
+  },
+  {
+    "homeTeamName": "ZAF",
+    "awayTeamName": "GNB",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.6379"
+  },
+  {
+    "homeTeamName": "MAR",
+    "awayTeamName": "CPV",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.7488"
+  },
+  {
+    "homeTeamName": "ZMB",
+    "awayTeamName": "MRT",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.6021"
+  },
+  {
+    "homeTeamName": "CRO",
+    "awayTeamName": "SUI",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6379"
+  },
+  {
+    "homeTeamName": "NED",
+    "awayTeamName": "SRB",
+    "homeTeamScore": "2",
+    "awayTeamScore": "4",
+    "probability": "0.7653"
+  },
+  {
+    "homeTeamName": "HIL",
+    "awayTeamName": "JUV",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.5938"
+  },
+  {
+    "homeTeamName": "POR",
+    "awayTeamName": "CHE",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.6688"
+  },
+  {
+    "homeTeamName": "URA",
+    "awayTeamName": "MCI",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.5341"
+  },
+  {
+    "homeTeamName": "LAFC",
+    "awayTeamName": "INT",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.5576"
+  },
+  {
+    "homeTeamName": "FUL",
+    "awayTeamName": "SUN",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.7166"
+  },
+  {
+    "homeTeamName": "BOU",
+    "awayTeamName": "WOL",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.767"
+  },
+  {
+    "homeTeamName": "LIV",
+    "awayTeamName": "BHA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.7884"
+  },
+  {
+    "homeTeamName": "TOT",
+    "awayTeamName": "NEW",
+    "homeTeamScore": "5",
+    "awayTeamScore": "1",
+    "probability": "0.8778"
+  },
+  {
+    "homeTeamName": "BUR",
+    "awayTeamName": "CHE",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.6251"
+  },
+  {
+    "homeTeamName": "LEV",
+    "awayTeamName": "GIR",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.6048"
+  },
+  {
+    "homeTeamName": "ELC",
+    "awayTeamName": "BIL",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.4249"
+  },
+  {
+    "homeTeamName": "ATM",
+    "awayTeamName": "VIL",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6479"
+  },
+  {
+    "homeTeamName": "ESP",
+    "awayTeamName": "OVI",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.6279"
+  },
+  {
+    "homeTeamName": "RAY",
+    "awayTeamName": "RMA",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.6848"
+  },
+  {
+    "homeTeamName": "HDH",
+    "awayTeamName": "HSV",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.7378"
+  },
+  {
+    "homeTeamName": "MAI",
+    "awayTeamName": "WOB",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.4651"
+  },
+  {
+    "homeTeamName": "TSG",
+    "awayTeamName": "STP",
+    "homeTeamScore": "1",
+    "awayTeamScore": "5",
+    "probability": "0.7086"
+  },
+  {
+    "homeTeamName": "LEV",
+    "awayTeamName": "VFB",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.6228"
+  },
+  {
+    "homeTeamName": "SVW",
+    "awayTeamName": "UNI",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.5458"
+  },
+  {
+    "homeTeamName": "UDI",
+    "awayTeamName": "SAS",
+    "homeTeamScore": "4",
+    "awayTeamScore": "0",
+    "probability": "0.7025"
+  },
+  {
+    "homeTeamName": "MRT",
+    "awayTeamName": "DZA",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.5663"
+  },
+  {
+    "homeTeamName": "EGY",
+    "awayTeamName": "MLI",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.7062"
+  },
+  {
+    "homeTeamName": "NGA",
+    "awayTeamName": "TZA",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6916"
+  },
+  {
+    "homeTeamName": "GNB",
+    "awayTeamName": "COD",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.5693"
+  },
+  {
+    "homeTeamName": "SUI",
+    "awayTeamName": "UKR",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.5884"
+  },
+  {
+    "homeTeamName": "DEN",
+    "awayTeamName": "AUT",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.7513"
+  },
+  {
+    "homeTeamName": "ITA",
+    "awayTeamName": "SVK",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.5994"
+  },
+  {
+    "homeTeamName": "CHE",
+    "awayTeamName": "BOC",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.662"
+  },
+  {
+    "homeTeamName": "ULS",
+    "awayTeamName": "EST",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.5799"
+  },
+  {
+    "homeTeamName": "SEA",
+    "awayTeamName": "AIN",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.5967"
+  },
+  {
+    "homeTeamName": "PAC",
+    "awayTeamName": "POR",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.6021"
+  },
+  {
+    "homeTeamName": "MCI",
+    "awayTeamName": "MTY",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.7836"
+  },
+  {
+    "homeTeamName": "RMA",
+    "awayTeamName": "URA",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.7934"
+  },
+  {
+    "homeTeamName": "MCI",
+    "awayTeamName": "WHU",
+    "homeTeamScore": "5",
+    "awayTeamScore": "2",
+    "probability": "0.8196"
+  },
+  {
+    "homeTeamName": "CHE",
+    "awayTeamName": "BHA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.7904"
+  },
+  {
+    "homeTeamName": "WOL",
+    "awayTeamName": "FOR",
+    "homeTeamScore": "4",
+    "awayTeamScore": "1",
+    "probability": "0.7853"
+  },
+  {
+    "homeTeamName": "MUN",
+    "awayTeamName": "BUR",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.6802"
+  },
+  {
+    "homeTeamName": "BRE",
+    "awayTeamName": "FUL",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.8446"
+  },
+  {
+    "homeTeamName": "AST",
+    "awayTeamName": "NEW",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.856"
+  },
+  {
+    "homeTeamName": "ALA",
+    "awayTeamName": "FCB",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.6279"
+  },
+  {
+    "homeTeamName": "OSA",
+    "awayTeamName": "LEV",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.5801"
+  },
+  {
+    "homeTeamName": "SEV",
+    "awayTeamName": "GIR",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.6525"
+  },
+  {
+    "homeTeamName": "BMU",
+    "awayTeamName": "WOB",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.5036"
+  },
+  {
+    "homeTeamName": "BVB",
+    "awayTeamName": "SGE",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.6783"
+  },
+  {
+    "homeTeamName": "INT",
+    "awayTeamName": "NEW",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.7227"
+  },
+  {
+    "homeTeamName": "GEN",
+    "awayTeamName": "CAG",
+    "homeTeamScore": "1",
+    "awayTeamScore": "4",
+    "probability": "0.6621"
+  },
+  {
+    "homeTeamName": "TOR",
+    "awayTeamName": "PIS",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.5311"
+  },
+  {
+    "homeTeamName": "NAP",
+    "awayTeamName": "ROM",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.6759"
+  },
+  {
+    "homeTeamName": "JUV",
+    "awayTeamName": "BFC",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6912"
+  },
+  {
+    "homeTeamName": "INT",
+    "awayTeamName": "UDI",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.7102"
+  },
+  {
+    "homeTeamName": "ATA",
+    "awayTeamName": "USC",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.6475"
+  },
+  {
+    "homeTeamName": "EGY",
+    "awayTeamName": "MAR",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.6599"
+  },
+  {
+    "homeTeamName": "MLI",
+    "awayTeamName": "DZA",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.6429"
+  },
+  {
+    "homeTeamName": "GIN",
+    "awayTeamName": "GNB",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.6124"
+  },
+  {
+    "homeTeamName": "GER",
+    "awayTeamName": "SRB",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6717"
+  },
+  {
+    "homeTeamName": "AUT",
+    "awayTeamName": "GEO",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.6381"
+  },
+  {
+    "homeTeamName": "SUN",
+    "awayTeamName": "MCI",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.5283"
+  },
+  {
+    "homeTeamName": "BAY",
+    "awayTeamName": "URA",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.7751"
+  },
+  {
+    "homeTeamName": "BOC",
+    "awayTeamName": "EST",
+    "homeTeamScore": "2",
+    "awayTeamScore": "4",
+    "probability": "0.6094"
+  },
+  {
+    "homeTeamName": "MIA",
+    "awayTeamName": "RBS",
+    "homeTeamScore": "4",
+    "awayTeamScore": "0",
+    "probability": "0.5884"
+  },
+  {
+    "homeTeamName": "BRE",
+    "awayTeamName": "LEE",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.7852"
+  },
+  {
+    "homeTeamName": "WHU",
+    "awayTeamName": "FUL",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.7853"
+  },
+  {
+    "homeTeamName": "AST",
+    "awayTeamName": "NEW",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.856"
+  },
+  {
+    "homeTeamName": "ELC",
+    "awayTeamName": "GIR",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6122"
+  },
+  {
+    "homeTeamName": "CEL",
+    "awayTeamName": "BIL",
+    "homeTeamScore": "2",
+    "awayTeamScore": "5",
+    "probability": "0.442"
+  },
+  {
+    "homeTeamName": "LEV",
+    "awayTeamName": "TSG",
+    "homeTeamScore": "4",
+    "awayTeamScore": "0",
+    "probability": "0.7327"
+  },
+  {
+    "homeTeamName": "VFB",
+    "awayTeamName": "SGE",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.7512"
+  },
+  {
+    "homeTeamName": "KOE",
+    "awayTeamName": "MAI",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.5068"
+  },
+  {
+    "homeTeamName": "BMU",
+    "awayTeamName": "SVW",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.5159"
+  },
+  {
+    "homeTeamName": "RMA",
+    "awayTeamName": "LIV",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.7169"
+  },
+  {
+    "homeTeamName": "ARS",
+    "awayTeamName": "VCF",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.7326"
+  },
+  {
+    "homeTeamName": "BMU",
+    "awayTeamName": "MCI",
+    "homeTeamScore": "4",
+    "awayTeamScore": "2",
+    "probability": "0.6806"
+  },
+  {
+    "homeTeamName": "PIS",
+    "awayTeamName": "UDI",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.5695"
+  },
+  {
+    "homeTeamName": "VER",
+    "awayTeamName": "FIO",
+    "homeTeamScore": "4",
+    "awayTeamScore": "0",
+    "probability": "0.648"
+  },
+  {
+    "homeTeamName": "MAR",
+    "awayTeamName": "DZA",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.7561"
+  },
+  {
+    "homeTeamName": "GHA",
+    "awayTeamName": "COD",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.5829"
+  },
+  {
+    "homeTeamName": "CIV",
+    "awayTeamName": "SEN",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.6043"
+  },
+  {
+    "homeTeamName": "MLI",
+    "awayTeamName": "GMB",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.7102"
+  },
+  {
+    "homeTeamName": "MRT",
+    "awayTeamName": "ZAF",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.5858"
+  },
+  {
+    "homeTeamName": "GIN",
+    "awayTeamName": "GNQ",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.6073"
+  },
+  {
+    "homeTeamName": "BFA",
+    "awayTeamName": "AGO",
+    "homeTeamScore": "4",
+    "awayTeamScore": "2",
+    "probability": "0.6848"
+  },
+  {
+    "homeTeamName": "NED",
+    "awayTeamName": "ROU",
+    "homeTeamScore": "5",
+    "awayTeamScore": "0",
+    "probability": "0.7492"
+  },
+  {
+    "homeTeamName": "TUR",
+    "awayTeamName": "FRA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.669"
+  },
+  {
+    "homeTeamName": "CRO",
+    "awayTeamName": "AUT",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6979"
+  },
+  {
+    "homeTeamName": "SRB",
+    "awayTeamName": "SVN",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6827"
+  },
+  {
+    "homeTeamName": "FLA",
+    "awayTeamName": "BEN",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.643"
+  },
+  {
+    "homeTeamName": "BVB",
+    "awayTeamName": "BAY",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.6573"
+  },
+  {
+    "homeTeamName": "FLU",
+    "awayTeamName": "PAL",
+    "homeTeamScore": "4",
+    "awayTeamScore": "3",
+    "probability": "0.5857"
+  },
+  {
+    "homeTeamName": "MIA",
+    "awayTeamName": "SEA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6453"
+  },
+  {
+    "homeTeamName": "WHU",
+    "awayTeamName": "WOL",
+    "homeTeamScore": "5",
+    "awayTeamScore": "4",
+    "probability": "0.7704"
+  },
+  {
+    "homeTeamName": "MUN",
+    "awayTeamName": "LIV",
+    "homeTeamScore": "2",
+    "awayTeamScore": "4",
+    "probability": "0.7705"
+  },
+  {
+    "homeTeamName": "CHE",
+    "awayTeamName": "BRE",
+    "homeTeamScore": "5",
+    "awayTeamScore": "0",
+    "probability": "0.814"
+  },
+  {
+    "homeTeamName": "MCI",
+    "awayTeamName": "LEE",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.7551"
+  },
+  {
+    "homeTeamName": "CEL",
+    "awayTeamName": "LEV",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.6017"
+  },
+  {
+    "homeTeamName": "RMA",
+    "awayTeamName": "SEV",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.5314"
+  },
+  {
+    "homeTeamName": "ALA",
+    "awayTeamName": "ELC",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6277"
+  },
+  {
+    "homeTeamName": "SVW",
+    "awayTeamName": "HSV",
+    "homeTeamScore": "4",
+    "awayTeamScore": "0",
+    "probability": "0.7401"
+  },
+  {
+    "homeTeamName": "FCA",
+    "awayTeamName": "BMU",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.7771"
+  },
+  {
+    "homeTeamName": "PSG",
+    "awayTeamName": "ATM",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6805"
+  },
+  {
+    "homeTeamName": "BVB",
+    "awayTeamName": "VCF",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.7322"
+  },
+  {
+    "homeTeamName": "TOR",
+    "awayTeamName": "INT",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.6782"
+  },
+  {
+    "homeTeamName": "NAP",
+    "awayTeamName": "USC",
+    "homeTeamScore": "1",
+    "awayTeamScore": "4",
+    "probability": "0.6178"
+  },
+  {
+    "homeTeamName": "UDI",
+    "awayTeamName": "VER",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6866"
+  },
+  {
+    "homeTeamName": "COM",
+    "awayTeamName": "ATA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.7166"
+  },
+  {
+    "homeTeamName": "DZA",
+    "awayTeamName": "AGO",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.7228"
+  },
+  {
+    "homeTeamName": "GMB",
+    "awayTeamName": "GHA",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.575"
+  },
+  {
+    "homeTeamName": "NAM",
+    "awayTeamName": "GIN",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6125"
+  },
+  {
+    "homeTeamName": "DEN",
+    "awayTeamName": "ITA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.7385"
+  },
+  {
+    "homeTeamName": "RBS",
+    "awayTeamName": "MTY",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6121"
+  },
+  {
+    "homeTeamName": "RMA",
+    "awayTeamName": "AKL",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.7946"
+  },
+  {
+    "homeTeamName": "CHE",
+    "awayTeamName": "SUN",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6912"
+  },
+  {
+    "homeTeamName": "INT",
+    "awayTeamName": "PSG",
+    "homeTeamScore": "1",
+    "awayTeamScore": "4",
+    "probability": "0.6458"
+  },
+  {
+    "homeTeamName": "FLA",
+    "awayTeamName": "AIN",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6378"
+  },
+  {
+    "homeTeamName": "PAL",
+    "awayTeamName": "URA",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.6402"
+  },
+  {
+    "homeTeamName": "BHA",
+    "awayTeamName": "EVE",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.6936"
+  },
+  {
+    "homeTeamName": "NEW",
+    "awayTeamName": "FOR",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.8209"
+  },
+  {
+    "homeTeamName": "MAL",
+    "awayTeamName": "GET",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.5828"
+  },
+  {
+    "homeTeamName": "LEV",
+    "awayTeamName": "OSA",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.4942"
+  },
+  {
+    "homeTeamName": "RAY",
+    "awayTeamName": "RMA",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6848"
+  },
+  {
+    "homeTeamName": "GIR",
+    "awayTeamName": "ELC",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.7104"
+  },
+  {
+    "homeTeamName": "VCF",
+    "awayTeamName": "ESP",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.5217"
+  },
+  {
+    "homeTeamName": "TSG",
+    "awayTeamName": "STP",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.7086"
+  },
+  {
+    "homeTeamName": "RMA",
+    "awayTeamName": "JUV",
+    "homeTeamScore": "4",
+    "awayTeamScore": "4",
+    "probability": "0.7043"
+  },
+  {
+    "homeTeamName": "CHE",
+    "awayTeamName": "NEW",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6829"
+  },
+  {
+    "homeTeamName": "FIO",
+    "awayTeamName": "PIS",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.5993"
+  },
+  {
+    "homeTeamName": "GEN",
+    "awayTeamName": "USC",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.5969"
+  },
+  {
+    "homeTeamName": "SAS",
+    "awayTeamName": "VER",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.4876"
+  },
+  {
+    "homeTeamName": "TOR",
+    "awayTeamName": "ACM",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.7824"
+  },
+  {
+    "homeTeamName": "CMR",
+    "awayTeamName": "MRT",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6665"
+  },
+  {
+    "homeTeamName": "EGY",
+    "awayTeamName": "MOZ",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.7637"
+  },
+  {
+    "homeTeamName": "NAM",
+    "awayTeamName": "GNB",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.6407"
+  },
+  {
+    "homeTeamName": "TZA",
+    "awayTeamName": "ZMB",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.5636"
+  },
+  {
+    "homeTeamName": "ROU",
+    "awayTeamName": "SVN",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6358"
+  },
+  {
+    "homeTeamName": "CRO",
+    "awayTeamName": "HUN",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6128"
+  },
+  {
+    "homeTeamName": "ALB",
+    "awayTeamName": "FRA",
+    "homeTeamScore": "5",
+    "awayTeamScore": "0",
+    "probability": "0.6892"
+  },
+  {
+    "homeTeamName": "ITA",
+    "awayTeamName": "BEL",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.5912"
+  },
+  {
+    "homeTeamName": "GER",
+    "awayTeamName": "UKR",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6805"
+  },
+  {
+    "homeTeamName": "ESP",
+    "awayTeamName": "TUR",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6614"
+  },
+  {
+    "homeTeamName": "GEO",
+    "awayTeamName": "POL",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.5994"
+  },
+  {
+    "homeTeamName": "SCO",
+    "awayTeamName": "ENG",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6276"
+  },
+  {
+    "homeTeamName": "NED",
+    "awayTeamName": "SUI",
+    "homeTeamScore": "4",
+    "awayTeamScore": "0",
+    "probability": "0.7873"
+  },
+  {
+    "homeTeamName": "ULS",
+    "awayTeamName": "MTY",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.5776"
+  },
+  {
+    "homeTeamName": "AHL",
+    "awayTeamName": "WAC",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.5858"
+  },
+  {
+    "homeTeamName": "AIN",
+    "awayTeamName": "PSG",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.5459"
+  },
+  {
+    "homeTeamName": "HIL",
+    "awayTeamName": "AKL",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6127"
+  },
+  {
+    "homeTeamName": "SUN",
+    "awayTeamName": "SEA",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.618"
+  },
+  {
+    "homeTeamName": "MIA",
+    "awayTeamName": "FLU",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.6124"
+  },
+  {
+    "homeTeamName": "RMA",
+    "awayTeamName": "ATM",
+    "homeTeamScore": "4",
+    "awayTeamScore": "2",
+    "probability": "0.7737"
+  },
+  {
+    "homeTeamName": "ARS",
+    "awayTeamName": "AST",
+    "homeTeamScore": "2",
+    "awayTeamScore": "5",
+    "probability": "0.5312"
+  },
+  {
+    "homeTeamName": "BRE",
+    "awayTeamName": "BOU",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.8426"
+  },
+  {
+    "homeTeamName": "ATM",
+    "awayTeamName": "ESP",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.628"
+  },
+  {
+    "homeTeamName": "RSO",
+    "awayTeamName": "BIL",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.3697"
+  },
+  {
+    "homeTeamName": "ALA",
+    "awayTeamName": "ELC",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6277"
+  },
+  {
+    "homeTeamName": "HDH",
+    "awayTeamName": "HSV",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.7378"
+  },
+  {
+    "homeTeamName": "BMU",
+    "awayTeamName": "WOB",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.5036"
+  },
+  {
+    "homeTeamName": "ACM",
+    "awayTeamName": "BMU",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.66"
+  },
+  {
+    "homeTeamName": "RMA",
+    "awayTeamName": "MCI",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.7044"
+  },
+  {
+    "homeTeamName": "CAG",
+    "awayTeamName": "NAP",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.7023"
+  },
+  {
+    "homeTeamName": "INT",
+    "awayTeamName": "PIS",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.6227"
+  },
+  {
+    "homeTeamName": "LEC",
+    "awayTeamName": "ACM",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.8265"
+  },
+  {
+    "homeTeamName": "VER",
+    "awayTeamName": "TOR",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.6669"
+  },
+  {
+    "homeTeamName": "ZAF",
+    "awayTeamName": "NAM",
+    "homeTeamScore": "3",
+    "awayTeamScore": "3",
+    "probability": "0.6846"
+  },
+  {
+    "homeTeamName": "GHA",
+    "awayTeamName": "MOZ",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6933"
+  },
+  {
+    "homeTeamName": "DZA",
+    "awayTeamName": "GMB",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.7224"
+  },
+  {
+    "homeTeamName": "GNB",
+    "awayTeamName": "MAR",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.546"
+  },
+  {
+    "homeTeamName": "GIN",
+    "awayTeamName": "GNQ",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6073"
+  },
+  {
+    "homeTeamName": "MRT",
+    "awayTeamName": "AGO",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.6454"
+  },
+  {
+    "homeTeamName": "SCO",
+    "awayTeamName": "SVN",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6548"
+  },
+  {
+    "homeTeamName": "SRB",
+    "awayTeamName": "TUR",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.6503"
+  },
+  {
+    "homeTeamName": "ROU",
+    "awayTeamName": "UKR",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.583"
+  },
+  {
+    "homeTeamName": "AHL",
+    "awayTeamName": "RIV",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.5633"
+  },
+  {
+    "homeTeamName": "SUN",
+    "awayTeamName": "RBS",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.5546"
+  },
+  {
+    "homeTeamName": "PAL",
+    "awayTeamName": "RMA",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.628"
+  },
+  {
+    "homeTeamName": "LAFC",
+    "awayTeamName": "MCI",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.5748"
+  },
+  {
+    "homeTeamName": "BOT",
+    "awayTeamName": "BAY",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.5778"
+  },
+  {
+    "homeTeamName": "ATM",
+    "awayTeamName": "ULS",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6779"
+  },
+  {
+    "homeTeamName": "FLA",
+    "awayTeamName": "MTY",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6425"
+  },
+  {
+    "homeTeamName": "MIA",
+    "awayTeamName": "INT",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.5458"
+  },
+  {
+    "homeTeamName": "BRE",
+    "awayTeamName": "NEW",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.874"
+  },
+  {
+    "homeTeamName": "BOU",
+    "awayTeamName": "FUL",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.7822"
+  },
+  {
+    "homeTeamName": "TOT",
+    "awayTeamName": "BUR",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.7617"
+  },
+  {
+    "homeTeamName": "CRY",
+    "awayTeamName": "BHA",
+    "homeTeamScore": "4",
+    "awayTeamScore": "1",
+    "probability": "0.7868"
+  },
+  {
+    "homeTeamName": "WHU",
+    "awayTeamName": "AST",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.648"
+  },
+  {
+    "homeTeamName": "VIL",
+    "awayTeamName": "FCB",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6229"
+  },
+  {
+    "homeTeamName": "VFB",
+    "awayTeamName": "SCF",
+    "homeTeamScore": "4",
+    "awayTeamScore": "2",
+    "probability": "0.6893"
+  },
+  {
+    "homeTeamName": "CHE",
+    "awayTeamName": "INT",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6827"
+  },
+  {
+    "homeTeamName": "ACM",
+    "awayTeamName": "POR",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6784"
+  },
+  {
+    "homeTeamName": "ATA",
+    "awayTeamName": "GEN",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6889"
+  },
+  {
+    "homeTeamName": "CAG",
+    "awayTeamName": "LAZ",
+    "homeTeamScore": "0",
+    "awayTeamScore": "5",
+    "probability": "0.7584"
+  },
+  {
+    "homeTeamName": "BFC",
+    "awayTeamName": "JUV",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.683"
+  },
+  {
+    "homeTeamName": "ROM",
+    "awayTeamName": "INT",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.7705"
+  },
+  {
+    "homeTeamName": "LEC",
+    "awayTeamName": "UDI",
+    "homeTeamScore": "0",
+    "awayTeamScore": "4",
+    "probability": "0.7022"
+  },
+  {
+    "homeTeamName": "SAS",
+    "awayTeamName": "COM",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.5343"
+  },
+  {
+    "homeTeamName": "DZA",
+    "awayTeamName": "MLI",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6914"
+  },
+  {
+    "homeTeamName": "TZA",
+    "awayTeamName": "MAR",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.5191"
+  },
+  {
+    "homeTeamName": "ZMB",
+    "awayTeamName": "MOZ",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6712"
+  },
+  {
+    "homeTeamName": "NAM",
+    "awayTeamName": "MRT",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.64"
+  },
+  {
+    "homeTeamName": "CMR",
+    "awayTeamName": "GMB",
+    "homeTeamScore": "3",
+    "awayTeamScore": "3",
+    "probability": "0.6917"
+  },
+  {
+    "homeTeamName": "CIV",
+    "awayTeamName": "TUN",
+    "homeTeamScore": "3",
+    "awayTeamScore": "4",
+    "probability": "0.6229"
+  },
+  {
+    "homeTeamName": "GNB",
+    "awayTeamName": "GIN",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.5829"
+  },
+  {
+    "homeTeamName": "CZE",
+    "awayTeamName": "SRB",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.6847"
+  },
+  {
+    "homeTeamName": "FRA",
+    "awayTeamName": "SUI",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.704"
+  },
+  {
+    "homeTeamName": "ESP",
+    "awayTeamName": "ENG",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.6668"
+  },
+  {
+    "homeTeamName": "SVK",
+    "awayTeamName": "AUT",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.6915"
+  },
+  {
+    "homeTeamName": "DEN",
+    "awayTeamName": "GER",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.6379"
+  },
+  {
+    "homeTeamName": "BOT",
+    "awayTeamName": "ULS",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.6174"
+  },
+  {
+    "homeTeamName": "FLU",
+    "awayTeamName": "BEN",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.5966"
+  },
+  {
+    "homeTeamName": "PAL",
+    "awayTeamName": "FLA",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.7161"
+  },
+  {
+    "homeTeamName": "MUN",
+    "awayTeamName": "WHU",
+    "homeTeamScore": "3",
+    "awayTeamScore": "5",
+    "probability": "0.7917"
+  },
+  {
+    "homeTeamName": "GET",
+    "awayTeamName": "RMA",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.6124"
+  },
+  {
+    "homeTeamName": "RAY",
+    "awayTeamName": "MAL",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.6595"
+  },
+  {
+    "homeTeamName": "FCB",
+    "awayTeamName": "RBB",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.5248"
+  },
+  {
+    "homeTeamName": "STP",
+    "awayTeamName": "WOB",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.465"
+  },
+  {
+    "homeTeamName": "UNI",
+    "awayTeamName": "KOE",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6306"
+  },
+  {
+    "homeTeamName": "HDH",
+    "awayTeamName": "BMG",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6714"
+  },
+  {
+    "homeTeamName": "BVB",
+    "awayTeamName": "FCA",
+    "homeTeamScore": "1",
+    "awayTeamScore": "4",
+    "probability": "0.6784"
+  },
+  {
+    "homeTeamName": "ACM",
+    "awayTeamName": "ATM",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.655"
+  },
+  {
+    "homeTeamName": "LIV",
+    "awayTeamName": "TOT",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.7381"
+  },
+  {
+    "homeTeamName": "PAR",
+    "awayTeamName": "ATA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.6848"
+  },
+  {
+    "homeTeamName": "SEN",
+    "awayTeamName": "DZA",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.6601"
+  },
+  {
+    "homeTeamName": "COD",
+    "awayTeamName": "EGY",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.5964"
+  },
+  {
+    "homeTeamName": "GMB",
+    "awayTeamName": "TZA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "3",
+    "probability": "0.6099"
+  },
+  {
+    "homeTeamName": "NGA",
+    "awayTeamName": "NAM",
+    "homeTeamScore": "4",
+    "awayTeamScore": "0",
+    "probability": "0.7443"
+  },
+  {
+    "homeTeamName": "ZAF",
+    "awayTeamName": "GNQ",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.6306"
+  },
+  {
+    "homeTeamName": "GER",
+    "awayTeamName": "POR",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.696"
+  },
+  {
+    "homeTeamName": "BEL",
+    "awayTeamName": "ENG",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6278"
+  },
+  {
+    "homeTeamName": "SVK",
+    "awayTeamName": "SVN",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6555"
+  },
+  {
+    "homeTeamName": "ITA",
+    "awayTeamName": "SCO",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.6691"
+  },
+  {
+    "homeTeamName": "TUR",
+    "awayTeamName": "SRB",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.6549"
+  },
+  {
+    "homeTeamName": "NED",
+    "awayTeamName": "CRO",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.7689"
+  },
+  {
+    "homeTeamName": "ROU",
+    "awayTeamName": "AUT",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6738"
+  },
+  {
+    "homeTeamName": "PAC",
+    "awayTeamName": "BVB",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.575"
+  },
+  {
+    "homeTeamName": "AIN",
+    "awayTeamName": "BOC",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.5601"
+  },
+  {
+    "homeTeamName": "HIL",
+    "awayTeamName": "BEN",
+    "homeTeamScore": "7",
+    "awayTeamScore": "1",
+    "probability": "0.6046"
+  },
+  {
+    "homeTeamName": "WOL",
+    "awayTeamName": "CRY",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.7871"
+  },
+  {
+    "homeTeamName": "RSO",
+    "awayTeamName": "VCF",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.3659"
+  },
+  {
+    "homeTeamName": "SCF",
+    "awayTeamName": "RBL",
+    "homeTeamScore": "2",
+    "awayTeamScore": "4",
+    "probability": "0.8278"
+  },
+  {
+    "homeTeamName": "BMU",
+    "awayTeamName": "KOE",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6197"
+  },
+  {
+    "homeTeamName": "WOB",
+    "awayTeamName": "HSV",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.7473"
+  },
+  {
+    "homeTeamName": "LEV",
+    "awayTeamName": "MAI",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.5747"
+  },
+  {
+    "homeTeamName": "LIV",
+    "awayTeamName": "BEN",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.7949"
+  },
+  {
+    "homeTeamName": "JUV",
+    "awayTeamName": "TOT",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.5831"
+  },
+  {
+    "homeTeamName": "LAZ",
+    "awayTeamName": "UDI",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.6227"
+  },
+  {
+    "homeTeamName": "PIS",
+    "awayTeamName": "VER",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.5434"
+  },
+  {
+    "homeTeamName": "GEN",
+    "awayTeamName": "SAS",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.66"
+  },
+  {
+    "homeTeamName": "LEC",
+    "awayTeamName": "NAP",
+    "homeTeamScore": "4",
+    "awayTeamScore": "1",
+    "probability": "0.6711"
+  },
+  {
+    "homeTeamName": "ACM",
+    "awayTeamName": "BFC",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.6937"
+  },
+  {
+    "homeTeamName": "TUN",
+    "awayTeamName": "AGO",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.7266"
+  },
+  {
+    "homeTeamName": "SEN",
+    "awayTeamName": "TZA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6873"
+  },
+  {
+    "homeTeamName": "DZA",
+    "awayTeamName": "BFA",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.669"
+  },
+  {
+    "homeTeamName": "MRT",
+    "awayTeamName": "NAM",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6644"
+  },
+  {
+    "homeTeamName": "NED",
+    "awayTeamName": "AUT",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.826"
+  },
+  {
+    "homeTeamName": "ESP",
+    "awayTeamName": "POR",
+    "homeTeamScore": "4",
+    "awayTeamScore": "1",
+    "probability": "0.6625"
+  },
+  {
+    "homeTeamName": "ALB",
+    "awayTeamName": "HUN",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.683"
+  },
+  {
+    "homeTeamName": "UKR",
+    "awayTeamName": "ENG",
+    "homeTeamScore": "5",
+    "awayTeamScore": "0",
+    "probability": "0.6018"
+  },
+  {
+    "homeTeamName": "SUN",
+    "awayTeamName": "ULS",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.56"
+  },
+  {
+    "homeTeamName": "POR",
+    "awayTeamName": "FLU",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.6802"
+  },
+  {
+    "homeTeamName": "SEA",
+    "awayTeamName": "BEN",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6022"
+  },
+  {
+    "homeTeamName": "URA",
+    "awayTeamName": "PAL",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.5548"
+  },
+  {
+    "homeTeamName": "AIN",
+    "awayTeamName": "RMA",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.58"
+  },
+  {
+    "homeTeamName": "BAY",
+    "awayTeamName": "CHE",
+    "homeTeamScore": "4",
+    "awayTeamScore": "0",
+    "probability": "0.7757"
+  },
+  {
+    "homeTeamName": "BRE",
+    "awayTeamName": "TOT",
+    "homeTeamScore": "4",
+    "awayTeamScore": "0",
+    "probability": "0.8448"
+  },
+  {
+    "homeTeamName": "FOR",
+    "awayTeamName": "BOU",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.7932"
+  },
+  {
+    "homeTeamName": "FUL",
+    "awayTeamName": "EVE",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.7145"
+  },
+  {
+    "homeTeamName": "AST",
+    "awayTeamName": "LIV",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.798"
+  },
+  {
+    "homeTeamName": "MAL",
+    "awayTeamName": "CEL",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6307"
+  },
+  {
+    "homeTeamName": "ALA",
+    "awayTeamName": "ESP",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.6481"
+  },
+  {
+    "homeTeamName": "ELC",
+    "awayTeamName": "RSO",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.4815"
+  },
+  {
+    "homeTeamName": "GIR",
+    "awayTeamName": "RAY",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.7021"
+  },
+  {
+    "homeTeamName": "SEV",
+    "awayTeamName": "FCB",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.6018"
+  },
+  {
+    "homeTeamName": "SVW",
+    "awayTeamName": "HSV",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.7401"
+  },
+  {
+    "homeTeamName": "SCF",
+    "awayTeamName": "RBL",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.8278"
+  },
+  {
+    "homeTeamName": "ATM",
+    "awayTeamName": "VCF",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.6805"
+  },
+  {
+    "homeTeamName": "BMU",
+    "awayTeamName": "MUN",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6711"
+  },
+  {
+    "homeTeamName": "RMA",
+    "awayTeamName": "NAP",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.7"
+  },
+  {
+    "homeTeamName": "LAZ",
+    "awayTeamName": "GEN",
+    "homeTeamScore": "0",
+    "awayTeamScore": "4",
+    "probability": "0.5992"
+  },
+  {
+    "homeTeamName": "USC",
+    "awayTeamName": "ATA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "3",
+    "probability": "0.5883"
+  },
+  {
+    "homeTeamName": "PIS",
+    "awayTeamName": "TOR",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.525"
+  },
+  {
+    "homeTeamName": "COM",
+    "awayTeamName": "BFC",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.7247"
+  },
+  {
+    "homeTeamName": "ZAF",
+    "awayTeamName": "MOZ",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6981"
+  },
+  {
+    "homeTeamName": "MAR",
+    "awayTeamName": "CIV",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.7704"
+  },
+  {
+    "homeTeamName": "CZE",
+    "awayTeamName": "ITA",
+    "homeTeamScore": "6",
+    "awayTeamScore": "3",
+    "probability": "0.7512"
+  },
+  {
+    "homeTeamName": "ALB",
+    "awayTeamName": "GEO",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6779"
+  },
+  {
+    "homeTeamName": "FRA",
+    "awayTeamName": "SRB",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.678"
+  },
+  {
+    "homeTeamName": "GER",
+    "awayTeamName": "BEL",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6571"
+  },
+  {
+    "homeTeamName": "ENG",
+    "awayTeamName": "SUI",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6153"
+  },
+  {
+    "homeTeamName": "EST",
+    "awayTeamName": "FLA",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6622"
+  },
+  {
+    "homeTeamName": "BOT",
+    "awayTeamName": "BVB",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6098"
+  },
+  {
+    "homeTeamName": "BAY",
+    "awayTeamName": "BOC",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.7531"
+  },
+  {
+    "homeTeamName": "JUV",
+    "awayTeamName": "AIN",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.638"
+  },
+  {
+    "homeTeamName": "HIL",
+    "awayTeamName": "INT",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.5574"
+  },
+  {
+    "homeTeamName": "AST",
+    "awayTeamName": "BRE",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.8115"
+  },
+  {
+    "homeTeamName": "WHU",
+    "awayTeamName": "WOL",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.7704"
+  },
+  {
+    "homeTeamName": "OVI",
+    "awayTeamName": "RBB",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.4554"
+  },
+  {
+    "homeTeamName": "BIL",
+    "awayTeamName": "SEV",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.5094"
+  },
+  {
+    "homeTeamName": "VIL",
+    "awayTeamName": "ELC",
+    "homeTeamScore": "4",
+    "awayTeamScore": "1",
+    "probability": "0.6252"
+  },
+  {
+    "homeTeamName": "VCF",
+    "awayTeamName": "OSA",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.4354"
+  },
+  {
+    "homeTeamName": "MAL",
+    "awayTeamName": "ALA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6454"
+  },
+  {
+    "homeTeamName": "FCA",
+    "awayTeamName": "STP",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.5884"
+  },
+  {
+    "homeTeamName": "RBL",
+    "awayTeamName": "TSG",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.685"
+  },
+  {
+    "homeTeamName": "INT",
+    "awayTeamName": "BMU",
+    "homeTeamScore": "3",
+    "awayTeamScore": "4",
+    "probability": "0.6954"
+  },
+  {
+    "homeTeamName": "FCB",
+    "awayTeamName": "TOT",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6596"
+  },
+  {
+    "homeTeamName": "NEW",
+    "awayTeamName": "ACM",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.7226"
+  },
+  {
+    "homeTeamName": "MUN",
+    "awayTeamName": "POR",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6599"
+  },
+  {
+    "homeTeamName": "JUV",
+    "awayTeamName": "USC",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.5939"
+  },
+  {
+    "homeTeamName": "UDI",
+    "awayTeamName": "INT",
+    "homeTeamScore": "0",
+    "awayTeamScore": "5",
+    "probability": "0.7438"
+  },
+  {
+    "homeTeamName": "BFC",
+    "awayTeamName": "LEC",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.6664"
+  },
+  {
+    "homeTeamName": "COM",
+    "awayTeamName": "GEN",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.6756"
+  },
+  {
+    "homeTeamName": "MRT",
+    "awayTeamName": "SEN",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.5457"
+  },
+  {
+    "homeTeamName": "GHA",
+    "awayTeamName": "TZA",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.6126"
+  },
+  {
+    "homeTeamName": "GNB",
+    "awayTeamName": "MAR",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.546"
+  },
+  {
+    "homeTeamName": "ZAF",
+    "awayTeamName": "MLI",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6304"
+  },
+  {
+    "homeTeamName": "MOZ",
+    "awayTeamName": "CIV",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.6428"
+  },
+  {
+    "homeTeamName": "POR",
+    "awayTeamName": "ROU",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.5601"
+  },
+  {
+    "homeTeamName": "SVN",
+    "awayTeamName": "SRB",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.5938"
+  },
+  {
+    "homeTeamName": "BEL",
+    "awayTeamName": "NED",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.566"
+  },
+  {
+    "homeTeamName": "BOC",
+    "awayTeamName": "RMA",
+    "homeTeamScore": "0",
+    "awayTeamScore": "4",
+    "probability": "0.5989"
+  },
+  {
+    "homeTeamName": "POR",
+    "awayTeamName": "AIN",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6572"
+  },
+  {
+    "homeTeamName": "CHE",
+    "awayTeamName": "PSG",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.6498"
+  },
+  {
+    "homeTeamName": "PAC",
+    "awayTeamName": "HIL",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6376"
+  },
+  {
+    "homeTeamName": "FLU",
+    "awayTeamName": "SUN",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.6042"
+  },
+  {
+    "homeTeamName": "LEE",
+    "awayTeamName": "FUL",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6455"
+  },
+  {
+    "homeTeamName": "WHU",
+    "awayTeamName": "AST",
+    "homeTeamScore": "4",
+    "awayTeamScore": "3",
+    "probability": "0.648"
+  },
+  {
+    "homeTeamName": "WOL",
+    "awayTeamName": "LIV",
+    "homeTeamScore": "4",
+    "awayTeamScore": "3",
+    "probability": "0.7669"
+  },
+  {
+    "homeTeamName": "ATM",
+    "awayTeamName": "RBB",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.5402"
+  },
+  {
+    "homeTeamName": "GIR",
+    "awayTeamName": "RAY",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.7021"
+  },
+  {
+    "homeTeamName": "OSA",
+    "awayTeamName": "VCF",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.4112"
+  },
+  {
+    "homeTeamName": "HDH",
+    "awayTeamName": "RBL",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.8037"
+  },
+  {
+    "homeTeamName": "ACM",
+    "awayTeamName": "CHE",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.7325"
+  },
+  {
+    "homeTeamName": "VER",
+    "awayTeamName": "PIS",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6123"
+  },
+  {
+    "homeTeamName": "ATA",
+    "awayTeamName": "NAP",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.6802"
+  },
+  {
+    "homeTeamName": "GNB",
+    "awayTeamName": "NGA",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.5937"
+  },
+  {
+    "homeTeamName": "POR",
+    "awayTeamName": "CZE",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.5885"
+  },
+  {
+    "homeTeamName": "ALB",
+    "awayTeamName": "AUT",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.7566"
+  },
+  {
+    "homeTeamName": "ROU",
+    "awayTeamName": "GER",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.5343"
+  },
+  {
+    "homeTeamName": "CRO",
+    "awayTeamName": "GEO",
+    "homeTeamScore": "4",
+    "awayTeamScore": "2",
+    "probability": "0.605"
+  },
+  {
+    "homeTeamName": "EST",
+    "awayTeamName": "MIA",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.5942"
+  },
+  {
+    "homeTeamName": "HIL",
+    "awayTeamName": "PAL",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.5938"
+  },
+  {
+    "homeTeamName": "FLU",
+    "awayTeamName": "CHE",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6016"
+  },
+  {
+    "homeTeamName": "BVB",
+    "awayTeamName": "MCI",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.6689"
+  },
+  {
+    "homeTeamName": "BOC",
+    "awayTeamName": "RBS",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6021"
+  },
+  {
+    "homeTeamName": "POR",
+    "awayTeamName": "ULS",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6623"
+  },
+  {
+    "homeTeamName": "BHA",
+    "awayTeamName": "EVE",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6936"
+  },
+  {
+    "homeTeamName": "AST",
+    "awayTeamName": "CRY",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.8153"
+  },
+  {
+    "homeTeamName": "BRE",
+    "awayTeamName": "BUR",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.7546"
+  },
+  {
+    "homeTeamName": "VIL",
+    "awayTeamName": "RAY",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6098"
+  },
+  {
+    "homeTeamName": "GIR",
+    "awayTeamName": "ATM",
+    "homeTeamScore": "4",
+    "awayTeamScore": "1",
+    "probability": "0.6355"
+  },
+  {
+    "homeTeamName": "RBB",
+    "awayTeamName": "OVI",
+    "homeTeamScore": "0",
+    "awayTeamScore": "4",
+    "probability": "0.5775"
+  },
+  {
+    "homeTeamName": "BMG",
+    "awayTeamName": "BVB",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.5342"
+  },
+  {
+    "homeTeamName": "UNI",
+    "awayTeamName": "HSV",
+    "homeTeamScore": "4",
+    "awayTeamScore": "1",
+    "probability": "0.676"
+  },
+  {
+    "homeTeamName": "ACM",
+    "awayTeamName": "POR",
+    "homeTeamScore": "4",
+    "awayTeamScore": "0",
+    "probability": "0.6784"
+  },
+  {
+    "homeTeamName": "NAP",
+    "awayTeamName": "CHE",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.708"
+  },
+  {
+    "homeTeamName": "UDI",
+    "awayTeamName": "VER",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6866"
+  },
+  {
+    "homeTeamName": "NGA",
+    "awayTeamName": "EGY",
+    "homeTeamScore": "3",
+    "awayTeamScore": "3",
+    "probability": "0.68"
+  },
+  {
+    "homeTeamName": "MAR",
+    "awayTeamName": "GIN",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.7669"
+  },
+  {
+    "homeTeamName": "GNB",
+    "awayTeamName": "GMB",
+    "homeTeamScore": "6",
+    "awayTeamScore": "0",
+    "probability": "0.6428"
+  },
+  {
+    "homeTeamName": "MRT",
+    "awayTeamName": "NAM",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6644"
+  },
+  {
+    "homeTeamName": "TZA",
+    "awayTeamName": "BFA",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.5519"
+  },
+  {
+    "homeTeamName": "MOZ",
+    "awayTeamName": "ZMB",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.6428"
+  },
+  {
+    "homeTeamName": "POR",
+    "awayTeamName": "GEO",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.5886"
+  },
+  {
+    "homeTeamName": "BEL",
+    "awayTeamName": "AUT",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6939"
+  },
+  {
+    "homeTeamName": "NED",
+    "awayTeamName": "UKR",
+    "homeTeamScore": "1",
+    "awayTeamScore": "5",
+    "probability": "0.7723"
+  },
+  {
+    "homeTeamName": "ROU",
+    "awayTeamName": "SVN",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.6358"
+  },
+  {
+    "homeTeamName": "SEA",
+    "awayTeamName": "FLU",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.6232"
+  },
+  {
+    "homeTeamName": "ULS",
+    "awayTeamName": "LAFC",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.5547"
+  },
+  {
+    "homeTeamName": "AKL",
+    "awayTeamName": "BOT",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.6406"
+  },
+  {
+    "homeTeamName": "FLA",
+    "awayTeamName": "RBS",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6377"
+  },
+  {
+    "homeTeamName": "URA",
+    "awayTeamName": "MCI",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.5341"
+  },
+  {
+    "homeTeamName": "PAL",
+    "awayTeamName": "HIL",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.6851"
+  },
+  {
+    "homeTeamName": "RIV",
+    "awayTeamName": "EST",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.687"
+  },
+  {
+    "homeTeamName": "FOR",
+    "awayTeamName": "MUN",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.7366"
+  },
+  {
+    "homeTeamName": "SUN",
+    "awayTeamName": "TOT",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.5936"
+  },
+  {
+    "homeTeamName": "MCI",
+    "awayTeamName": "BRE",
+    "homeTeamScore": "5",
+    "awayTeamScore": "1",
+    "probability": "0.8126"
+  },
+  {
+    "homeTeamName": "LEE",
+    "awayTeamName": "CHE",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6757"
+  },
+  {
+    "homeTeamName": "FUL",
+    "awayTeamName": "BHA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.7546"
+  },
+  {
+    "homeTeamName": "ATM",
+    "awayTeamName": "SEV",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.5313"
+  },
+  {
+    "homeTeamName": "MAL",
+    "awayTeamName": "OVI",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.6047"
+  },
+  {
+    "homeTeamName": "BMU",
+    "awayTeamName": "MAI",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.5158"
+  },
+  {
+    "homeTeamName": "BMG",
+    "awayTeamName": "STP",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6126"
+  },
+  {
+    "homeTeamName": "FCA",
+    "awayTeamName": "SGE",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.5994"
+  },
+  {
+    "homeTeamName": "ACM",
+    "awayTeamName": "BEN",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.7222"
+  },
+  {
+    "homeTeamName": "BVB",
+    "awayTeamName": "TOT",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6526"
+  },
+  {
+    "homeTeamName": "FIO",
+    "awayTeamName": "ROM",
+    "homeTeamScore": "2",
+    "awayTeamScore": "4",
+    "probability": "0.6849"
+  },
+  {
+    "homeTeamName": "COM",
+    "awayTeamName": "UDI",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.6986"
+  },
+  {
+    "homeTeamName": "GEN",
+    "awayTeamName": "ATA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6873"
+  },
+  {
+    "homeTeamName": "AGO",
+    "awayTeamName": "CMR",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.5939"
+  },
+  {
+    "homeTeamName": "NGA",
+    "awayTeamName": "GIN",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.6805"
+  },
+  {
+    "homeTeamName": "COD",
+    "awayTeamName": "TZA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.6099"
+  },
+  {
+    "homeTeamName": "DZA",
+    "awayTeamName": "GNQ",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.6908"
+  },
+  {
+    "homeTeamName": "MRT",
+    "awayTeamName": "GHA",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.563"
+  },
+  {
+    "homeTeamName": "CIV",
+    "awayTeamName": "MAR",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6097"
+  },
+  {
+    "homeTeamName": "ZAF",
+    "awayTeamName": "NAM",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.6846"
+  },
+  {
+    "homeTeamName": "SCO",
+    "awayTeamName": "ITA",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6757"
+  },
+  {
+    "homeTeamName": "ENG",
+    "awayTeamName": "DEN",
+    "homeTeamScore": "1",
+    "awayTeamScore": "4",
+    "probability": "0.5661"
+  },
+  {
+    "homeTeamName": "SVN",
+    "awayTeamName": "FRA",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.6075"
+  },
+  {
+    "homeTeamName": "AUT",
+    "awayTeamName": "SVK",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6252"
+  },
+  {
+    "homeTeamName": "URA",
+    "awayTeamName": "RIV",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.5371"
+  },
+  {
+    "homeTeamName": "BEN",
+    "awayTeamName": "PAL",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6381"
+  },
+  {
+    "homeTeamName": "BAY",
+    "awayTeamName": "BOC",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.7531"
+  },
+  {
+    "homeTeamName": "BOT",
+    "awayTeamName": "BVB",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.6098"
+  },
+  {
+    "homeTeamName": "HIL",
+    "awayTeamName": "RBS",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.599"
+  },
+  {
+    "homeTeamName": "EVE",
+    "awayTeamName": "WHU",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.7651"
+  },
+  {
+    "homeTeamName": "BRE",
+    "awayTeamName": "FUL",
+    "homeTeamScore": "4",
+    "awayTeamScore": "2",
+    "probability": "0.8446"
+  },
+  {
+    "homeTeamName": "CEL",
+    "awayTeamName": "LEV",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.6017"
+  },
+  {
+    "homeTeamName": "RMA",
+    "awayTeamName": "ESP",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6254"
+  },
+  {
+    "homeTeamName": "LEV",
+    "awayTeamName": "TSG",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.7327"
+  },
+  {
+    "homeTeamName": "SVW",
+    "awayTeamName": "BMU",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.8274"
+  },
+  {
+    "homeTeamName": "ARS",
+    "awayTeamName": "MUN",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.6689"
+  },
+  {
+    "homeTeamName": "JUV",
+    "awayTeamName": "VCF",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6736"
+  },
+  {
+    "homeTeamName": "BVB",
+    "awayTeamName": "FCB",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6477"
+  },
+  {
+    "homeTeamName": "PIS",
+    "awayTeamName": "USC",
+    "homeTeamScore": "0",
+    "awayTeamScore": "4",
+    "probability": "0.491"
+  },
+  {
+    "homeTeamName": "LAZ",
+    "awayTeamName": "VER",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.6022"
+  },
+  {
+    "homeTeamName": "MAR",
+    "awayTeamName": "DZA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.7561"
+  },
+  {
+    "homeTeamName": "TUN",
+    "awayTeamName": "ZAF",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6803"
+  },
+  {
+    "homeTeamName": "TZA",
+    "awayTeamName": "COD",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.54"
+  },
+  {
+    "homeTeamName": "ROU",
+    "awayTeamName": "NED",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.5401"
+  },
+  {
+    "homeTeamName": "SVK",
+    "awayTeamName": "ITA",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.6739"
+  },
+  {
+    "homeTeamName": "FRA",
+    "awayTeamName": "CZE",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.6803"
+  },
+  {
+    "homeTeamName": "HUN",
+    "awayTeamName": "DEN",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6256"
+  },
+  {
+    "homeTeamName": "AHL",
+    "awayTeamName": "AKL",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.5965"
+  },
+  {
+    "homeTeamName": "PAL",
+    "awayTeamName": "INT",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.5885"
+  },
+  {
+    "homeTeamName": "CHE",
+    "awayTeamName": "RMA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.6778"
+  },
+  {
+    "homeTeamName": "FLA",
+    "awayTeamName": "POR",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6596"
+  },
+  {
+    "homeTeamName": "URA",
+    "awayTeamName": "PAC",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.5254"
+  },
+  {
+    "homeTeamName": "JUV",
+    "awayTeamName": "PSG",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6071"
+  },
+  {
+    "homeTeamName": "MCI",
+    "awayTeamName": "BUR",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.7207"
+  },
+  {
+    "homeTeamName": "LIV",
+    "awayTeamName": "FOR",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.8168"
+  },
+  {
+    "homeTeamName": "FUL",
+    "awayTeamName": "LEE",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.7189"
+  },
+  {
+    "homeTeamName": "BRE",
+    "awayTeamName": "AST",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.7378"
+  },
+  {
+    "homeTeamName": "GIR",
+    "awayTeamName": "SEV",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.6528"
+  },
+  {
+    "homeTeamName": "SGE",
+    "awayTeamName": "STP",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.6429"
+  },
+  {
+    "homeTeamName": "KOE",
+    "awayTeamName": "BMG",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.5802"
+  },
+  {
+    "homeTeamName": "WOB",
+    "awayTeamName": "MAI",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6256"
+  },
+  {
+    "homeTeamName": "FCB",
+    "awayTeamName": "ATM",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.667"
+  },
+  {
+    "homeTeamName": "TOT",
+    "awayTeamName": "BMU",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6573"
+  },
+  {
+    "homeTeamName": "NAP",
+    "awayTeamName": "INT",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.6646"
+  },
+  {
+    "homeTeamName": "MCI",
+    "awayTeamName": "JUV",
+    "homeTeamScore": "5",
+    "awayTeamScore": "0",
+    "probability": "0.7835"
+  },
+  {
+    "homeTeamName": "UDI",
+    "awayTeamName": "NAP",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6761"
+  },
+  {
+    "homeTeamName": "ACM",
+    "awayTeamName": "GEN",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6379"
+  },
+  {
+    "homeTeamName": "DZA",
+    "awayTeamName": "BFA",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.669"
+  },
+  {
+    "homeTeamName": "SEN",
+    "awayTeamName": "GNB",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.7022"
+  },
+  {
+    "homeTeamName": "AGO",
+    "awayTeamName": "GMB",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.6551"
+  },
+  {
+    "homeTeamName": "CPV",
+    "awayTeamName": "GNQ",
+    "homeTeamScore": "4",
+    "awayTeamScore": "0",
+    "probability": "0.5993"
+  },
+  {
+    "homeTeamName": "POR",
+    "awayTeamName": "ROU",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.5601"
+  },
+  {
+    "homeTeamName": "SCO",
+    "awayTeamName": "FRA",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6098"
+  },
+  {
+    "homeTeamName": "BEL",
+    "awayTeamName": "SUI",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.6307"
+  },
+  {
+    "homeTeamName": "ITA",
+    "awayTeamName": "SVN",
+    "homeTeamScore": "2",
+    "awayTeamScore": "4",
+    "probability": "0.6691"
+  },
+  {
+    "homeTeamName": "CRO",
+    "awayTeamName": "HUN",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6128"
+  },
+  {
+    "homeTeamName": "TUR",
+    "awayTeamName": "GEO",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6575"
+  },
+  {
+    "homeTeamName": "ESP",
+    "awayTeamName": "SRB",
+    "homeTeamScore": "4",
+    "awayTeamScore": "2",
+    "probability": "0.6354"
+  },
+  {
+    "homeTeamName": "ATM",
+    "awayTeamName": "SEA",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.7204"
+  },
+  {
+    "homeTeamName": "BOT",
+    "awayTeamName": "JUV",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6074"
+  },
+  {
+    "homeTeamName": "INT",
+    "awayTeamName": "FLA",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.7547"
+  },
+  {
+    "homeTeamName": "RIV",
+    "awayTeamName": "ULS",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6827"
+  },
+  {
+    "homeTeamName": "SUN",
+    "awayTeamName": "WAC",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.5549"
+  },
+  {
+    "homeTeamName": "URA",
+    "awayTeamName": "BOC",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.5339"
+  },
+  {
+    "homeTeamName": "MCI",
+    "awayTeamName": "RBS",
+    "homeTeamScore": "0",
+    "awayTeamScore": "4",
+    "probability": "0.7805"
+  },
+  {
+    "homeTeamName": "RMA",
+    "awayTeamName": "BEN",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.7899"
+  },
+  {
+    "homeTeamName": "PSG",
+    "awayTeamName": "EST",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.7789"
+  },
+  {
+    "homeTeamName": "BHA",
+    "awayTeamName": "BUR",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6594"
+  },
+  {
+    "homeTeamName": "TOT",
+    "awayTeamName": "CHE",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.8641"
+  },
+  {
+    "homeTeamName": "BOU",
+    "awayTeamName": "FUL",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.7822"
+  },
+  {
+    "homeTeamName": "ATM",
+    "awayTeamName": "VIL",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6479"
+  },
+  {
+    "homeTeamName": "BVB",
+    "awayTeamName": "HDH",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.6477"
+  },
+  {
+    "homeTeamName": "TSG",
+    "awayTeamName": "HSV",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.7689"
+  },
+  {
+    "homeTeamName": "KOE",
+    "awayTeamName": "WOB",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.4976"
+  },
+  {
+    "homeTeamName": "CAG",
+    "awayTeamName": "GEN",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.7128"
+  },
+  {
+    "homeTeamName": "COM",
+    "awayTeamName": "JUV",
+    "homeTeamScore": "5",
+    "awayTeamScore": "1",
+    "probability": "0.7039"
+  },
+  {
+    "homeTeamName": "USC",
+    "awayTeamName": "INT",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.6125"
+  },
+  {
+    "homeTeamName": "FIO",
+    "awayTeamName": "UDI",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.6891"
+  },
+  {
+    "homeTeamName": "CIV",
+    "awayTeamName": "MLI",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.6623"
+  },
+  {
+    "homeTeamName": "DZA",
+    "awayTeamName": "MOZ",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.7513"
+  },
+  {
+    "homeTeamName": "SEN",
+    "awayTeamName": "GHA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6572"
+  },
+  {
+    "homeTeamName": "CPV",
+    "awayTeamName": "GNQ",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.5993"
+  },
+  {
+    "homeTeamName": "TUR",
+    "awayTeamName": "CRO",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.6595"
+  },
+  {
+    "homeTeamName": "BEL",
+    "awayTeamName": "POL",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.6127"
+  },
+  {
+    "homeTeamName": "CZE",
+    "awayTeamName": "HUN",
+    "homeTeamScore": "4",
+    "awayTeamScore": "3",
+    "probability": "0.6914"
+  },
+  {
+    "homeTeamName": "BOC",
+    "awayTeamName": "EST",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.6094"
+  },
+  {
+    "homeTeamName": "AIN",
+    "awayTeamName": "RBS",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.583"
+  },
+  {
+    "homeTeamName": "PAC",
+    "awayTeamName": "BVB",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.575"
+  },
+  {
+    "homeTeamName": "AHL",
+    "awayTeamName": "URA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.5967"
+  },
+  {
+    "homeTeamName": "WAC",
+    "awayTeamName": "BOT",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6505"
+  },
+  {
+    "homeTeamName": "BAY",
+    "awayTeamName": "PSG",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.7418"
+  },
+  {
+    "homeTeamName": "LIV",
+    "awayTeamName": "WHU",
+    "homeTeamScore": "1",
+    "awayTeamScore": "4",
+    "probability": "0.8191"
+  },
+  {
+    "homeTeamName": "FOR",
+    "awayTeamName": "FUL",
+    "homeTeamScore": "3",
+    "awayTeamScore": "3",
+    "probability": "0.7946"
+  },
+  {
+    "homeTeamName": "BOU",
+    "awayTeamName": "EVE",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6982"
+  },
+  {
+    "homeTeamName": "AST",
+    "awayTeamName": "SUN",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.7518"
+  },
+  {
+    "homeTeamName": "GIR",
+    "awayTeamName": "VIL",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.7439"
+  },
+  {
+    "homeTeamName": "ATM",
+    "awayTeamName": "ALA",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.6229"
+  },
+  {
+    "homeTeamName": "BVB",
+    "awayTeamName": "HSV",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.7367"
+  },
+  {
+    "homeTeamName": "SGE",
+    "awayTeamName": "BMG",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6429"
+  },
+  {
+    "homeTeamName": "MUN",
+    "awayTeamName": "LIV",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.669"
+  },
+  {
+    "homeTeamName": "MCI",
+    "awayTeamName": "ATM",
+    "homeTeamScore": "3",
+    "awayTeamScore": "3",
+    "probability": "0.7708"
+  },
+  {
+    "homeTeamName": "RMA",
+    "awayTeamName": "VCF",
+    "homeTeamScore": "1",
+    "awayTeamScore": "4",
+    "probability": "0.7563"
+  },
+  {
+    "homeTeamName": "COM",
+    "awayTeamName": "ATA",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.7166"
+  },
+  {
+    "homeTeamName": "CAG",
+    "awayTeamName": "FIO",
+    "homeTeamScore": "4",
+    "awayTeamScore": "0",
+    "probability": "0.6802"
+  },
+  {
+    "homeTeamName": "LEC",
+    "awayTeamName": "GEN",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6802"
+  },
+  {
+    "homeTeamName": "DZA",
+    "awayTeamName": "MAR",
+    "homeTeamScore": "1",
+    "awayTeamScore": "4",
+    "probability": "0.6433"
+  },
+  {
+    "homeTeamName": "MLI",
+    "awayTeamName": "TZA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "3",
+    "probability": "0.6712"
+  },
+  {
+    "homeTeamName": "SEN",
+    "awayTeamName": "NAM",
+    "homeTeamScore": "2",
+    "awayTeamScore": "4",
+    "probability": "0.7424"
+  },
+  {
+    "homeTeamName": "GMB",
+    "awayTeamName": "CMR",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.591"
+  },
+  {
+    "homeTeamName": "SUI",
+    "awayTeamName": "SCO",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6428"
+  },
+  {
+    "homeTeamName": "CRO",
+    "awayTeamName": "CZE",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6048"
+  },
+  {
+    "homeTeamName": "HUN",
+    "awayTeamName": "POR",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.6622"
+  },
+  {
+    "homeTeamName": "MIA",
+    "awayTeamName": "JUV",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.583"
+  },
+  {
+    "homeTeamName": "PSG",
+    "awayTeamName": "PAL",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.7704"
+  },
+  {
+    "homeTeamName": "BAY",
+    "awayTeamName": "SEA",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.802"
+  },
+  {
+    "homeTeamName": "AKL",
+    "awayTeamName": "POR",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.5774"
+  },
+  {
+    "homeTeamName": "HIL",
+    "awayTeamName": "PAC",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.569"
+  },
+  {
+    "homeTeamName": "AHL",
+    "awayTeamName": "LAFC",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.569"
+  },
+  {
+    "homeTeamName": "MCI",
+    "awayTeamName": "BOC",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.7653"
+  },
+  {
+    "homeTeamName": "ULS",
+    "awayTeamName": "RMA",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.5688"
+  },
+  {
+    "homeTeamName": "LIV",
+    "awayTeamName": "BOU",
+    "homeTeamScore": "4",
+    "awayTeamScore": "1",
+    "probability": "0.8205"
+  },
+  {
+    "homeTeamName": "BHA",
+    "awayTeamName": "ARS",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.6715"
+  },
+  {
+    "homeTeamName": "TOT",
+    "awayTeamName": "WOL",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.8386"
+  },
+  {
+    "homeTeamName": "FUL",
+    "awayTeamName": "EVE",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.7145"
+  },
+  {
+    "homeTeamName": "RBB",
+    "awayTeamName": "RSO",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.5342"
+  },
+  {
+    "homeTeamName": "CEL",
+    "awayTeamName": "GIR",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6249"
+  },
+  {
+    "homeTeamName": "TSG",
+    "awayTeamName": "RBL",
+    "homeTeamScore": "2",
+    "awayTeamScore": "5",
+    "probability": "0.8276"
+  },
+  {
+    "homeTeamName": "UNI",
+    "awayTeamName": "STP",
+    "homeTeamScore": "4",
+    "awayTeamScore": "1",
+    "probability": "0.5966"
+  },
+  {
+    "homeTeamName": "LEV",
+    "awayTeamName": "VFB",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6228"
+  },
+  {
+    "homeTeamName": "PSG",
+    "awayTeamName": "MUN",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.6866"
+  },
+  {
+    "homeTeamName": "POR",
+    "awayTeamName": "CHE",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.7346"
+  },
+  {
+    "homeTeamName": "BMU",
+    "awayTeamName": "ACM",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.7585"
+  },
+  {
+    "homeTeamName": "ATA",
+    "awayTeamName": "BFC",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.7337"
+  },
+  {
+    "homeTeamName": "NAP",
+    "awayTeamName": "PAR",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.6826"
+  },
+  {
+    "homeTeamName": "ROM",
+    "awayTeamName": "PIS",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6571"
+  },
+  {
+    "homeTeamName": "VER",
+    "awayTeamName": "FIO",
+    "homeTeamScore": "1",
+    "awayTeamScore": "5",
+    "probability": "0.648"
+  },
+  {
+    "homeTeamName": "DZA",
+    "awayTeamName": "GHA",
+    "homeTeamScore": "5",
+    "awayTeamScore": "0",
+    "probability": "0.6552"
+  },
+  {
+    "homeTeamName": "ZAF",
+    "awayTeamName": "TZA",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.6204"
+  },
+  {
+    "homeTeamName": "TUN",
+    "awayTeamName": "EGY",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6782"
+  },
+  {
+    "homeTeamName": "NGA",
+    "awayTeamName": "MRT",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.7061"
+  },
+  {
+    "homeTeamName": "AGO",
+    "awayTeamName": "MAR",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.5633"
+  },
+  {
+    "homeTeamName": "GEO",
+    "awayTeamName": "ENG",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6153"
+  },
+  {
+    "homeTeamName": "HUN",
+    "awayTeamName": "ITA",
+    "homeTeamScore": "4",
+    "awayTeamScore": "2",
+    "probability": "0.7126"
+  },
+  {
+    "homeTeamName": "CRO",
+    "awayTeamName": "ALB",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.5859"
+  },
+  {
+    "homeTeamName": "SCO",
+    "awayTeamName": "SVK",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.5831"
+  },
+  {
+    "homeTeamName": "RBS",
+    "awayTeamName": "PSG",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.572"
+  },
+  {
+    "homeTeamName": "BVB",
+    "awayTeamName": "FLU",
+    "homeTeamScore": "1",
+    "awayTeamScore": "5",
+    "probability": "0.7082"
+  },
+  {
+    "homeTeamName": "SUN",
+    "awayTeamName": "MIA",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.5857"
+  },
+  {
+    "homeTeamName": "RMA",
+    "awayTeamName": "CHE",
+    "homeTeamScore": "2",
+    "awayTeamScore": "4",
+    "probability": "0.7933"
+  },
+  {
+    "homeTeamName": "FLA",
+    "awayTeamName": "URA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.6504"
+  },
+  {
+    "homeTeamName": "MCI",
+    "awayTeamName": "BHA",
+    "homeTeamScore": "2",
+    "awayTeamScore": "4",
+    "probability": "0.7883"
+  },
+  {
+    "homeTeamName": "WHU",
+    "awayTeamName": "NEW",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.8244"
+  },
+  {
+    "homeTeamName": "BUR",
+    "awayTeamName": "CHE",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6251"
+  },
+  {
+    "homeTeamName": "WOL",
+    "awayTeamName": "TOT",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.7933"
+  },
+  {
+    "homeTeamName": "EVE",
+    "awayTeamName": "AST",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6233"
+  },
+  {
+    "homeTeamName": "RMA",
+    "awayTeamName": "RBB",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.5372"
+  },
+  {
+    "homeTeamName": "GET",
+    "awayTeamName": "BIL",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.442"
+  },
+  {
+    "homeTeamName": "ESP",
+    "awayTeamName": "GIR",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6955"
+  },
+  {
+    "homeTeamName": "SEV",
+    "awayTeamName": "FCB",
+    "homeTeamScore": "4",
+    "awayTeamScore": "1",
+    "probability": "0.6018"
+  },
+  {
+    "homeTeamName": "CEL",
+    "awayTeamName": "ALA",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.5912"
+  },
+  {
+    "homeTeamName": "RAY",
+    "awayTeamName": "ATM",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.566"
+  },
+  {
+    "homeTeamName": "SGE",
+    "awayTeamName": "BMU",
+    "homeTeamScore": "3",
+    "awayTeamScore": "4",
+    "probability": "0.8108"
+  },
+  {
+    "homeTeamName": "LEV",
+    "awayTeamName": "WOB",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.5634"
+  },
+  {
+    "homeTeamName": "INT",
+    "awayTeamName": "ATM",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.6915"
+  },
+  {
+    "homeTeamName": "JUV",
+    "awayTeamName": "BEN",
+    "homeTeamScore": "4",
+    "awayTeamScore": "0",
+    "probability": "0.6667"
+  },
+  {
+    "homeTeamName": "MUN",
+    "awayTeamName": "RMA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.625"
+  },
+  {
+    "homeTeamName": "TOT",
+    "awayTeamName": "VCF",
+    "homeTeamScore": "4",
+    "awayTeamScore": "0",
+    "probability": "0.7287"
+  },
+  {
+    "homeTeamName": "SAS",
+    "awayTeamName": "CAG",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.5096"
+  },
+  {
+    "homeTeamName": "GEN",
+    "awayTeamName": "COM",
+    "homeTeamScore": "0",
+    "awayTeamScore": "5",
+    "probability": "0.6782"
+  },
+  {
+    "homeTeamName": "USC",
+    "awayTeamName": "UDI",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.5634"
+  },
+  {
+    "homeTeamName": "NAM",
+    "awayTeamName": "COD",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.5992"
+  },
+  {
+    "homeTeamName": "ZAF",
+    "awayTeamName": "GIN",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.6046"
+  },
+  {
+    "homeTeamName": "GNB",
+    "awayTeamName": "TZA",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.5965"
+  },
+  {
+    "homeTeamName": "SUI",
+    "awayTeamName": "DEN",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.5632"
+  },
+  {
+    "homeTeamName": "BVB",
+    "awayTeamName": "AIN",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6869"
+  },
+  {
+    "homeTeamName": "PAL",
+    "awayTeamName": "WAC",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6327"
+  },
+  {
+    "homeTeamName": "LAFC",
+    "awayTeamName": "URA",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.6099"
+  },
+  {
+    "homeTeamName": "RMA",
+    "awayTeamName": "FLA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.84"
+  },
+  {
+    "homeTeamName": "AKL",
+    "awayTeamName": "RIV",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.5282"
+  },
+  {
+    "homeTeamName": "PSG",
+    "awayTeamName": "SUN",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.7805"
+  },
+  {
+    "homeTeamName": "MIA",
+    "awayTeamName": "ULS",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.5937"
+  },
+  {
+    "homeTeamName": "AHL",
+    "awayTeamName": "BOT",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6667"
+  },
+  {
+    "homeTeamName": "BAY",
+    "awayTeamName": "PAC",
+    "homeTeamScore": "4",
+    "awayTeamScore": "1",
+    "probability": "0.7473"
+  },
+  {
+    "homeTeamName": "WOL",
+    "awayTeamName": "TOT",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.7933"
+  },
+  {
+    "homeTeamName": "RBB",
+    "awayTeamName": "OSA",
+    "homeTeamScore": "1",
+    "awayTeamScore": "4",
+    "probability": "0.5488"
+  },
+  {
+    "homeTeamName": "FCB",
+    "awayTeamName": "GET",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.5397"
+  },
+  {
+    "homeTeamName": "SVW",
+    "awayTeamName": "KOE",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.702"
+  },
+  {
+    "homeTeamName": "FCA",
+    "awayTeamName": "LEV",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.6478"
+  },
+  {
+    "homeTeamName": "HDH",
+    "awayTeamName": "TSG",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.7599"
+  },
+  {
+    "homeTeamName": "HSV",
+    "awayTeamName": "BVB",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.5159"
+  },
+  {
+    "homeTeamName": "CHE",
+    "awayTeamName": "BMU",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.6526"
+  },
+  {
+    "homeTeamName": "NEW",
+    "awayTeamName": "LIV",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.6524"
+  },
+  {
+    "homeTeamName": "PSG",
+    "awayTeamName": "BEN",
+    "homeTeamScore": "4",
+    "awayTeamScore": "0",
+    "probability": "0.7437"
+  },
+  {
+    "homeTeamName": "TOT",
+    "awayTeamName": "VCF",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.7287"
+  },
+  {
+    "homeTeamName": "TOR",
+    "awayTeamName": "UDI",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6333"
+  },
+  {
+    "homeTeamName": "USC",
+    "awayTeamName": "PIS",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.4454"
+  },
+  {
+    "homeTeamName": "ATA",
+    "awayTeamName": "FIO",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.6551"
+  },
+  {
+    "homeTeamName": "GNQ",
+    "awayTeamName": "AGO",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6502"
+  },
+  {
+    "homeTeamName": "GHA",
+    "awayTeamName": "COD",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.5829"
+  },
+  {
+    "homeTeamName": "MAR",
+    "awayTeamName": "DZA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.7561"
+  },
+  {
+    "homeTeamName": "EGY",
+    "awayTeamName": "ZMB",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6937"
+  },
+  {
+    "homeTeamName": "BEL",
+    "awayTeamName": "SVK",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.583"
+  },
+  {
+    "homeTeamName": "ALB",
+    "awayTeamName": "UKR",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.6851"
+  },
+  {
+    "homeTeamName": "FRA",
+    "awayTeamName": "CRO",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.6802"
+  },
+  {
+    "homeTeamName": "TUR",
+    "awayTeamName": "SRB",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6549"
+  },
+  {
+    "homeTeamName": "POR",
+    "awayTeamName": "GER",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.5461"
+  },
+  {
+    "homeTeamName": "AUT",
+    "awayTeamName": "SCO",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6916"
+  },
+  {
+    "homeTeamName": "ESP",
+    "awayTeamName": "POL",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.6524"
+  },
+  {
+    "homeTeamName": "HUN",
+    "awayTeamName": "NED",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.6101"
+  },
+  {
+    "homeTeamName": "FLA",
+    "awayTeamName": "MIA",
+    "homeTeamScore": "4",
+    "awayTeamScore": "4",
+    "probability": "0.6689"
+  },
+  {
+    "homeTeamName": "LAFC",
+    "awayTeamName": "BAY",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.5609"
+  },
+  {
+    "homeTeamName": "AIN",
+    "awayTeamName": "SUN",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.5968"
+  },
+  {
+    "homeTeamName": "BOT",
+    "awayTeamName": "FLU",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.6352"
+  },
+  {
+    "homeTeamName": "MUN",
+    "awayTeamName": "AST",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.6598"
+  },
+  {
+    "homeTeamName": "MCI",
+    "awayTeamName": "CHE",
+    "homeTeamScore": "2",
+    "awayTeamScore": "4",
+    "probability": "0.8401"
+  },
+  {
+    "homeTeamName": "BHA",
+    "awayTeamName": "BUR",
+    "homeTeamScore": "5",
+    "awayTeamScore": "1",
+    "probability": "0.6594"
+  },
+  {
+    "homeTeamName": "VIL",
+    "awayTeamName": "RAY",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6098"
+  },
+  {
+    "homeTeamName": "STP",
+    "awayTeamName": "FCA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.5633"
+  },
+  {
+    "homeTeamName": "TSG",
+    "awayTeamName": "SGE",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.7166"
+  },
+  {
+    "homeTeamName": "BEN",
+    "awayTeamName": "FCB",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6574"
+  },
+  {
+    "homeTeamName": "LIV",
+    "awayTeamName": "JUV",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.7567"
+  },
+  {
+    "homeTeamName": "JUV",
+    "awayTeamName": "PIS",
+    "homeTeamScore": "4",
+    "awayTeamScore": "1",
+    "probability": "0.5636"
+  },
+  {
+    "homeTeamName": "GEN",
+    "awayTeamName": "SAS",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.66"
+  },
+  {
+    "homeTeamName": "EGY",
+    "awayTeamName": "NGA",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.6985"
+  },
+  {
+    "homeTeamName": "COD",
+    "awayTeamName": "TUN",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.5772"
+  },
+  {
+    "homeTeamName": "ZMB",
+    "awayTeamName": "SEN",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.528"
+  },
+  {
+    "homeTeamName": "GNQ",
+    "awayTeamName": "GHA",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.5661"
+  },
+  {
+    "homeTeamName": "FRA",
+    "awayTeamName": "ALB",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.664"
+  },
+  {
+    "homeTeamName": "DEN",
+    "awayTeamName": "CRO",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6737"
+  },
+  {
+    "homeTeamName": "AUT",
+    "awayTeamName": "SRB",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.6353"
+  },
+  {
+    "homeTeamName": "SVN",
+    "awayTeamName": "ESP",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.5913"
+  },
+  {
+    "homeTeamName": "CZE",
+    "awayTeamName": "GER",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6552"
+  },
+  {
+    "homeTeamName": "MTY",
+    "awayTeamName": "AHL",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.5938"
+  },
+  {
+    "homeTeamName": "BOC",
+    "awayTeamName": "EST",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6094"
+  },
+  {
+    "homeTeamName": "INT",
+    "awayTeamName": "SUN",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.6891"
+  },
+  {
+    "homeTeamName": "PAL",
+    "awayTeamName": "ATM",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6097"
+  },
+  {
+    "homeTeamName": "MCI",
+    "awayTeamName": "ARS",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.7328"
+  },
+  {
+    "homeTeamName": "LIV",
+    "awayTeamName": "CRY",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.8152"
+  },
+  {
+    "homeTeamName": "TOT",
+    "awayTeamName": "FUL",
+    "homeTeamScore": "4",
+    "awayTeamScore": "1",
+    "probability": "0.8486"
+  },
+  {
+    "homeTeamName": "SUN",
+    "awayTeamName": "WOL",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.5692"
+  },
+  {
+    "homeTeamName": "FOR",
+    "awayTeamName": "LEE",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.7166"
+  },
+  {
+    "homeTeamName": "FCB",
+    "awayTeamName": "VIL",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6328"
+  },
+  {
+    "homeTeamName": "GIR",
+    "awayTeamName": "RBB",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6622"
+  },
+  {
+    "homeTeamName": "LEV",
+    "awayTeamName": "CEL",
+    "homeTeamScore": "2",
+    "awayTeamScore": "5",
+    "probability": "0.5518"
+  },
+  {
+    "homeTeamName": "OVI",
+    "awayTeamName": "SEV",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.4454"
+  },
+  {
+    "homeTeamName": "HSV",
+    "awayTeamName": "BMU",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.782"
+  },
+  {
+    "homeTeamName": "KOE",
+    "awayTeamName": "WOB",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.4976"
+  },
+  {
+    "homeTeamName": "UNI",
+    "awayTeamName": "BMG",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.5964"
+  },
+  {
+    "homeTeamName": "VFB",
+    "awayTeamName": "SGE",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.7512"
+  },
+  {
+    "homeTeamName": "TSG",
+    "awayTeamName": "MAI",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.6549"
+  },
+  {
+    "homeTeamName": "BMU",
+    "awayTeamName": "NAP",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6786"
+  },
+  {
+    "homeTeamName": "JUV",
+    "awayTeamName": "MUN",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.5964"
+  },
+  {
+    "homeTeamName": "ATM",
+    "awayTeamName": "MCI",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6181"
+  },
+  {
+    "homeTeamName": "PSG",
+    "awayTeamName": "LIV",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.7084"
+  },
+  {
+    "homeTeamName": "INT",
+    "awayTeamName": "BVB",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.6934"
+  },
+  {
+    "homeTeamName": "POR",
+    "awayTeamName": "FCB",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6502"
+  },
+  {
+    "homeTeamName": "TZA",
+    "awayTeamName": "MAR",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.5191"
+  },
+  {
+    "homeTeamName": "BFA",
+    "awayTeamName": "GMB",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.6827"
+  },
+  {
+    "homeTeamName": "AGO",
+    "awayTeamName": "NAM",
+    "homeTeamScore": "5",
+    "awayTeamScore": "2",
+    "probability": "0.676"
+  },
+  {
+    "homeTeamName": "SVK",
+    "awayTeamName": "SRB",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.5938"
+  },
+  {
+    "homeTeamName": "ITA",
+    "awayTeamName": "POR",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6354"
+  },
+  {
+    "homeTeamName": "SVN",
+    "awayTeamName": "GER",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.5574"
+  },
+  {
+    "homeTeamName": "AIN",
+    "awayTeamName": "PSG",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.5459"
+  },
+  {
+    "homeTeamName": "INT",
+    "awayTeamName": "PAC",
+    "homeTeamScore": "3",
+    "awayTeamScore": "3",
+    "probability": "0.6526"
+  },
+  {
+    "homeTeamName": "SUN",
+    "awayTeamName": "JUV",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.5463"
+  },
+  {
+    "homeTeamName": "AKL",
+    "awayTeamName": "POR",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.5774"
+  },
+  {
+    "homeTeamName": "CHE",
+    "awayTeamName": "MIA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.7086"
+  },
+  {
+    "homeTeamName": "PAL",
+    "awayTeamName": "HIL",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.6851"
+  },
+  {
+    "homeTeamName": "FUL",
+    "awayTeamName": "BHA",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.7546"
+  },
+  {
+    "homeTeamName": "BUR",
+    "awayTeamName": "SUN",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.4522"
+  },
+  {
+    "homeTeamName": "WHU",
+    "awayTeamName": "BRE",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.7724"
+  },
+  {
+    "homeTeamName": "ARS",
+    "awayTeamName": "FOR",
+    "homeTeamScore": "5",
+    "awayTeamScore": "1",
+    "probability": "0.6959"
+  },
+  {
+    "homeTeamName": "RSO",
+    "awayTeamName": "GET",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.4583"
+  },
+  {
+    "homeTeamName": "GIR",
+    "awayTeamName": "ATM",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6355"
+  },
+  {
+    "homeTeamName": "ELC",
+    "awayTeamName": "SEV",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.4782"
+  },
+  {
+    "homeTeamName": "ESP",
+    "awayTeamName": "OSA",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.602"
+  },
+  {
+    "homeTeamName": "WOB",
+    "awayTeamName": "SGE",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6914"
+  },
+  {
+    "homeTeamName": "RBL",
+    "awayTeamName": "HSV",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.6575"
+  },
+  {
+    "homeTeamName": "MCI",
+    "awayTeamName": "ACM",
+    "homeTeamScore": "4",
+    "awayTeamScore": "1",
+    "probability": "0.8377"
+  },
+  {
+    "homeTeamName": "BMU",
+    "awayTeamName": "TOT",
+    "homeTeamScore": "4",
+    "awayTeamScore": "0",
+    "probability": "0.6571"
+  },
+  {
+    "homeTeamName": "ARS",
+    "awayTeamName": "PSG",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.6427"
+  },
+  {
+    "homeTeamName": "LIV",
+    "awayTeamName": "POR",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.7603"
+  },
+  {
+    "homeTeamName": "CHE",
+    "awayTeamName": "VCF",
+    "homeTeamScore": "4",
+    "awayTeamScore": "0",
+    "probability": "0.7227"
+  },
+  {
+    "homeTeamName": "GEN",
+    "awayTeamName": "USC",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.5969"
+  },
+  {
+    "homeTeamName": "BFC",
+    "awayTeamName": "SAS",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.6714"
+  },
+  {
+    "homeTeamName": "JUV",
+    "awayTeamName": "UDI",
+    "homeTeamScore": "0",
+    "awayTeamScore": "4",
+    "probability": "0.662"
+  },
+  {
+    "homeTeamName": "VER",
+    "awayTeamName": "FIO",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.648"
+  },
+  {
+    "homeTeamName": "INT",
+    "awayTeamName": "TOR",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.6779"
+  },
+  {
+    "homeTeamName": "GIN",
+    "awayTeamName": "GHA",
+    "homeTeamScore": "0",
+    "awayTeamScore": "6",
+    "probability": "0.5604"
+  },
+  {
+    "homeTeamName": "MRT",
+    "awayTeamName": "ZAF",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.5858"
+  },
+  {
+    "homeTeamName": "ROU",
+    "awayTeamName": "POL",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.5885"
+  },
+  {
+    "homeTeamName": "SVN",
+    "awayTeamName": "CZE",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.5967"
+  },
+  {
+    "homeTeamName": "BEL",
+    "awayTeamName": "NED",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.566"
+  },
+  {
+    "homeTeamName": "ITA",
+    "awayTeamName": "GER",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.5716"
+  },
+  {
+    "homeTeamName": "SRB",
+    "awayTeamName": "HUN",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.6353"
+  },
+  {
+    "homeTeamName": "RIV",
+    "awayTeamName": "BVB",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.6757"
+  },
+  {
+    "homeTeamName": "POR",
+    "awayTeamName": "LAFC",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6447"
+  },
+  {
+    "homeTeamName": "PSG",
+    "awayTeamName": "MTY",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.776"
+  },
+  {
+    "homeTeamName": "ULS",
+    "awayTeamName": "FLU",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.599"
+  },
+  {
+    "homeTeamName": "EST",
+    "awayTeamName": "AHL",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.5938"
+  },
+  {
+    "homeTeamName": "FLA",
+    "awayTeamName": "PAL",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.6354"
+  },
+  {
+    "homeTeamName": "LIV",
+    "awayTeamName": "AST",
+    "homeTeamScore": "1",
+    "awayTeamScore": "4",
+    "probability": "0.7043"
+  },
+  {
+    "homeTeamName": "TOT",
+    "awayTeamName": "CHE",
+    "homeTeamScore": "5",
+    "awayTeamScore": "5",
+    "probability": "0.8641"
+  },
+  {
+    "homeTeamName": "FUL",
+    "awayTeamName": "NEW",
+    "homeTeamScore": "3",
+    "awayTeamScore": "5",
+    "probability": "0.833"
+  },
+  {
+    "homeTeamName": "GIR",
+    "awayTeamName": "OSA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.6688"
+  },
+  {
+    "homeTeamName": "CEL",
+    "awayTeamName": "ATM",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.4682"
+  },
+  {
+    "homeTeamName": "BIL",
+    "awayTeamName": "VCF",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.4518"
+  },
+  {
+    "homeTeamName": "VIL",
+    "awayTeamName": "ESP",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.6431"
+  },
+  {
+    "homeTeamName": "ALA",
+    "awayTeamName": "OVI",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.602"
+  },
+  {
+    "homeTeamName": "WOB",
+    "awayTeamName": "BMG",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.6824"
+  },
+  {
+    "homeTeamName": "SCF",
+    "awayTeamName": "TSG",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.7885"
+  },
+  {
+    "homeTeamName": "RBL",
+    "awayTeamName": "STP",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.5774"
+  },
+  {
+    "homeTeamName": "KOE",
+    "awayTeamName": "VFB",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.5599"
+  },
+  {
+    "homeTeamName": "RMA",
+    "awayTeamName": "INT",
+    "homeTeamScore": "6",
+    "awayTeamScore": "1",
+    "probability": "0.7182"
+  },
+  {
+    "homeTeamName": "BMU",
+    "awayTeamName": "ACM",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.7585"
+  },
+  {
+    "homeTeamName": "MUN",
+    "awayTeamName": "NAP",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.65"
+  },
+  {
+    "homeTeamName": "BEN",
+    "awayTeamName": "ARS",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.6759"
+  },
+  {
+    "homeTeamName": "VER",
+    "awayTeamName": "CAG",
+    "homeTeamScore": "4",
+    "awayTeamScore": "1",
+    "probability": "0.7"
+  },
+  {
+    "homeTeamName": "COM",
+    "awayTeamName": "LEC",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.6915"
+  },
+  {
+    "homeTeamName": "NAP",
+    "awayTeamName": "PIS",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.5859"
+  },
+  {
+    "homeTeamName": "JUV",
+    "awayTeamName": "SAS",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6574"
+  },
+  {
+    "homeTeamName": "EGY",
+    "awayTeamName": "BFA",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6849"
+  },
+  {
+    "homeTeamName": "MAR",
+    "awayTeamName": "SEN",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.7417"
+  },
+  {
+    "homeTeamName": "MRT",
+    "awayTeamName": "TZA",
+    "homeTeamScore": "0",
+    "awayTeamScore": "4",
+    "probability": "0.5966"
+  },
+  {
+    "homeTeamName": "ZAF",
+    "awayTeamName": "NGA",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.6203"
+  },
+  {
+    "homeTeamName": "GEO",
+    "awayTeamName": "AUT",
+    "homeTeamScore": "2",
+    "awayTeamScore": "4",
+    "probability": "0.6807"
+  },
+  {
+    "homeTeamName": "DEN",
+    "awayTeamName": "ENG",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.6979"
+  },
+  {
+    "homeTeamName": "FLA",
+    "awayTeamName": "SUN",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.65"
+  },
+  {
+    "homeTeamName": "CHE",
+    "awayTeamName": "PSG",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6498"
+  },
+  {
+    "homeTeamName": "BOC",
+    "awayTeamName": "BOT",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.6801"
+  },
+  {
+    "homeTeamName": "WHU",
+    "awayTeamName": "TOT",
+    "homeTeamScore": "2",
+    "awayTeamScore": "5",
+    "probability": "0.7841"
+  },
+  {
+    "homeTeamName": "BRE",
+    "awayTeamName": "FUL",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.8446"
+  },
+  {
+    "homeTeamName": "AST",
+    "awayTeamName": "LIV",
+    "homeTeamScore": "2",
+    "awayTeamScore": "4",
+    "probability": "0.798"
+  },
+  {
+    "homeTeamName": "SUN",
+    "awayTeamName": "CRY",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.5803"
+  },
+  {
+    "homeTeamName": "BMU",
+    "awayTeamName": "FCA",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.5968"
+  },
+  {
+    "homeTeamName": "HDH",
+    "awayTeamName": "MAI",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6127"
+  },
+  {
+    "homeTeamName": "UNI",
+    "awayTeamName": "BVB",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.516"
+  },
+  {
+    "homeTeamName": "LEV",
+    "awayTeamName": "STP",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6383"
+  },
+  {
+    "homeTeamName": "SGE",
+    "awayTeamName": "TSG",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.7384"
+  },
+  {
+    "homeTeamName": "POR",
+    "awayTeamName": "PSG",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.6433"
+  },
+  {
+    "homeTeamName": "FCB",
+    "awayTeamName": "NEW",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.698"
+  },
+  {
+    "homeTeamName": "JUV",
+    "awayTeamName": "NAP",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6046"
+  },
+  {
+    "homeTeamName": "CAG",
+    "awayTeamName": "FIO",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6802"
+  },
+  {
+    "homeTeamName": "LEC",
+    "awayTeamName": "ACM",
+    "homeTeamScore": "3",
+    "awayTeamScore": "3",
+    "probability": "0.8265"
+  },
+  {
+    "homeTeamName": "GEN",
+    "awayTeamName": "LAZ",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.6978"
+  },
+  {
+    "homeTeamName": "INT",
+    "awayTeamName": "JUV",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.7164"
+  },
+  {
+    "homeTeamName": "COM",
+    "awayTeamName": "VER",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.6782"
+  },
+  {
+    "homeTeamName": "NGA",
+    "awayTeamName": "SEN",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6477"
+  },
+  {
+    "homeTeamName": "MAR",
+    "awayTeamName": "GNQ",
+    "homeTeamScore": "3",
+    "awayTeamScore": "4",
+    "probability": "0.7821"
+  },
+  {
+    "homeTeamName": "NAM",
+    "awayTeamName": "COD",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.5992"
+  },
+  {
+    "homeTeamName": "MLI",
+    "awayTeamName": "DZA",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.6429"
+  },
+  {
+    "homeTeamName": "ZMB",
+    "awayTeamName": "TUN",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.5488"
+  },
+  {
+    "homeTeamName": "UKR",
+    "awayTeamName": "FRA",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.5832"
+  },
+  {
+    "homeTeamName": "ESP",
+    "awayTeamName": "DEN",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.6226"
+  },
+  {
+    "homeTeamName": "AKL",
+    "awayTeamName": "EST",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.5632"
+  },
+  {
+    "homeTeamName": "BOT",
+    "awayTeamName": "MCI",
+    "homeTeamScore": "3",
+    "awayTeamScore": "3",
+    "probability": "0.5912"
+  },
+  {
+    "homeTeamName": "AIN",
+    "awayTeamName": "URA",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.5966"
+  },
+  {
+    "homeTeamName": "SEA",
+    "awayTeamName": "MTY",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6017"
+  },
+  {
+    "homeTeamName": "PAC",
+    "awayTeamName": "JUV",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.5716"
+  },
+  {
+    "homeTeamName": "EVE",
+    "awayTeamName": "CRY",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.7634"
+  },
+  {
+    "homeTeamName": "BHA",
+    "awayTeamName": "WHU",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.7757"
+  },
+  {
+    "homeTeamName": "NEW",
+    "awayTeamName": "MCI",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.801"
+  },
+  {
+    "homeTeamName": "WOL",
+    "awayTeamName": "CHE",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.8138"
+  },
+  {
+    "homeTeamName": "BRE",
+    "awayTeamName": "MUN",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.8005"
+  },
+  {
+    "homeTeamName": "LIV",
+    "awayTeamName": "BUR",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.7208"
+  },
+  {
+    "homeTeamName": "BIL",
+    "awayTeamName": "OVI",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.5605"
+  },
+  {
+    "homeTeamName": "FCB",
+    "awayTeamName": "RSO",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.5159"
+  },
+  {
+    "homeTeamName": "GET",
+    "awayTeamName": "ESP",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.5967"
+  },
+  {
+    "homeTeamName": "RAY",
+    "awayTeamName": "LEV",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.6761"
+  },
+  {
+    "homeTeamName": "NEW",
+    "awayTeamName": "ACM",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.7226"
+  },
+  {
+    "homeTeamName": "INT",
+    "awayTeamName": "FCB",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6806"
+  },
+  {
+    "homeTeamName": "VER",
+    "awayTeamName": "CAG",
+    "homeTeamScore": "2",
+    "awayTeamScore": "4",
+    "probability": "0.7"
+  },
+  {
+    "homeTeamName": "LEC",
+    "awayTeamName": "PIS",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6123"
+  },
+  {
+    "homeTeamName": "ZMB",
+    "awayTeamName": "GMB",
+    "homeTeamScore": "4",
+    "awayTeamScore": "0",
+    "probability": "0.6309"
+  },
+  {
+    "homeTeamName": "TZA",
+    "awayTeamName": "NGA",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.5688"
+  },
+  {
+    "homeTeamName": "CMR",
+    "awayTeamName": "MLI",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.6617"
+  },
+  {
+    "homeTeamName": "BFA",
+    "awayTeamName": "EGY",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6281"
+  },
+  {
+    "homeTeamName": "POL",
+    "awayTeamName": "GEO",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.5546"
+  },
+  {
+    "homeTeamName": "MCI",
+    "awayTeamName": "ULS",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.7837"
+  },
+  {
+    "homeTeamName": "RIV",
+    "awayTeamName": "BOC",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.6596"
+  },
+  {
+    "homeTeamName": "MIA",
+    "awayTeamName": "BAY",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.5517"
+  },
+  {
+    "homeTeamName": "SUN",
+    "awayTeamName": "EST",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.5632"
+  },
+  {
+    "homeTeamName": "RMA",
+    "awayTeamName": "LAFC",
+    "homeTeamScore": "4",
+    "awayTeamScore": "0",
+    "probability": "0.7769"
+  },
+  {
+    "homeTeamName": "MTY",
+    "awayTeamName": "HIL",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6252"
+  },
+  {
+    "homeTeamName": "AKL",
+    "awayTeamName": "PSG",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.5098"
+  },
+  {
+    "homeTeamName": "BUR",
+    "awayTeamName": "NEW",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6571"
+  },
+  {
+    "homeTeamName": "MCI",
+    "awayTeamName": "AST",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.7044"
+  },
+  {
+    "homeTeamName": "BHA",
+    "awayTeamName": "CRY",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.7722"
+  },
+  {
+    "homeTeamName": "BIL",
+    "awayTeamName": "GIR",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6377"
+  },
+  {
+    "homeTeamName": "SGE",
+    "awayTeamName": "BVB",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.5717"
+  },
+  {
+    "homeTeamName": "TSG",
+    "awayTeamName": "HDH",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.6893"
+  },
+  {
+    "homeTeamName": "JUV",
+    "awayTeamName": "ACM",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.7"
+  },
+  {
+    "homeTeamName": "BEN",
+    "awayTeamName": "INT",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.7021"
+  },
+  {
+    "homeTeamName": "VER",
+    "awayTeamName": "GEN",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6802"
+  },
+  {
+    "homeTeamName": "ATA",
+    "awayTeamName": "PAR",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.7083"
+  },
+  {
+    "homeTeamName": "CAG",
+    "awayTeamName": "LAZ",
+    "homeTeamScore": "2",
+    "awayTeamScore": "5",
+    "probability": "0.7584"
+  },
+  {
+    "homeTeamName": "JUV",
+    "awayTeamName": "COM",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.6759"
+  },
+  {
+    "homeTeamName": "MLI",
+    "awayTeamName": "GNQ",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.6779"
+  },
+  {
+    "homeTeamName": "NGA",
+    "awayTeamName": "ZAF",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6804"
+  },
+  {
+    "homeTeamName": "COD",
+    "awayTeamName": "GNB",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6255"
+  },
+  {
+    "homeTeamName": "MOZ",
+    "awayTeamName": "ZMB",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.6428"
+  },
+  {
+    "homeTeamName": "TZA",
+    "awayTeamName": "EGY",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.5549"
+  },
+  {
+    "homeTeamName": "CIV",
+    "awayTeamName": "NAM",
+    "homeTeamScore": "4",
+    "awayTeamScore": "2",
+    "probability": "0.7123"
+  },
+  {
+    "homeTeamName": "UKR",
+    "awayTeamName": "BEL",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.5461"
+  },
+  {
+    "homeTeamName": "ALB",
+    "awayTeamName": "CZE",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.6779"
+  },
+  {
+    "homeTeamName": "TUR",
+    "awayTeamName": "SRB",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6549"
+  },
+  {
+    "homeTeamName": "GEO",
+    "awayTeamName": "ENG",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.6153"
+  },
+  {
+    "homeTeamName": "CRO",
+    "awayTeamName": "DEN",
+    "homeTeamScore": "4",
+    "awayTeamScore": "3",
+    "probability": "0.5883"
+  },
+  {
+    "homeTeamName": "ESP",
+    "awayTeamName": "AUT",
+    "homeTeamScore": "4",
+    "awayTeamScore": "0",
+    "probability": "0.7246"
+  },
+  {
+    "homeTeamName": "BVB",
+    "awayTeamName": "RIV",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6711"
+  },
+  {
+    "homeTeamName": "INT",
+    "awayTeamName": "BAY",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6449"
+  },
+  {
+    "homeTeamName": "BOC",
+    "awayTeamName": "SUN",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.6154"
+  },
+  {
+    "homeTeamName": "BEN",
+    "awayTeamName": "AKL",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6525"
+  },
+  {
+    "homeTeamName": "AHL",
+    "awayTeamName": "ATM",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.5632"
+  },
+  {
+    "homeTeamName": "BOT",
+    "awayTeamName": "FLA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.7049"
+  },
+  {
+    "homeTeamName": "MTY",
+    "awayTeamName": "PAL",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.5574"
+  },
+  {
+    "homeTeamName": "FLU",
+    "awayTeamName": "POR",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6121"
+  },
+  {
+    "homeTeamName": "AIN",
+    "awayTeamName": "LAFC",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.5688"
+  },
+  {
+    "homeTeamName": "MIA",
+    "awayTeamName": "URA",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6016"
+  },
+  {
+    "homeTeamName": "FOR",
+    "awayTeamName": "BHA",
+    "homeTeamScore": "4",
+    "awayTeamScore": "0",
+    "probability": "0.755"
+  },
+  {
+    "homeTeamName": "BRE",
+    "awayTeamName": "CHE",
+    "homeTeamScore": "1",
+    "awayTeamScore": "4",
+    "probability": "0.86"
+  },
+  {
+    "homeTeamName": "BUR",
+    "awayTeamName": "WHU",
+    "homeTeamScore": "4",
+    "awayTeamScore": "0",
+    "probability": "0.5829"
+  },
+  {
+    "homeTeamName": "EVE",
+    "awayTeamName": "MUN",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.7064"
+  },
+  {
+    "homeTeamName": "OSA",
+    "awayTeamName": "ATM",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.4455"
+  },
+  {
+    "homeTeamName": "SEV",
+    "awayTeamName": "GET",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.5547"
+  },
+  {
+    "homeTeamName": "RSO",
+    "awayTeamName": "VCF",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.3659"
+  },
+  {
+    "homeTeamName": "UNI",
+    "awayTeamName": "FCA",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6072"
+  },
+  {
+    "homeTeamName": "PSG",
+    "awayTeamName": "ATM",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.6805"
+  },
+  {
+    "homeTeamName": "MUN",
+    "awayTeamName": "NAP",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.65"
+  },
+  {
+    "homeTeamName": "VCF",
+    "awayTeamName": "ARS",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.5966"
+  },
+  {
+    "homeTeamName": "MCI",
+    "awayTeamName": "FCB",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.7637"
+  },
+  {
+    "homeTeamName": "VER",
+    "awayTeamName": "USC",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6405"
+  },
+  {
+    "homeTeamName": "CAG",
+    "awayTeamName": "TOR",
+    "homeTeamScore": "3",
+    "awayTeamScore": "3",
+    "probability": "0.6979"
+  },
+  {
+    "homeTeamName": "PAR",
+    "awayTeamName": "GEN",
+    "homeTeamScore": "1",
+    "awayTeamScore": "4",
+    "probability": "0.6401"
+  },
+  {
+    "homeTeamName": "BFC",
+    "awayTeamName": "NAP",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6451"
+  },
+  {
+    "homeTeamName": "LAZ",
+    "awayTeamName": "SAS",
+    "homeTeamScore": "3",
+    "awayTeamScore": "3",
+    "probability": "0.6204"
+  },
+  {
+    "homeTeamName": "CIV",
+    "awayTeamName": "CPV",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6152"
+  },
+  {
+    "homeTeamName": "NGA",
+    "awayTeamName": "MOZ",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.7584"
+  },
+  {
+    "homeTeamName": "BFA",
+    "awayTeamName": "GHA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.6072"
+  },
+  {
+    "homeTeamName": "GMB",
+    "awayTeamName": "EGY",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.5964"
+  },
+  {
+    "homeTeamName": "CRO",
+    "awayTeamName": "UKR",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.6123"
+  },
+  {
+    "homeTeamName": "SUI",
+    "awayTeamName": "AUT",
+    "homeTeamScore": "4",
+    "awayTeamScore": "0",
+    "probability": "0.6781"
+  },
+  {
+    "homeTeamName": "ESP",
+    "awayTeamName": "SVK",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6254"
+  },
+  {
+    "homeTeamName": "TUR",
+    "awayTeamName": "SCO",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.7107"
+  },
+  {
+    "homeTeamName": "NED",
+    "awayTeamName": "DEN",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.7564"
+  },
+  {
+    "homeTeamName": "AHL",
+    "awayTeamName": "RBS",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.583"
+  },
+  {
+    "homeTeamName": "AKL",
+    "awayTeamName": "CHE",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.5667"
+  },
+  {
+    "homeTeamName": "JUV",
+    "awayTeamName": "SEA",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6955"
+  },
+  {
+    "homeTeamName": "URA",
+    "awayTeamName": "RIV",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.5371"
+  },
+  {
+    "homeTeamName": "INT",
+    "awayTeamName": "MIA",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.702"
+  },
+  {
+    "homeTeamName": "BVB",
+    "awayTeamName": "LAFC",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.6758"
+  },
+  {
+    "homeTeamName": "FLA",
+    "awayTeamName": "SUN",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.65"
+  },
+  {
+    "homeTeamName": "AIN",
+    "awayTeamName": "PAL",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.5802"
+  },
+  {
+    "homeTeamName": "NEW",
+    "awayTeamName": "LEE",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.7619"
+  },
+  {
+    "homeTeamName": "BRE",
+    "awayTeamName": "WOL",
+    "homeTeamScore": "3",
+    "awayTeamScore": "3",
+    "probability": "0.834"
+  },
+  {
+    "homeTeamName": "WHU",
+    "awayTeamName": "LIV",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.76"
+  },
+  {
+    "homeTeamName": "BOU",
+    "awayTeamName": "AST",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.6405"
+  },
+  {
+    "homeTeamName": "RSO",
+    "awayTeamName": "GIR",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.572"
+  },
+  {
+    "homeTeamName": "LEV",
+    "awayTeamName": "BMG",
+    "homeTeamScore": "0",
+    "awayTeamScore": "4",
+    "probability": "0.6379"
+  },
+  {
+    "homeTeamName": "MAI",
+    "awayTeamName": "UNI",
+    "homeTeamScore": "4",
+    "awayTeamScore": "2",
+    "probability": "0.394"
+  },
+  {
+    "homeTeamName": "BVB",
+    "awayTeamName": "STP",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6694"
+  },
+  {
+    "homeTeamName": "HSV",
+    "awayTeamName": "SVW",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.5282"
+  },
+  {
+    "homeTeamName": "LIV",
+    "awayTeamName": "INT",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.7687"
+  },
+  {
+    "homeTeamName": "ARS",
+    "awayTeamName": "MUN",
+    "homeTeamScore": "0",
+    "awayTeamScore": "4",
+    "probability": "0.6689"
+  },
+  {
+    "homeTeamName": "TOT",
+    "awayTeamName": "PSG",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6356"
+  },
+  {
+    "homeTeamName": "NEW",
+    "awayTeamName": "NAP",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.6334"
+  },
+  {
+    "homeTeamName": "LEC",
+    "awayTeamName": "USC",
+    "homeTeamScore": "1",
+    "awayTeamScore": "5",
+    "probability": "0.6401"
+  },
+  {
+    "homeTeamName": "FIO",
+    "awayTeamName": "SAS",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6849"
+  },
+  {
+    "homeTeamName": "GEN",
+    "awayTeamName": "NAP",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6305"
+  },
+  {
+    "homeTeamName": "MAR",
+    "awayTeamName": "TZA",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.7758"
+  },
+  {
+    "homeTeamName": "COD",
+    "awayTeamName": "SEN",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.5577"
+  },
+  {
+    "homeTeamName": "EGY",
+    "awayTeamName": "MLI",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.7062"
+  },
+  {
+    "homeTeamName": "CIV",
+    "awayTeamName": "GHA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6226"
+  },
+  {
+    "homeTeamName": "GER",
+    "awayTeamName": "SVN",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.7228"
+  },
+  {
+    "homeTeamName": "POL",
+    "awayTeamName": "CZE",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.5548"
+  },
+  {
+    "homeTeamName": "SCO",
+    "awayTeamName": "FRA",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6098"
+  },
+  {
+    "homeTeamName": "HUN",
+    "awayTeamName": "AUT",
+    "homeTeamScore": "2",
+    "awayTeamScore": "3",
+    "probability": "0.7269"
+  },
+  {
+    "homeTeamName": "DEN",
+    "awayTeamName": "TUR",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.6915"
+  },
+  {
+    "homeTeamName": "FLA",
+    "awayTeamName": "MIA",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.6689"
+  },
+  {
+    "homeTeamName": "PAL",
+    "awayTeamName": "MTY",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6328"
+  },
+  {
+    "homeTeamName": "AKL",
+    "awayTeamName": "POR",
+    "homeTeamScore": "2",
+    "awayTeamScore": "4",
+    "probability": "0.5774"
+  },
+  {
+    "homeTeamName": "SUN",
+    "awayTeamName": "ATM",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.5311"
+  },
+  {
+    "homeTeamName": "URA",
+    "awayTeamName": "RBS",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.5579"
+  },
+  {
+    "homeTeamName": "HIL",
+    "awayTeamName": "BVB",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.5966"
+  },
+  {
+    "homeTeamName": "SEA",
+    "awayTeamName": "PAC",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.566"
+  },
+  {
+    "homeTeamName": "BOT",
+    "awayTeamName": "MCI",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.5912"
+  },
+  {
+    "homeTeamName": "BAY",
+    "awayTeamName": "FLU",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.7819"
+  },
+  {
+    "homeTeamName": "WOL",
+    "awayTeamName": "NEW",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.831"
+  },
+  {
+    "homeTeamName": "TOT",
+    "awayTeamName": "BRE",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.8402"
+  },
+  {
+    "homeTeamName": "FOR",
+    "awayTeamName": "EVE",
+    "homeTeamScore": "3",
+    "awayTeamScore": "3",
+    "probability": "0.7148"
+  },
+  {
+    "homeTeamName": "MUN",
+    "awayTeamName": "CRY",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.7868"
+  },
+  {
+    "homeTeamName": "SUN",
+    "awayTeamName": "BOU",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.5911"
+  },
+  {
+    "homeTeamName": "BUR",
+    "awayTeamName": "WHU",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.5829"
+  },
+  {
+    "homeTeamName": "OSA",
+    "awayTeamName": "BIL",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.4151"
+  },
+  {
+    "homeTeamName": "SEV",
+    "awayTeamName": "GET",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.5547"
+  },
+  {
+    "homeTeamName": "TSG",
+    "awayTeamName": "VFB",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6958"
+  },
+  {
+    "homeTeamName": "POR",
+    "awayTeamName": "CHE",
+    "homeTeamScore": "0",
+    "awayTeamScore": "4",
+    "probability": "0.7346"
+  },
+  {
+    "homeTeamName": "JUV",
+    "awayTeamName": "RMA",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.5777"
+  },
+  {
+    "homeTeamName": "FIO",
+    "awayTeamName": "VER",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6688"
+  },
+  {
+    "homeTeamName": "ATA",
+    "awayTeamName": "INT",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.7458"
+  },
+  {
+    "homeTeamName": "PIS",
+    "awayTeamName": "JUV",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.5776"
+  },
+  {
+    "homeTeamName": "GIN",
+    "awayTeamName": "ZAF",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.5827"
+  },
+  {
+    "homeTeamName": "ZMB",
+    "awayTeamName": "TUN",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.5488"
+  },
+  {
+    "homeTeamName": "BFA",
+    "awayTeamName": "EGY",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.6281"
+  },
+  {
+    "homeTeamName": "CMR",
+    "awayTeamName": "MRT",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.6665"
+  },
+  {
+    "homeTeamName": "GHA",
+    "awayTeamName": "COD",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.5829"
+  },
+  {
+    "homeTeamName": "SRB",
+    "awayTeamName": "GEO",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.6283"
+  },
+  {
+    "homeTeamName": "ESP",
+    "awayTeamName": "TUR",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.6614"
+  },
+  {
+    "homeTeamName": "FRA",
+    "awayTeamName": "DEN",
+    "homeTeamScore": "1",
+    "awayTeamScore": "4",
+    "probability": "0.6645"
+  },
+  {
+    "homeTeamName": "BOT",
+    "awayTeamName": "BVB",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6098"
+  },
+  {
+    "homeTeamName": "RIV",
+    "awayTeamName": "MIA",
+    "homeTeamScore": "4",
+    "awayTeamScore": "0",
+    "probability": "0.7044"
+  },
+  {
+    "homeTeamName": "BAY",
+    "awayTeamName": "MCI",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.753"
+  },
+  {
+    "homeTeamName": "PAC",
+    "awayTeamName": "MTY",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.58"
+  },
+  {
+    "homeTeamName": "RBS",
+    "awayTeamName": "INT",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.5662"
+  },
+  {
+    "homeTeamName": "WAC",
+    "awayTeamName": "AIN",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.5603"
+  },
+  {
+    "homeTeamName": "SEA",
+    "awayTeamName": "AHL",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6282"
+  },
+  {
+    "homeTeamName": "RMA",
+    "awayTeamName": "PAL",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.7837"
+  },
+  {
+    "homeTeamName": "LIV",
+    "awayTeamName": "NEW",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.8549"
+  },
+  {
+    "homeTeamName": "FUL",
+    "awayTeamName": "TOT",
+    "homeTeamScore": "1",
+    "awayTeamScore": "4",
+    "probability": "0.7947"
+  },
+  {
+    "homeTeamName": "SUN",
+    "awayTeamName": "CHE",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.6305"
+  },
+  {
+    "homeTeamName": "BUR",
+    "awayTeamName": "WHU",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.5829"
+  },
+  {
+    "homeTeamName": "VCF",
+    "awayTeamName": "OSA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.4354"
+  },
+  {
+    "homeTeamName": "ALA",
+    "awayTeamName": "SEV",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.5576"
+  },
+  {
+    "homeTeamName": "MAL",
+    "awayTeamName": "CEL",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6307"
+  },
+  {
+    "homeTeamName": "RSO",
+    "awayTeamName": "GIR",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.572"
+  },
+  {
+    "homeTeamName": "OVI",
+    "awayTeamName": "BIL",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.3871"
+  },
+  {
+    "homeTeamName": "FCA",
+    "awayTeamName": "VFB",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.5718"
+  },
+  {
+    "homeTeamName": "BVB",
+    "awayTeamName": "BMG",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6689"
+  },
+  {
+    "homeTeamName": "INT",
+    "awayTeamName": "POR",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.7124"
+  },
+  {
+    "homeTeamName": "ACM",
+    "awayTeamName": "JUV",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.6737"
+  },
+  {
+    "homeTeamName": "TOT",
+    "awayTeamName": "NEW",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.6853"
+  },
+  {
+    "homeTeamName": "BEN",
+    "awayTeamName": "BVB",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.6733"
+  },
+  {
+    "homeTeamName": "USC",
+    "awayTeamName": "SAS",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.5573"
+  },
+  {
+    "homeTeamName": "FIO",
+    "awayTeamName": "CAG",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6846"
+  },
+  {
+    "homeTeamName": "INT",
+    "awayTeamName": "LAZ",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.7398"
+  },
+  {
+    "homeTeamName": "MAR",
+    "awayTeamName": "MLI",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.7821"
+  },
+  {
+    "homeTeamName": "ZMB",
+    "awayTeamName": "EGY",
+    "homeTeamScore": "0",
+    "awayTeamScore": "3",
+    "probability": "0.569"
+  },
+  {
+    "homeTeamName": "SEN",
+    "awayTeamName": "NGA",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.6874"
+  },
+  {
+    "homeTeamName": "TUN",
+    "awayTeamName": "GIN",
+    "homeTeamScore": "4",
+    "awayTeamScore": "1",
+    "probability": "0.6781"
+  },
+  {
+    "homeTeamName": "AUT",
+    "awayTeamName": "ITA",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.7082"
+  },
+  {
+    "homeTeamName": "TUR",
+    "awayTeamName": "GEO",
+    "homeTeamScore": "1",
+    "awayTeamScore": "1",
+    "probability": "0.6575"
+  },
+  {
+    "homeTeamName": "POL",
+    "awayTeamName": "SVN",
+    "homeTeamScore": "0",
+    "awayTeamScore": "4",
+    "probability": "0.6175"
+  },
+  {
+    "homeTeamName": "AHL",
+    "awayTeamName": "BVB",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.5827"
+  },
+  {
+    "homeTeamName": "RMA",
+    "awayTeamName": "PSG",
+    "homeTeamScore": "4",
+    "awayTeamScore": "1",
+    "probability": "0.7653"
+  },
+  {
+    "homeTeamName": "RIV",
+    "awayTeamName": "SUN",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.6896"
+  },
+  {
+    "homeTeamName": "POR",
+    "awayTeamName": "FLU",
+    "homeTeamScore": "1",
+    "awayTeamScore": "4",
+    "probability": "0.6802"
+  },
+  {
+    "homeTeamName": "LAFC",
+    "awayTeamName": "BEN",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.6022"
+  },
+  {
+    "homeTeamName": "ATM",
+    "awayTeamName": "WAC",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.6735"
+  },
+  {
+    "homeTeamName": "CHE",
+    "awayTeamName": "BOU",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.8231"
+  },
+  {
+    "homeTeamName": "BRE",
+    "awayTeamName": "MUN",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.8005"
+  },
+  {
+    "homeTeamName": "WHU",
+    "awayTeamName": "FOR",
+    "homeTeamScore": "4",
+    "awayTeamScore": "0",
+    "probability": "0.7773"
+  },
+  {
+    "homeTeamName": "NEW",
+    "awayTeamName": "AST",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.7125"
+  },
+  {
+    "homeTeamName": "WOL",
+    "awayTeamName": "TOT",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.7933"
+  },
+  {
+    "homeTeamName": "RBB",
+    "awayTeamName": "ELC",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.6021"
+  },
+  {
+    "homeTeamName": "VIL",
+    "awayTeamName": "ALA",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.6404"
+  },
+  {
+    "homeTeamName": "ATM",
+    "awayTeamName": "RAY",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.5938"
+  },
+  {
+    "homeTeamName": "MAL",
+    "awayTeamName": "ESP",
+    "homeTeamScore": "3",
+    "awayTeamScore": "3",
+    "probability": "0.6498"
+  },
+  {
+    "homeTeamName": "TSG",
+    "awayTeamName": "BVB",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.6453"
+  },
+  {
+    "homeTeamName": "BMG",
+    "awayTeamName": "HSV",
+    "homeTeamScore": "1",
+    "awayTeamScore": "2",
+    "probability": "0.6889"
+  },
+  {
+    "homeTeamName": "VFB",
+    "awayTeamName": "UNI",
+    "homeTeamScore": "4",
+    "awayTeamScore": "0",
+    "probability": "0.6377"
+  },
+  {
+    "homeTeamName": "LIV",
+    "awayTeamName": "FCB",
+    "homeTeamScore": "3",
+    "awayTeamScore": "2",
+    "probability": "0.7327"
+  },
+  {
+    "homeTeamName": "POR",
+    "awayTeamName": "MCI",
+    "homeTeamScore": "3",
+    "awayTeamScore": "0",
+    "probability": "0.6781"
+  },
+  {
+    "homeTeamName": "INT",
+    "awayTeamName": "ACM",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.7773"
+  },
+  {
+    "homeTeamName": "BEN",
+    "awayTeamName": "CHE",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.7437"
+  },
+  {
+    "homeTeamName": "VCF",
+    "awayTeamName": "TOT",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.583"
+  },
+  {
+    "homeTeamName": "COM",
+    "awayTeamName": "SAS",
+    "homeTeamScore": "2",
+    "awayTeamScore": "2",
+    "probability": "0.6938"
+  },
+  {
+    "homeTeamName": "USC",
+    "awayTeamName": "PAR",
+    "homeTeamScore": "1",
+    "awayTeamScore": "3",
+    "probability": "0.5633"
+  },
+  {
+    "homeTeamName": "GEN",
+    "awayTeamName": "BFC",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.696"
+  },
+  {
+    "homeTeamName": "ROM",
+    "awayTeamName": "JUV",
+    "homeTeamScore": "2",
+    "awayTeamScore": "4",
+    "probability": "0.7435"
+  },
+  {
+    "homeTeamName": "AGO",
+    "awayTeamName": "MOZ",
+    "homeTeamScore": "1",
+    "awayTeamScore": "4",
+    "probability": "0.6913"
+  },
+  {
+    "homeTeamName": "POL",
+    "awayTeamName": "ESP",
+    "homeTeamScore": "0",
+    "awayTeamScore": "2",
+    "probability": "0.5488"
+  },
+  {
+    "homeTeamName": "DEN",
+    "awayTeamName": "SCO",
+    "homeTeamScore": "4",
+    "awayTeamScore": "2",
+    "probability": "0.7222"
+  },
+  {
+    "homeTeamName": "SVN",
+    "awayTeamName": "CZE",
+    "homeTeamScore": "0",
+    "awayTeamScore": "4",
+    "probability": "0.5967"
+  },
+  {
+    "homeTeamName": "NED",
+    "awayTeamName": "ENG",
+    "homeTeamScore": "5",
+    "awayTeamScore": "0",
+    "probability": "0.7867"
+  },
+  {
+    "homeTeamName": "SUI",
+    "awayTeamName": "GEO",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.583"
+  },
+  {
+    "homeTeamName": "AUT",
+    "awayTeamName": "UKR",
+    "homeTeamScore": "3",
+    "awayTeamScore": "1",
+    "probability": "0.6428"
+  },
+  {
+    "homeTeamName": "WAC",
+    "awayTeamName": "CHE",
+    "homeTeamScore": "2",
+    "awayTeamScore": "1",
+    "probability": "0.5778"
+  },
+  {
+    "homeTeamName": "SEA",
+    "awayTeamName": "LAFC",
+    "homeTeamScore": "2",
+    "awayTeamScore": "0",
+    "probability": "0.5835"
   }
 ]
