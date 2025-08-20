@@ -218,149 +218,155 @@ async function runFlow(page) {
   }
 }
   
-// --- Bootstrap ---  
-(async () => {  
-  if (!fs.existsSync(SESSION_FILE)) {  
-    console.log("No session file found. Running sporty.js to create one...");  
-    exec('node sporty.js', (err, stdout) => {  
-  if (err) console.error("Error running sporty.js:", err);  
-  else { /* console.log(stdout); */ }  
-});  
-    return;  
-  }  
-  
-  const browser = await firefox.launch({ headless: false });  
-  let context = await browser.newContext({ storageState: SESSION_FILE });  
-  let page = await context.newPage();  
-  
-  //Attach API listeners *before* first navigation  
-  page.on('response', async (response) => {  
-    const url = response.url();  
-  
-    if (url.includes('/api/ng/instantwin/api/v2/iwqk/event/list_all_with_popular_markets')) {  
-      try {  
-        const data = await response.json();  
-        fs.writeFileSync(fixtureFile, JSON.stringify(data, null, 2));  
-        fixtureCache = null;  
-        console.log(`Fixture data saved to ${fixtureFile}`);  
-      } catch (err) {  
-        console.error('Error saving fixture response:', err);  
-      }  
-    }  
-  
-    if (url.includes('/api/ng/instantwin/api/v2/iwqk/round/list_settle_events')) {  
-      try {  
-        const data = await response.json();  
-        if (Array.isArray(data)) {  
-          let savedResults = [];  
-          if (fs.existsSync(resultFile)) {  
-            try {  
-              savedResults = JSON.parse(fs.readFileSync(resultFile, 'utf-8'));  
-            } catch { savedResults = []; }  
-          }  
-  
-          let updated = false;  
-          for (const event of data) {  
-            const homeScore = parseInt(event.homeTeamScore, 10) || 0;  
-            const awayScore = parseInt(event.awayTeamScore, 10) || 0;  
-            if (homeScore + awayScore >= 2) {  
-              const probability = getOver15Probability(event.homeTeamName, event.awayTeamName);  
-              const resultObj = {  
-                homeTeamName: event.homeTeamName,  
-                awayTeamName: event.awayTeamName,  
-                homeTeamScore: String(event.homeTeamScore),  
-                awayTeamScore: String(event.awayTeamScore),  
-                ...(probability ? { probability } : {})  
-              };  
-  
-              const exists = savedResults.some(r =>  
-                r.homeTeamName === resultObj.homeTeamName &&  
-                r.awayTeamName === resultObj.awayTeamName &&  
-                r.homeTeamScore === resultObj.homeTeamScore &&  
-                r.awayTeamScore === resultObj.awayTeamScore  
-              );  
-  
-              if (!exists) {  
-                savedResults.push(resultObj);  
-                updated = true;  
-              }  
-            }  
-          }  
-  
-          if (updated) {  
-            fs.writeFileSync(resultFile, JSON.stringify(savedResults, null, 2));  
-            console.log(` Updated results written to ${resultFile}`);  
-          }  
-        }  
-      } catch (err) {  
-        console.error('Error parsing result API response:', err);  
-      }  
-    }  
-  });  
-  
-  // Navigate after attaching listeners  
-  await page.goto(CHECK_URL, { waitUntil: 'domcontentloaded' });  
-  await page.waitForTimeout(3000);  
-  
-  const loginBtn = await page.$('div[data-op="nav-login"]');  
-  if (loginBtn) {  
-    console.log("Not logged in. Running sporty.js to refresh session...");  
-    await browser.close();  
-    exec('node sporty.js', (err, stdout) => {  
-  if (err) console.error("Error running sporty.js:", err);  
-  else { /* console.log(stdout); */ }  
-});  
-    return;  
-  }  
-  
-  console.log("Session valid. Already logged in.");  
-  
-  //Instead of static waitForFixture, retry until fixture.json is saved  
-  let retries = 0;  
-  while (!fs.existsSync(fixtureFile) && retries < 3) {  
-    console.log("Waiting for fixture.json (forcing refresh)...");  
-    await page.reload({ waitUntil: 'domcontentloaded' });  
-    await page.waitForTimeout(5000);  
-    retries++;  
-  }  
-  
-  if (!fs.existsSync(fixtureFile)) {  
-    throw new Error("Failed to capture fixture.json after retries.");  
-  }  
-  
-  // Loop forever with recovery  
-while (true) {  
-  try {  
-    await runFlow(page);  
-  } catch (err) {  
-    if (err.message === "RestartTrigger") {  
-      console.log(" O/U and Near missing forcing restart...");  
-      try {  
-        await page.reload({ waitUntil: 'domcontentloaded', timeout: 60000 });  
-        await page.waitForTimeout(5000);  
-        continue; // go back to runFlow after reload  
-      } catch (reloadErr) {  
-        console.error(" Reload failed during restart:", reloadErr.message);  
-      }  
-    } else {  
-      console.error(" runFlow failed:", err.message);  
-    }  
-  }  
+// --- Bootstrap ---
+(async () => {
+  if (!fs.existsSync(SESSION_FILE)) {
+    console.log("No session file found. Running sporty.js to create one...");
+    exec('node sporty.js', (err, stdout) => {
+      if (err) console.error("Error running sporty.js:", err);
+    });
+    return;
+  }
 
-  try {  
-    console.log(" Refreshing page and restarting...");  
-    await page.reload({ waitUntil: 'domcontentloaded', timeout: 60000 });  
-    await page.waitForTimeout(5000);  
-  } catch (err) {  
-    console.error(" Reload failed, recovering:", err.message);  
-    try {  
-      await page.goto(CHECK_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });  
-    } catch (gotoErr) {  
-      console.error(" Hard fail, restarting browser context:", gotoErr.message);  
-      context = await browser.newContext({ storageState: SESSION_FILE });  
-      page = await context.newPage();  
-      await page.goto(CHECK_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });  
-    }  
-  }  
-}  
+  const browser = await firefox.launch({ headless: false });
+  let context = await browser.newContext({ storageState: SESSION_FILE });
+  let page = await context.newPage();
+
+  // --- Attach API listeners before first navigation ---
+  page.on('response', async (response) => {
+    const url = response.url();
+
+    if (url.includes('/api/ng/instantwin/api/v2/iwqk/event/list_all_with_popular_markets')) {
+      try {
+        const data = await response.json();
+        fs.writeFileSync(fixtureFile, JSON.stringify(data, null, 2));
+        fixtureCache = null;
+        console.log(`Fixture data saved to ${fixtureFile}`);
+      } catch (err) {
+        console.error('Error saving fixture response:', err);
+      }
+    }
+
+    if (url.includes('/api/ng/instantwin/api/v2/iwqk/round/list_settle_events')) {
+      try {
+        const data = await response.json();
+        if (Array.isArray(data)) {
+          let savedResults = [];
+          if (fs.existsSync(resultFile)) {
+            try {
+              savedResults = JSON.parse(fs.readFileSync(resultFile, 'utf-8'));
+            } catch { savedResults = []; }
+          }
+
+          let updated = false;
+          for (const event of data) {
+            const homeScore = parseInt(event.homeTeamScore, 10) || 0;
+            const awayScore = parseInt(event.awayTeamScore, 10) || 0;
+            if (homeScore + awayScore >= 2) {
+              const probability = getOver15Probability(event.homeTeamName, event.awayTeamName);
+              const resultObj = {
+                homeTeamName: event.homeTeamName,
+                awayTeamName: event.awayTeamName,
+                homeTeamScore: String(event.homeTeamScore),
+                awayTeamScore: String(event.awayTeamScore),
+                ...(probability ? { probability } : {})
+              };
+
+              const exists = savedResults.some(r =>
+                r.homeTeamName === resultObj.homeTeamName &&
+                r.awayTeamName === resultObj.awayTeamName &&
+                r.homeTeamScore === resultObj.homeTeamScore &&
+                r.awayTeamScore === resultObj.awayTeamScore
+              );
+
+              if (!exists) {
+                savedResults.push(resultObj);
+                updated = true;
+              }
+            }
+          }
+
+          if (updated) {
+            fs.writeFileSync(resultFile, JSON.stringify(savedResults, null, 2));
+            console.log(` Updated results written to ${resultFile}`);
+          }
+        }
+      } catch (err) {
+        console.error('Error parsing result API response:', err);
+      }
+    }
+  });
+
+  // --- Navigation & login check ---
+  await page.goto(CHECK_URL, { waitUntil: 'domcontentloaded' });
+  await page.waitForTimeout(3000);
+
+  const loginBtn = await page.$('div[data-op="nav-login"]');
+  if (loginBtn) {
+    console.log("Not logged in. Running sporty.js to refresh session...");
+    await browser.close();
+    exec('node sporty.js', (err, stdout) => {
+      if (err) console.error("Error running sporty.js:", err);
+    });
+    return;
+  }
+
+  console.log("Session valid. Already logged in.");
+
+  // --- Wait until fixture.json appears ---
+  let retries = 0;
+  while (!fs.existsSync(fixtureFile) && retries < 3) {
+    console.log("Waiting for fixture.json (forcing refresh)...");
+    await page.reload({ waitUntil: 'domcontentloaded' });
+    await page.waitForTimeout(5000);
+    retries++;
+  }
+
+  if (!fs.existsSync(fixtureFile)) {
+    throw new Error("Failed to capture fixture.json after retries.");
+  }
+
+  // --- Auto-shutdown timer (5h25m) ---
+  const MAX_RUNTIME_MS = (5 * 60 * 60 * 1000) + (25 * 60 * 1000);
+  setTimeout(async () => {
+    console.log("Max runtime reached (5h25m). Exiting gracefully...");
+    try { await browser.close(); } catch {}
+    process.exit(0);
+  }, MAX_RUNTIME_MS);
+
+  // --- Main loop with recovery ---
+  while (true) {
+    try {
+      await runFlow(page);
+    } catch (err) {
+      if (err.message === "RestartTrigger") {
+        console.log(" O/U and Near missing forcing restart...");
+        try {
+          await page.reload({ waitUntil: 'domcontentloaded', timeout: 60000 });
+          await page.waitForTimeout(5000);
+          continue;
+        } catch (reloadErr) {
+          console.error(" Reload failed during restart:", reloadErr.message);
+        }
+      } else {
+        console.error(" runFlow failed:", err.message);
+      }
+    }
+
+    try {
+      console.log(" Refreshing page and restarting...");
+      await page.reload({ waitUntil: 'domcontentloaded', timeout: 60000 });
+      await page.waitForTimeout(5000);
+    } catch (err) {
+      console.error(" Reload failed, recovering:", err.message);
+      try {
+        await page.goto(CHECK_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });
+      } catch (gotoErr) {
+        console.error(" Hard fail, restarting browser context:", gotoErr.message);
+        context = await browser.newContext({ storageState: SESSION_FILE });
+        page = await context.newPage();
+        await page.goto(CHECK_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });
+      }
+    }
+  }
 })();
