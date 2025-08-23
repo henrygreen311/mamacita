@@ -248,38 +248,29 @@ async function runFlow(page) {
     }  
 
     if (url.includes('/api/ng/instantwin/api/v2/iwqk/round/list_settle_events')) {  
-      try {  
-        const data = await response.json();  
-        if (Array.isArray(data)) {  
-          let savedResults = [];  
-          if (fs.existsSync(resultFile)) {  
-            try {  
-              savedResults = JSON.parse(fs.readFileSync(resultFile, 'utf-8'));  
-            } catch { savedResults = []; }  
-          }  
+  try {  
+    const data = await response.json();  
+    if (Array.isArray(data)) {  
 
-          for (const event of data) {  
-            const probability = getOver15Probability(event.homeTeamName, event.awayTeamName);  
-            const resultObj = {  
-              homeTeamName: event.homeTeamName,  
-              awayTeamName: event.awayTeamName,  
-              homeTeamScore: String(event.homeTeamScore),  
-              awayTeamScore: String(event.awayTeamScore),  
-              ...(probability ? { probability } : {}),  
-              timestamp: new Date().toLocaleString("en-NG", { timeZone: "Africa/Lagos" })  
-            };  
+      for (const event of data) {
+        const probability = getOver15Probability(event.homeTeamName, event.awayTeamName);
+        const resultObj = {
+          Team: `${event.homeTeamName} vs ${event.awayTeamName}`,
+          scores: `${event.homeTeamScore} - ${event.awayTeamScore}`,
+          ...(probability ? { probability } : {}),
+          timestamp: new Date().toLocaleString("en-NG", { timeZone: "Africa/Lagos" })
+        };
 
-            // Always push  
-            savedResults.push(resultObj);  
-          }  
+        // Append compact record (NDJSON format)
+        fs.appendFileSync(resultFile, JSON.stringify(resultObj) + "\n");
+      }
 
-          fs.writeFileSync(resultFile, JSON.stringify(savedResults, null, 2));  
-          console.log(`All results (including 0â0) written to ${resultFile}`);  
-        }  
-      } catch (err) {  
-        console.error('Error parsing result API response:', err);  
-      }  
+      console.log(`Appended ${data.length} compact results to ${resultFile}`);  
     }  
+  } catch (err) {  
+    console.error('Error parsing result API response:', err);  
+  }  
+} 
   });  
 
   // --- Navigation & login check ---  
@@ -354,4 +345,4 @@ async function runFlow(page) {
       }  
     }  
   }  
-}
+})(
