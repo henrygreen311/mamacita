@@ -11,41 +11,11 @@
       "sameSite": "None"
     },
     {
-      "name": "device-id",
-      "value": "ce652eaa-2e70-47d8-8c60-d3fe001254f4",
-      "domain": "www.sportybet.com",
-      "path": "/",
-      "expires": 1790299257,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "None"
-    },
-    {
-      "name": "sb_country",
-      "value": "ng",
-      "domain": "www.sportybet.com",
-      "path": "/",
-      "expires": 1787275257,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "None"
-    },
-    {
-      "name": "_gcl_au",
-      "value": "1.1.1103838599.1755739258",
-      "domain": ".sportybet.com",
-      "path": "/",
-      "expires": 1763515258,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "None"
-    },
-    {
       "name": "sb_fs_id",
-      "value": "a49831e3-63df-415b-a567-452fa9c28397",
+      "value": "a787e24a-8e00-4d54-841f-580637026c21",
       "domain": "www.sportybet.com",
       "path": "/",
-      "expires": 1787275258,
+      "expires": 1787531701,
       "httpOnly": false,
       "secure": false,
       "sameSite": "None"
@@ -55,24 +25,54 @@
       "value": "false",
       "domain": "www.sportybet.com",
       "path": "/",
-      "expires": 1787275258,
+      "expires": 1787531701,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "device-id",
+      "value": "682635ad-7510-42e8-b216-38b1492df913",
+      "domain": "www.sportybet.com",
+      "path": "/",
+      "expires": 1790555701,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "sb_country",
+      "value": "ng",
+      "domain": "www.sportybet.com",
+      "path": "/",
+      "expires": 1787531701,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "_gcl_au",
+      "value": "1.1.1144649768.1755995702",
+      "domain": ".sportybet.com",
+      "path": "/",
+      "expires": 1763771702,
       "httpOnly": false,
       "secure": false,
       "sameSite": "None"
     },
     {
       "name": "_ga",
-      "value": "GA1.1.2016495884.1755739258",
+      "value": "GA1.1.1309580744.1755995702",
       "domain": ".sportybet.com",
       "path": "/",
-      "expires": 1790299258,
+      "expires": 1790555702,
       "httpOnly": false,
       "secure": false,
       "sameSite": "None"
     },
     {
       "name": "usrId",
-      "value": "250821012058pdid83761097",
+      "value": "250824003502pdid26147118",
       "domain": "www.sportybet.com",
       "path": "/",
       "expires": -1,
@@ -82,120 +82,10 @@
     },
     {
       "name": "_ga_D9PX9RRZRJ",
-      "value": "GS2.1.s1755739258$o1$g0$t1755739260$j58$l0$h0",
+      "value": "GS2.1.s1755995702$o1$g0$t1755995704$j58$l0$h0",
       "domain": ".sportybet.com",
       "path": "/",
-      "expires": 1790299260,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "None"
-    },
-    {
-      "name": "accessToken",
-      "value": "patron:id:accesstoken:ebbd94723652d59a2d247fc9643b1aafxZP6Yn/2UEiP+m9Zc153c86dp2pZ/DTY/zIguwTuXiYFMZ9YPC4fKUnpMqR/GeXiu37a84GktUSN/lAvi0x2ow==",
-      "domain": "www.sportybet.com",
-      "path": "/",
-      "expires": -1,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "None"
-    },
-    {
-      "name": "refreshToken",
-      "value": "patron:id:refreshtoken:d318086b96814e0aa93aa55cb0ad4749",
-      "domain": "www.sportybet.com",
-      "path": "/",
-      "expires": 1758331261,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "None"
-    },
-    {
-      "name": "deviceId",
-      "value": "250821012058bdid83761096",
-      "domain": "www.sportybet.com",
-      "path": "/",
-      "expires": 1758331261,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "None"
-    },
-    {
-      "name": "userId",
-      "value": "G240608065027puid07872939",
-      "domain": "www.sportybet.com",
-      "path": "/",
-      "expires": 1758331261,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "None"
-    },
-    {
-      "name": "selfExclusionType",
-      "value": "",
-      "domain": "www.sportybet.com",
-      "path": "/",
-      "expires": 1763515261,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "selfExclusionStartDate",
-      "value": "0",
-      "domain": "www.sportybet.com",
-      "path": "/",
-      "expires": 1763515261,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "selfExclusionEndDate",
-      "value": "0",
-      "domain": "www.sportybet.com",
-      "path": "/",
-      "expires": 1763515261,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "selfExclusionCooldown",
-      "value": "false",
-      "domain": "www.sportybet.com",
-      "path": "/",
-      "expires": 1763515261,
-      "httpOnly": false,
-      "secure": true,
-      "sameSite": "None"
-    },
-    {
-      "name": "_ga_00HZ52K43N",
-      "value": "GS2.1.s1755739258$o1$g0$t1755739261$j57$l0$h0",
-      "domain": ".sportybet.com",
-      "path": "/",
-      "expires": 1790299261,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "None"
-    },
-    {
-      "name": "phone",
-      "value": "9120183273",
-      "domain": "www.sportybet.com",
-      "path": "/",
-      "expires": 1787275261,
-      "httpOnly": false,
-      "secure": false,
-      "sameSite": "None"
-    },
-    {
-      "name": "lastUserId",
-      "value": "G240608065027puid07872939",
-      "domain": "www.sportybet.com",
-      "path": "/",
-      "expires": 1758417661,
+      "expires": 1790555704,
       "httpOnly": false,
       "secure": false,
       "sameSite": "None"
@@ -205,19 +95,119 @@
       "value": "350",
       "domain": "www.sportybet.com",
       "path": "/",
+      "expires": 1758587706,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "accessToken",
+      "value": "patron:id:accesstoken:f1149c17518b9887d2ce6548b0654d1fUqMbCcslDTwf2+uCdc+Gezl5aEvgMXHHfvBB2YLxzegvzj0UcREq6OWs32rZHMrlJeRIekCY7GwZ1gWrx3ZMcA==",
+      "domain": "www.sportybet.com",
+      "path": "/",
       "expires": -1,
       "httpOnly": false,
       "secure": false,
       "sameSite": "None"
     },
     {
-      "name": "__cf_bm",
-      "value": "GRuIN3UsMAm7bXoLhAvXztuvFcmfPECTg2XJNPrHnU0-1755739259-1.0.1.1-v7j3W8U.oB02t_r7y7bWey7K59RKc42jKivfMu_k1T32QaXquSEavE0ZqpZrr3aLWX1GTZhmEhtTtimAR5GdSaN6Dc5lZKgL0K.vdcjU1Rc",
-      "domain": ".football.com",
+      "name": "refreshToken",
+      "value": "patron:id:refreshtoken:ae61959f091649349b797c476b8a7c75",
+      "domain": "www.sportybet.com",
       "path": "/",
-      "expires": 1755741059,
-      "httpOnly": true,
+      "expires": 1758587706,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "deviceId",
+      "value": "250824003502bdid26147116",
+      "domain": "www.sportybet.com",
+      "path": "/",
+      "expires": 1758587706,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "userId",
+      "value": "G240608065027puid07872939",
+      "domain": "www.sportybet.com",
+      "path": "/",
+      "expires": 1758587706,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "selfExclusionType",
+      "value": "",
+      "domain": "www.sportybet.com",
+      "path": "/",
+      "expires": 1763771706,
+      "httpOnly": false,
       "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "selfExclusionStartDate",
+      "value": "0",
+      "domain": "www.sportybet.com",
+      "path": "/",
+      "expires": 1763771706,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "selfExclusionEndDate",
+      "value": "0",
+      "domain": "www.sportybet.com",
+      "path": "/",
+      "expires": 1763771706,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "selfExclusionCooldown",
+      "value": "false",
+      "domain": "www.sportybet.com",
+      "path": "/",
+      "expires": 1763771706,
+      "httpOnly": false,
+      "secure": true,
+      "sameSite": "None"
+    },
+    {
+      "name": "_ga_00HZ52K43N",
+      "value": "GS2.1.s1755995702$o1$g0$t1755995706$j56$l0$h0",
+      "domain": ".sportybet.com",
+      "path": "/",
+      "expires": 1790555706,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "phone",
+      "value": "9120183273",
+      "domain": "www.sportybet.com",
+      "path": "/",
+      "expires": 1787531706,
+      "httpOnly": false,
+      "secure": false,
+      "sameSite": "None"
+    },
+    {
+      "name": "lastUserId",
+      "value": "G240608065027puid07872939",
+      "domain": "www.sportybet.com",
+      "path": "/",
+      "expires": 1758674106,
+      "httpOnly": false,
+      "secure": false,
       "sameSite": "None"
     }
   ],
@@ -230,24 +220,20 @@
           "value": "0"
         },
         {
+          "name": "last_time_sub_promo_msg",
+          "value": "1755995706875"
+        },
+        {
+          "name": "_gcl_ls",
+          "value": "{\"schema\":\"gcl\",\"version\":1,\"gcl_ctr\":{\"value\":{\"value\":0,\"creationTimeMs\":1755995701779},\"expires\":1763771701779}}"
+        },
+        {
           "name": "login_without_click_download_banner_count",
           "value": "1"
         },
         {
-          "name": "notification_unread",
-          "value": "1755739262236"
-        },
-        {
-          "name": "_gcl_ls",
-          "value": "{\"schema\":\"gcl\",\"version\":1,\"gcl_ctr\":{\"value\":{\"value\":0,\"creationTimeMs\":1755739258041},\"expires\":1763515258041}}"
-        },
-        {
           "name": "notification_request_permission_time",
-          "value": "1755739262046"
-        },
-        {
-          "name": "last_time_sub_promo_msg",
-          "value": "1755739262141"
+          "value": "1755995706680"
         },
         {
           "name": "hasSimulateGameNewResult",
@@ -263,7 +249,7 @@
         },
         {
           "name": "daily_reward_last_subscribe",
-          "value": "1755739262141"
+          "value": "1755995706875"
         },
         {
           "name": "removeSuspended_G240608065027puid07872939",
@@ -271,7 +257,7 @@
         },
         {
           "name": "com.grafana.faro.session",
-          "value": "{\"sessionId\":\"dc8Uf8E5ym\",\"lastActivity\":1755739261356,\"started\":1755739259392,\"isSampled\":true,\"sessionMeta\":{\"id\":\"dc8Uf8E5ym\",\"attributes\":{\"isSampled\":\"true\"}}}"
+          "value": "{\"sessionId\":\"jJLM6rbcEE\",\"lastActivity\":1755995704365,\"started\":1755995703094,\"isSampled\":true,\"sessionMeta\":{\"id\":\"jJLM6rbcEE\",\"attributes\":{\"isSampled\":\"true\"}}}"
         },
         {
           "name": "isHaveHistoryTip",
@@ -296,7 +282,7 @@
       "localStorage": [
         {
           "name": "rc::a",
-          "value": "YnJ6M2ltMWc2cGw5bA=="
+          "value": "a3N2NXhtMW4wcWlidA=="
         }
       ]
     }
