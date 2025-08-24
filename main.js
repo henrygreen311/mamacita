@@ -345,4 +345,4 @@ async function runFlow(page) {
       }  
     }  
   }  
-})(
+})();
