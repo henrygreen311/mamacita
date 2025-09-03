@@ -126,7 +126,7 @@ async function runFlow(page) {
     }  
 
     // --- Step 2: Always try 1.5 after Near ---  
-    await safeClick(page, 'div.specifier-select-item:has-text("1.5")', "1.5");  
+    await safeClick(page, 'div.specifier-select-item:has-text("0.5")', "0.5");  
 
     // --- Step 3: Continue normal flow ---  
     await page.waitForSelector('div.event-list.spacer-market', { timeout: 10000 });  
