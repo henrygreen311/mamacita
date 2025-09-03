@@ -3,7 +3,7 @@ name: Sporty
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */605 * * *'  # Every 6 hours
+    - cron: '0 */6 * * *'  # Every 6 hours
 
 jobs:
   sporty:
@@ -62,21 +62,42 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       # Step 4: Commit and push result.json if updated
-      - name: Commit and push result.json
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+      - name: Commit and push session.json
+  run: |
+    git config user.name "github-actions"
+    git config user.email "github-actions@github.com"
 
-          if [ -f result.json ]; then
-            git add result.json
-            if ! git diff --cached --quiet result.json; then
-              git commit -m "Update result.json after main.js run"
-              git push
-            else
-              echo "No changes in result.json, skipping commit."
-            fi
-          else
-            echo "No result.json file found, skipping commit."
-          fi
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    if [ -f session.json ]; then
+      git add session.json
+      if ! git diff --cached --quiet session.json; then
+        git commit -m "Update session.json after sporty.js run" || true
+        git pull --rebase origin ${{ github.ref }} || true
+        git push origin HEAD:${{ github.ref }} --force
+      else
+        echo "No changes in session.json, skipping commit."
+      fi
+    else
+      echo "No session.json file found, skipping commit."
+    fi
+  env:
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+- name: Commit and push result.json
+  run: |
+    git config user.name "github-actions"
+    git config user.email "github-actions@github.com"
+
+    if [ -f result.json ]; then
+      git add result.json
+      if ! git diff --cached --quiet result.json; then
+        git commit -m "Update result.json after main.js run" || true
+        git pull --rebase origin ${{ github.ref }} || true
+        git push origin HEAD:${{ github.ref }} --force
+      else
+        echo "No changes in result.json, skipping commit."
+      fi
+    else
+      echo "No result.json file found, skipping commit."
+    fi
+  env:
+    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
