@@ -71,8 +71,8 @@ jobs:
             git add session.json
             if ! git diff --cached --quiet session.json; then
               git commit -m "Update session.json after sporty.js run" || true
-              git pull --rebase origin ${{ github.ref }} || true
-              git push origin HEAD:${{ github.ref }} --force
+              git pull --rebase origin ${{ github.ref_name }} || true
+              git push origin HEAD:${{ github.ref_name }} --force
             else
               echo "No changes in session.json, skipping commit."
             fi
@@ -93,8 +93,8 @@ jobs:
             if ! git diff --cached --quiet result.json; then
               git commit -m "Update result.json after main.js run" || true
               git fetch origin
-              git reset --soft origin/${{ github.ref }}
-              git push origin HEAD:${{ github.ref }} --force
+              git reset --soft origin/${{ github.ref_name }}
+              git push origin HEAD:${{ github.ref_name }} --force
             else
               echo "No changes in result.json, skipping commit."
             fi
