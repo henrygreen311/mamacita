@@ -68,19 +68,13 @@ async function dismissPopup(page) {
 
   try {  
     await page.waitForSelector(overlaySelector, { timeout: 5000 });  
-    //console.log("Popup detected. Removing overlay...");  
-
     if (await page.$(tryItSelector)) {  
       await page.click(tryItSelector);  
-      //console.log('Clicked "Try it" button.');  
     }  
-
     await page.evaluate(() => {  
       document.querySelectorAll('div.dialog-wrapper, div.dialog-mask')  
         .forEach(el => el.remove());  
     });  
-
-    //console.log("Popup removed.");  
     await page.waitForTimeout(5000);  
   } catch {  
     console.log("No popup detected.");  
@@ -92,18 +86,48 @@ async function safeClick(page, selector, label) {
   try {  
     await page.waitForSelector(selector, { timeout: 10000 });  
     await page.click(selector, { timeout: 10000 });  
-    //console.log(`Clicked ${label}.`);  
   } catch (err) {  
     if (err.message.includes('intercepts pointer events')) {  
-      //console.log(`${label} blocked by popup, dismissing...`);  
       await dismissPopup(page);  
       await page.click(selector);  
-      //console.log(`Clicked ${label} after dismissing popup.`);  
     } else {  
       throw err;  
     }  
   }  
 }  
+
+// --- Error recovery for consecutive failures ---  
+let consecutiveErrors = 0;
+
+async function handleErrorRecovery(page) {
+  consecutiveErrors++;
+  console.log(`Error count: ${consecutiveErrors}`);
+
+  if (consecutiveErrors >= 2) {
+    console.log("Attempting recovery by clicking Next/Open Bets...");
+
+    // Try "Next Round" button first
+    const nextRoundBtn = await page.$('span[data-op="iv-next-round-button"]');
+    if (nextRoundBtn) {
+      await nextRoundBtn.click();
+      console.log("Clicked 'Next Round' button.");
+      consecutiveErrors = 0;
+      return;
+    }
+
+    // If not found, try "Open Bets" button
+    const openBetsBtn = await page.$('span[data-cms-key="open_bets"]');
+    if (openBetsBtn) {
+      await openBetsBtn.click();
+      console.log("Clicked 'Open Bets' button.");
+      consecutiveErrors = 0;
+      return;
+    }
+
+    console.log("No recovery button found, continuing without clicking.");
+    consecutiveErrors = 0;
+  }
+}
 
 // --- Main flow (interactions) ---  
 async function runFlow(page) {  
@@ -122,7 +146,7 @@ async function runFlow(page) {
       await safeClick(page, 'span:has-text("Near")', "Near");  
     } else if (!ouTab) {  
       console.log("Neither O/U nor Near found â requesting restart...");  
-      throw new Error("RestartTrigger"); // signal main loop to restart  
+      throw new Error("RestartTrigger");  
     }  
 
     // --- Step 2: Always try 1.5 after Near ---  
@@ -135,18 +159,15 @@ async function runFlow(page) {
     const randomIndex = Math.floor(Math.random() * maxIndex);  
     const chosenEvent = events[randomIndex];  
 
-    //console.log(`Selected event index: ${randomIndex + 1}`);  
     const outcome = await chosenEvent.$('div[data-op="iv-outcome"]');  
     if (!outcome) throw new Error("No iv-outcome found inside chosen event");  
     await outcome.click();  
-    //console.log("Clicked over 1.5");  
 
     // Place bet  
-    const bottomContainer = await page.waitForSelector('div.nav-bottom-container', { timeout: 10000 });  
+    const bottomContainer = await page.waitForSelector('div.nav-bottom-container', { timeout: 30000 });  
     const rightBtn = await bottomContainer.$('div.btn.right');  
     if (rightBtn) {  
       await rightBtn.click();  
-      //console.log("Clicked the 'Place Bet' button.");  
     }  
 
     const confirmContainer = await page.waitForSelector('#confirm-pop__bottom', { timeout: 10000 });  
@@ -156,11 +177,16 @@ async function runFlow(page) {
       console.log("Clicked the 'Confirm' button.");  
     }  
 
-    const kickOffBtn = await page.waitForSelector('span[data-op="iv-openbet-kick-off-button"]', { timeout: 10000 });  
-    if (kickOffBtn) {  
-      await kickOffBtn.click();  
-      //console.log("Clicked the 'Kick Off' button.");  
-    }  
+    // Kick-Off button
+    try {
+      const kickOffBtn = await page.waitForSelector('span[data-op="iv-openbet-kick-off-button"]', { timeout: 20000 });
+      if (kickOffBtn) {  
+        await kickOffBtn.click();  
+        console.log("Clicked the 'Kick Off' button.");  
+      }
+    } catch {
+      console.log("Kick-Off button not found, will attempt recovery if needed.");  
+    }
 
     // Skip to result  
     try {  
@@ -168,7 +194,6 @@ async function runFlow(page) {
       await skipButton.waitFor({ state: 'visible', timeout: 15000 });  
       if (await skipButton.evaluate(node => !!node.isConnected)) {  
         await skipButton.click();  
-        //console.log('Clicked Skip to Result button.');  
       }  
     } catch {  
       console.log('Skip to Result button not found, continuing...');  
@@ -193,7 +218,6 @@ async function runFlow(page) {
           const popup = document.querySelector('#winngin-pop');  
           if (popup) popup.remove();  
         });  
-        //console.log('Blocked "winngin-pop" popup.');  
       }  
     } catch (err) {  
       console.log('Error checking or blocking popups:', err);  
@@ -210,11 +234,16 @@ async function runFlow(page) {
     }  
 
     console.log(`All done. Results saved in ${resultFile}, fixture in ${fixtureFile}`);  
+
+    // reset consecutive errors on success
+    consecutiveErrors = 0;
+
   } catch (err) {  
     if (err.message === "RestartTrigger") {  
-      throw err; // bubble up for restart handling in main loop  
+      throw err;  
     }  
     console.error("Error during interactions:", err);  
+    await handleErrorRecovery(page);  
   }  
 }  
 
@@ -248,29 +277,25 @@ async function runFlow(page) {
     }  
 
     if (url.includes('/api/ng/instantwin/api/v2/iwqk/round/list_settle_events')) {  
-  try {  
-    const data = await response.json();  
-    if (Array.isArray(data)) {  
-
-      for (const event of data) {
-        const probability = getOver15Probability(event.homeTeamName, event.awayTeamName);
-        const resultObj = {
-          Team: `${event.homeTeamName} vs ${event.awayTeamName}`,
-          scores: `${event.homeTeamScore} - ${event.awayTeamScore}`,
-          ...(probability ? { probability } : {}),
-          timestamp: new Date().toLocaleString("en-NG", { timeZone: "Africa/Lagos" })
-        };
-
-        // Append compact record (NDJSON format)
-        fs.appendFileSync(resultFile, JSON.stringify(resultObj) + "\n");
-      }
-
-      console.log(`Appended ${data.length} compact results to ${resultFile}`);  
-    }  
-  } catch (err) {  
-    console.error('Error parsing result API response:', err);  
-  }  
-} 
+      try {  
+        const data = await response.json();  
+        if (Array.isArray(data)) {  
+          for (const event of data) {
+            const probability = getOver15Probability(event.homeTeamName, event.awayTeamName);
+            const resultObj = {
+              Team: `${event.homeTeamName} vs ${event.awayTeamName}`,
+              scores: `${event.homeTeamScore} - ${event.awayTeamScore}`,
+              ...(probability ? { probability } : {}),
+              timestamp: new Date().toLocaleString("en-NG", { timeZone: "Africa/Lagos" })
+            };
+            fs.appendFileSync(resultFile, JSON.stringify(resultObj) + "\n");
+          }
+          console.log(`Appended ${data.length} compact results to ${resultFile}`);  
+        }  
+      } catch (err) {  
+        console.error('Error parsing result API response:', err);  
+      }  
+    } 
   });  
 
   // --- Navigation & login check ---  
@@ -326,6 +351,7 @@ async function runFlow(page) {
         }  
       } else {  
         console.error(" runFlow failed:", err.message);  
+        await handleErrorRecovery(page);  
       }  
     }  
 
