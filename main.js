@@ -115,10 +115,9 @@ async function runFlow(page) {
   try {  
     await dismissPopup(page);  
   
-    // --- Step 1: Try O/U and Near ---  
-    const ouTab = await page.locator('li[data-op="iv-market-tabs"]').filter({
-  hasText: 'O/U'
-}).first();
+    // --- Step 1: Try O/U and Near ---
+const ouTab = await page.locator('li[data-op="iv-market-tabs"]').filter({ hasText: 'O/U' }).first();
+const nearBtn = await page.locator('span:has-text("Near")').first();
 
 if (await ouTab.count() > 0) {
   await safeClick(page, 'li[data-op="iv-market-tabs"]:has-text("O/U")', "O/U tab");
@@ -126,35 +125,35 @@ if (await ouTab.count() > 0) {
 } else {
   ouTabFailures++;
   console.log("O/U tab not found, retrying...");
-}  
-  
-    if (ouTabFailures >= 2) {  
-      const nextRoundBtn = await page.$('span[data-op="iv-next-round-button"]');  
-      if (nextRoundBtn) {  
-        await nextRoundBtn.click();  
-        console.log("Clicked Next Round (recovery)");  
-        ouTabFailures = 0;  
-      } else {  
-        const openBetsBtn = await page.$('span[data-cms-key="open_bets"]');  
-        if (openBetsBtn) {  
-          await openBetsBtn.click();  
-          console.log("Clicked Open Bets (recovery)");  
-          ouTabFailures = 0;  
-        } else {  
-          console.log("Neither Next Round nor Open Bets found, refreshing page...");  
-          await page.reload({ waitUntil: 'domcontentloaded', timeout: 60000 });  
-          await page.waitForTimeout(5000);  
-          ouTabFailures = 0;  
-        }  
-      }  
-    }  
-  
-    if (nearBtn) {  
-      await safeClick(page, 'span:has-text("Near")', "Near");  
-    } else if (!ouTab) {  
-      console.log("Neither O/U nor Near found requesting restart...");  
-      throw new Error("RestartTrigger");  
-    }  
+}
+
+if (ouTabFailures >= 2) {
+  const nextRoundBtn = await page.$('span[data-op="iv-next-round-button"]');
+  if (nextRoundBtn) {
+    await nextRoundBtn.click();
+    console.log("Clicked Next Round (recovery)");
+    ouTabFailures = 0;
+  } else {
+    const openBetsBtn = await page.$('span[data-cms-key="open_bets"]');
+    if (openBetsBtn) {
+      await openBetsBtn.click();
+      console.log("Clicked Open Bets (recovery)");
+      ouTabFailures = 0;
+    } else {
+      console.log("Neither Next Round nor Open Bets found, refreshing page...");
+      await page.reload({ waitUntil: 'domcontentloaded', timeout: 60000 });
+      await page.waitForTimeout(5000);
+      ouTabFailures = 0;
+    }
+  }
+}
+
+if (await nearBtn.count() > 0) {
+  await safeClick(page, 'span:has-text("Near")', "Near");
+} else if ((await ouTab.count()) === 0) {
+  console.log("Neither O/U nor Near found â requesting restart...");
+  throw new Error("RestartTrigger");
+}
   
     // --- Step 2: Always try 0.5 after Near ---  
     await safeClick(page, 'div.specifier-select-item:has-text("0.5")', "0.5");  
