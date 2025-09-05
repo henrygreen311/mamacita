@@ -68,11 +68,9 @@ async function dismissPopup(page) {
 
   try {
     await page.waitForSelector(overlaySelector, { timeout: 5000 });
-    //console.log("Popup detected. Removing overlay...");
 
     if (await page.$(tryItSelector)) {
       await page.click(tryItSelector);
-      //console.log('Clicked "Try it" button.');
     }
 
     await page.evaluate(() => {
@@ -80,7 +78,6 @@ async function dismissPopup(page) {
         .forEach(el => el.remove());
     });
 
-    //console.log("Popup removed.");
     await page.waitForTimeout(5000);
 
   } catch {
@@ -93,16 +90,26 @@ async function safeClick(page, selector, label) {
   try {
     await page.waitForSelector(selector, { timeout: 10000 });
     await page.click(selector, { timeout: 10000 });
-    //console.log(`Clicked ${label}.`);
   } catch (err) {
     if (err.message.includes('intercepts pointer events')) {
-      //console.log(`${label} blocked by popup, dismissing...`);
       await dismissPopup(page);
       await page.click(selector);
-      //console.log(`Clicked ${label} after dismissing popup.`);
     } else {
       throw err;
     }
+  }
+}
+
+// --- Optional click helper ---
+async function clickIfExists(page, selector, label, timeout = 5000) {
+  try {
+    await page.waitForSelector(selector, { timeout });
+    await page.click(selector);
+    console.log(`Clicked ${label}`);
+    return true;
+  } catch {
+    console.log(`${label} not found, skipping...`);
+    return false;
   }
 }
 
@@ -110,152 +117,71 @@ async function safeClick(page, selector, label) {
 let ouTabFailures = 0;
 let kickOffFailures = 0;
 
-// --- Main flow (interactions) ---
+// --- Refactored main flow ---
 async function runFlow(page) {
   try {
     await dismissPopup(page);
+    await page.waitForTimeout(2000);
 
-    // --- Step 1: Try O/U and Near ---
-    const ouTab = await page.$('li[data-op="iv-market-tabs"]:has-text("O/U")');
-    const nearBtn = await page.$('span:has-text("Near")');
+    // Step 1: Try O/U and Near
+    const ouTabClicked = await clickIfExists(page, 'li[data-op="iv-market-tabs"]:has-text("O/U")', "O/U tab", 10000);
+    const nearClicked = await clickIfExists(page, 'span:has-text("Near")', "Near", 5000);
 
-    if (ouTab) {
-      try {
-        await safeClick(page, 'li[data-op="iv-market-tabs"]:has-text("O/U")', "O/U tab");
-        ouTabFailures = 0;
-      } catch {
-        ouTabFailures++;
-      }
-    }
-
-    if (ouTabFailures >= 2) {
-      const nextRoundBtn = await page.$('span[data-op="iv-next-round-button"]');
-      if (nextRoundBtn) {
-        await nextRoundBtn.click();
-        console.log("Clicked Next Round (recovery)");
-        ouTabFailures = 0;
-      } else {
-        const openBetsBtn = await page.$('span[data-cms-key="open_bets"]');
-        if (openBetsBtn) {
-          await openBetsBtn.click();
-          console.log("Clicked Open Bets (recovery)");
-          ouTabFailures = 0;
-        } else {
-          console.log("Neither Next Round nor Open Bets found, refreshing page...");
-          await page.reload({ waitUntil: 'domcontentloaded', timeout: 60000 });
-          await page.waitForTimeout(5000);
-          ouTabFailures = 0;
-        }
-      }
-    }
-
-    if (nearBtn) {
-      await safeClick(page, 'span:has-text("Near")', "Near");
-    } else if (!ouTab) {
-      console.log("Neither O/U nor Near found â requesting restart...");
+    if (!ouTabClicked && !nearClicked) {
+      console.log("Neither O/U nor Near found â forcing restart...");
       throw new Error("RestartTrigger");
     }
 
-    // --- Step 2: Always try 0.5 after Near ---
-    await safeClick(page, 'div.specifier-select-item:has-text("0.5")', "0.5");
+    // Step 2: Always try 0.5 after Near
+    await clickIfExists(page, 'div.specifier-select-item:has-text("0.5")', "0.5", 5000);
 
-    // --- Step 3: Continue normal flow ---
+    // Step 3: Select a random event
     await page.waitForSelector('div.event-list.spacer-market', { timeout: 10000 });
     const events = await page.$$('div.event-list.spacer-market');
+    if (!events.length) {
+      console.log("No events found, skipping this round.");
+      return;
+    }
+
     const maxIndex = Math.min(events.length, 10);
     const randomIndex = Math.floor(Math.random() * maxIndex);
     const chosenEvent = events[randomIndex];
 
-    //console.log(`Selected event index: ${randomIndex + 1}`);
     const outcome = await chosenEvent.$('div[data-op="iv-outcome"]');
-    if (!outcome) throw new Error("No iv-outcome found inside chosen event");
-    await outcome.click();
-    //console.log("Clicked over 1.5");
+    if (outcome) await outcome.click();
 
     // Place bet
-    const bottomContainer = await page.waitForSelector('div.nav-bottom-container', { timeout: 30000 });
-    const rightBtn = await bottomContainer.$('div.btn.right');
-    if (rightBtn) {
-      await rightBtn.click();
-      //console.log("Clicked the 'Place Bet' button.");
+    const bottomContainer = await page.$('div.nav-bottom-container');
+    if (bottomContainer) {
+      const rightBtn = await bottomContainer.$('div.btn.right');
+      if (rightBtn) await rightBtn.click();
+      else console.log("'Place Bet' button not found, skipping...");
+    } else {
+      console.log("'nav-bottom-container' not visible, skipping Place Bet.");
     }
 
-    const confirmContainer = await page.waitForSelector('#confirm-pop__bottom', { timeout: 10000 });
-    const confirmBtn = await confirmContainer.$('#confirm-btn');
-    if (confirmBtn) {
-      await confirmBtn.click();
-      console.log("Clicked the 'Confirm' button.");
+    // Confirm bet
+    await clickIfExists(page, '#confirm-btn', "Confirm button", 10000);
+
+    // Kick Off recovery
+    const kickOffClicked = await clickIfExists(page, 'span[data-op="iv-openbet-kick-off-button"]', "Kick Off", 20000);
+    if (!kickOffClicked && kickOffFailures++ >= 2) {
+      await clickIfExists(page, 'span[data-cms-key="open_bets"]', "Open Bets (kick-off recovery)");
+      kickOffFailures = 0;
     }
 
-    // --- Kick Off recovery logic ---
+    // Skip to Result
+    await clickIfExists(page, 'span[data-op="iv-quick-games-skip-to-result"]', "Skip to Result", 15000);
+
+    // Block win popups
     try {
-      const kickOffBtn = await page.waitForSelector('span[data-op="iv-openbet-kick-off-button"]', { timeout: 20000 });
-      if (kickOffBtn) {
-        await kickOffBtn.click();
-        kickOffFailures = 0;
-        //console.log("Clicked the 'Kick Off' button.");
-      }
-    } catch {
-      kickOffFailures++;
-      console.warn(`Kick Off button failed, attempt ${kickOffFailures}`);
-      if (kickOffFailures >= 2) {
-        const openBetsBtn = await page.$('span[data-cms-key="open_bets"]');
-        if (openBetsBtn) {
-          await openBetsBtn.click();
-          console.log("Clicked Open Bets (kick-off recovery)");
-          kickOffFailures = 0;
-          try {
-            const kickOffBtnRetry = await page.waitForSelector('span[data-op="iv-openbet-kick-off-button"]', { timeout: 20000 });
-            if (kickOffBtnRetry) await kickOffBtnRetry.click();
-          } catch {
-            console.warn("Kick Off still not found after Open Bets, refreshing page");
-            await page.reload({ waitUntil: 'domcontentloaded', timeout: 60000 });
-            await page.waitForTimeout(5000);
-          }
-        } else {
-          console.warn("Open Bets not found, refreshing page...");
-          await page.reload({ waitUntil: 'domcontentloaded', timeout: 60000 });
-          await page.waitForTimeout(5000);
-        }
-      }
-    }
-
-    // Skip to result
-    try {
-      const skipButton = page.locator('span[data-op="iv-quick-games-skip-to-result"]');
-      await skipButton.waitFor({ state: 'visible', timeout: 15000 });
-      if (await skipButton.evaluate(node => !!node.isConnected)) {
-        await skipButton.click();
-        //console.log('Clicked Skip to Result button.');
-      }
-    } catch {
-      console.log('Skip to Result button not found, continuing...');
-    }
-
-    // Handle popups
-    try {
-      const winPopup = await page.$('div.main__bg');
-      if (winPopup) {
-        await page.evaluate(() => {
-          const popup = document.querySelector('div.main__bg');
-          if (popup) popup.remove();
-          const parent = document.querySelector('div.main');
-          if (parent) parent.style.display = 'none';
-        });
-        console.log('Blocked "YOU WON" popup.');
-      }
-
-      const newWinPopup = await page.$('#winngin-pop');
-      if (newWinPopup) {
-        await page.evaluate(() => {
-          const popup = document.querySelector('#winngin-pop');
-          if (popup) popup.remove();
-        });
-        //console.log('Blocked "winngin-pop" popup.');
-      }
-    } catch (err) {
-      console.log('Error checking or blocking popups:', err);
-    }
+      await page.evaluate(() => {
+        document.querySelectorAll('div.main__bg, #winngin-pop').forEach(el => el.remove());
+        const parent = document.querySelector('div.main');
+        if (parent) parent.style.display = 'none';
+      });
+      console.log('Removed popups if any.');
+    } catch {}
 
     // Country tabs
     const countryItems = await page.$$('div.country-subheader li.sport-type-item.m-snap-nav-item');
@@ -270,10 +196,8 @@ async function runFlow(page) {
     console.log(`All done. Results saved in ${resultFile}, fixture in ${fixtureFile}`);
 
   } catch (err) {
-    if (err.message === "RestartTrigger") {
-      throw err; // bubble up for restart handling in main loop
-    }
-    console.error("Error during interactions:", err);
+    if (err.message === "RestartTrigger") throw err;
+    console.error("Error during interactions:", err.message);
   }
 }
 
