@@ -303,7 +303,7 @@ async function runFlow(page) {
   }  
 
   // --- Auto-shutdown timer (5h25m) ---  
-  const MAX_RUNTIME_MS = (5 * 60 * 60 * 1000) + (25 * 60 * 1000);  
+  const MAX_RUNTIME_MS = 1 * 60 * 60 * 1000; // 1 hour  
   setTimeout(async () => {  
     console.log("Max runtime reached (5h25m). Exiting gracefully...");  
     try { await browser.close(); } catch {}  
