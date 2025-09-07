@@ -302,8 +302,8 @@ async function runFlow(page) {
     throw new Error("Failed to capture fixture.json after retries.");  
   }  
 
-  // --- Auto-shutdown timer (5h25m) ---  
-  const MAX_RUNTIME_MS = (5 * 60 * 60 * 1000) + (25 * 60 * 1000);  
+  // --- Auto-shutdown timer (55mins) ---  
+  const MAX_RUNTIME_MS = 55 * 60 * 1000; // 55 minutes  
   setTimeout(async () => {  
     console.log("Max runtime reached (5h25m). Exiting gracefully...");  
     try { await browser.close(); } catch {}  
