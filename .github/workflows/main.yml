@@ -3,7 +3,7 @@ name: Sporty
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */900009000 * * *'  # Every 1 hours
+    - cron: '0 */henry * * *'  # Every 1 hours
 
 jobs:
   sporty:
