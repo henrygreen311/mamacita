@@ -112,10 +112,10 @@ async function runBetCycle(page, isFirstRun = false) {
     if (nextBtn) {  
       await nextBtn.click();  
       console.log('SHIT! nothing found here, Tapped next round.');  
-      await page.waitForTimeout(10000);  
+      await page.waitForTimeout(5000);  
     } else {  
       console.log('Next Round button not found. Waiting 7s...');  
-      await page.waitForTimeout(7000);  
+      await page.waitForTimeout(3000);  
     }  
   }  
 
