@@ -74,7 +74,7 @@ async function waitForFixture() {
   while (!fs.existsSync(fixtureFile)) {
     await new Promise(resolve => setTimeout(resolve, 1000));
   }
-  console.log('Fixture.json detected.');
+  //console.log('Fixture.json detected.');
 }
 
 // --- Attach fixture listener (reset each cycle) ---
