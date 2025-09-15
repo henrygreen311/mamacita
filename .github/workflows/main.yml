@@ -1,0 +1,94 @@
+name: Sporty
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 */1 * * *'  # Every 1 hours
+
+jobs:
+  sporty:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330  # 5h 30m max runtime
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y xvfb
+          npm install playwright
+          npx playwright install firefox
+          npm install fs
+
+      # Step 1: Run sporty.js to refresh/create session.json
+      - name: Run sporty.js with xvfb
+        run: |
+          xvfb-run -a node sporty.js || true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Step 2: Commit and push session.json if updated
+      - name: Commit and push session.json
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          if [ -f session.json ]; then
+            git add session.json
+            if ! git diff --cached --quiet session.json; then
+              git commit -m "Update session.json after sporty.js run"
+              git push origin HEAD:${{ github.ref_name }}
+            else
+              echo "No changes in session.json, skipping commit."
+            fi
+          else
+            echo "No session.json file found, skipping commit."
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Step 3: Run staker.js
+      - name: Run staker.js with xvfb
+        run: |
+          xvfb-run -a node staker.js || true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Step 5: Commit and push result.json + metrics.csv (force overwrite safe)
+      - name: Commit and push result.json and metrics.csv
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+
+          # Always fetch latest to avoid conflicts
+          git fetch origin ${{ github.ref_name }}
+          git reset --soft origin/${{ github.ref_name }}
+
+          files_changed=false
+
+          for f in result.json metrics.csv; do
+            if [ -f "$f" ]; then
+              git add "$f"
+              if ! git diff --cached --quiet "$f"; then
+                files_changed=true
+              fi
+            else
+              echo "$f not found, skipping."
+            fi
+          done
+
+          if [ "$files_changed" = true ]; then
+            git commit -m "Update result.json and/or metrics.csv after staker.js run" || true
+            git push origin HEAD:${{ github.ref_name }} --force
+          else
+            echo "No changes in result.json or metrics.csv, skipping commit."
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
