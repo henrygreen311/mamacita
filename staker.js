@@ -167,26 +167,34 @@ async function runBetCycle(page, isFirstRun = false) {
 
   await page.goto(CHECK_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });
 
-  // --- Loop for 5h30m ---
-  const runDuration = 55 * 60 * 1000; // 5h 30m in ms
-  const endTime = Date.now() + runDuration;
-  let isFirstRun = true;
+// --- Loop for 5 min ---
+const runDuration = 5 * 60 * 1000; // 5 min in ms
+const endTime = Date.now() + runDuration;
+let isFirstRun = true;
 
+async function main() {
   while (Date.now() < endTime) {
-    //console.log(`Starting betting cycle. Time left: ${(endTime - Date.now()) / 60000} min`);
+    //console.log(`Starting betting cycle. Time left: ${Math.round((endTime - Date.now()) / 60000)} min`);
 
     await runBetCycle(page, isFirstRun);
     isFirstRun = false;
 
     // Refresh page before next cycle
-    console.log("Page got refresh for next bet😎");
+    console.log("Page got refresh for next bet");
     await page.goto(CHECK_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });
 
-    // Reset fixture listener each cycle to avoid stale data
     attachFixtureListener(page);
   }
 
-  console.log("5h 30m elapsed. Closing browser.");
+  // Hard stop when time is up
+  console.log("5 min elapsed. Closing browser.");
   await browser.close();
   process.exit(0);
+}
+
+// run it
+main().catch(err => {
+    console.error("Fatal error in main loop:", err);
+    process.exit(1);
+  });
 })();
