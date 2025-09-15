@@ -109,14 +109,14 @@ async function runBetCycle(page, isFirstRun = false) {
     }  
 
     const nextBtn = await page.$('span[data-op="iv-next-round-button"]');  
-    if (nextBtn) {  
-      await nextBtn.click();  
-      console.log('SHIT! nothing found here, Tapped next round.');  
-      await page.waitForTimeout(5000);  
-    } else {  
-      console.log('Next Round button not found. Waiting 7s...');  
-      await page.waitForTimeout(3000);  
-    }  
+if (nextBtn) {  
+  await nextBtn.click();  
+  console.log('SHIT! nothing found here, Tapped next round.');  
+  await page.waitForTimeout(10000);  
+} else {  
+  console.log('Next Round button not found. Starting new loop immediately...');  
+  continue; // <-- jumps to next iteration immediately
+}  
   }  
 
   const betsToProcess = JSON.parse(fs.readFileSync(selBetFile, 'utf-8'));  
