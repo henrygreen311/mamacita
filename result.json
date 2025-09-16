@@ -756,38 +756,31 @@
     "timestamp": "16/09/2025, 20:46:02"
   },
   {
-    "Team": "INT vs ACM",
-    "scores": "3 - 2",
-    "probability": 0.8323,
-    "eventId": "250916204212uEve6h9284140",
-    "timestamp": "16/09/2025, 21:42:53"
+    "Team": "CRY vs MCI",
+    "scores": "1 - 1",
+    "probability": 0.7917,
+    "eventId": "250916212047uEvejgjq88930",
+    "timestamp": "16/09/2025, 22:21:23"
   },
   {
-    "Team": "GER vs ENG",
-    "scores": "1 - 1",
-    "probability": 0.7,
-    "eventId": "250916204351uEve9d6sq4554",
-    "timestamp": "16/09/2025, 21:44:35"
+    "Team": "NEW vs WHU",
+    "scores": "3 - 5",
+    "probability": 0.8246,
+    "eventId": "250916220235uEvelppt84145",
+    "timestamp": "16/09/2025, 23:03:10"
   },
   {
     "Team": "LIV vs EVE",
-    "scores": "2 - 2",
+    "scores": "2 - 3",
     "probability": 0.7512,
-    "eventId": "250916204956uEvebzgvq7307",
-    "timestamp": "16/09/2025, 21:50:30"
+    "eventId": "250916220737uEvex9b989425",
+    "timestamp": "16/09/2025, 23:08:29"
   },
   {
-    "Team": "LIV vs TOT",
-    "scores": "0 - 2",
-    "probability": 0.8221,
-    "eventId": "250916211022uEve6dkhc5595",
-    "timestamp": "16/09/2025, 22:10:57"
-  },
-  {
-    "Team": "PSG vs PAC",
-    "scores": "1 - 1",
-    "probability": 0.7532,
-    "eventId": "250916211022uEve6dkhc5666",
-    "timestamp": "16/09/2025, 22:11:08"
+    "Team": "INT vs ACM",
+    "scores": "2 - 0",
+    "probability": 0.8323,
+    "eventId": "250916220737uEvex9b989461",
+    "timestamp": "16/09/2025, 23:08:35"
   }
 ]
