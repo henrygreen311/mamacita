@@ -111,7 +111,7 @@ async function runBetCycle(page, isFirstRun = false) {
     const nextBtn = await page.$('span[data-op="iv-next-round-button"]');        
     if (nextBtn) {        
       await nextBtn.click();        
-      console.log('SHIT! nothing found here, Tapped next round.');        
+      //console.log('SHIT! nothing found here, Tapped next round.');        
       await page.waitForTimeout(10000);        
     } else {        
       console.log('Next Round button not found. Waiting 7s...');        
