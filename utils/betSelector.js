@@ -102,6 +102,7 @@ function selectBets(fixtureFile, statsFile) {
   }
 }
 
+return validBets;
 }
 
 module.exports = { selectBets };
