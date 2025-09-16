@@ -173,5 +173,82 @@
     "probability": 0.7512,
     "eventId": "250916095510uEved8nnt0778",
     "timestamp": "16/09/2025, 10:56:14"
+  },
+  {
+    "Team": "LIV vs CHE",
+    "scores": "3 - 0",
+    "probability": 0.8402,
+    "eventId": "250916101956uEve5k4lf4433",
+    "timestamp": "16/09/2025, 11:20:31"
+  },
+  {
+    "Team": "INT vs ACM",
+    "scores": "3 - 3",
+    "probability": 0.8323,
+    "eventId": "250916101956uEve5k4lf4476",
+    "timestamp": "16/09/2025, 11:20:37"
+  },
+  {
+    "Team": "GER vs ENG",
+    "scores": "2 - 1",
+    "probability": 0.7,
+    "eventId": "250916102105uEved8nnt6283",
+    "timestamp": "16/09/2025, 11:21:48"
+  },
+  {
+    "Team": "PSG vs PAC",
+    "scores": "0 - 1",
+    "probability": 0.7532,
+    "eventId": "250916102105uEved8nnt6299",
+    "timestamp": "16/09/2025, 11:21:49"
+  },
+  {
+    "Team": "POR vs ACM",
+    "scores": "1 - 2",
+    "probability": 0.7548,
+    "eventId": "250916102152uEvedk5v47070",
+    "timestamp": "16/09/2025, 11:22:55"
+  },
+  {
+    "Team": "POR vs ACM",
+    "scores": "3 - 1",
+    "probability": 0.7548,
+    "eventId": "250916102314uEverrrvb3159",
+    "timestamp": "16/09/2025, 11:24:18"
+  },
+  {
+    "Team": "GER vs ENG",
+    "scores": "2 - 1",
+    "probability": 0.7,
+    "eventId": "250916102848uEvebjmkc1285",
+    "timestamp": "16/09/2025, 11:29:59"
+  },
+  {
+    "Team": "INT vs BEN",
+    "scores": "2 - 0",
+    "probability": 0.7529,
+    "eventId": "250916103031uEvefmp7g0048",
+    "timestamp": "16/09/2025, 11:31:35"
+  },
+  {
+    "Team": "GER vs ENG",
+    "scores": "0 - 3",
+    "probability": 0.7,
+    "eventId": "250916103312uEveswfsp2710",
+    "timestamp": "16/09/2025, 11:34:26"
+  },
+  {
+    "Team": "PSG vs PAC",
+    "scores": "2 - 0",
+    "probability": 0.7532,
+    "eventId": "250916103312uEveswfsp2715",
+    "timestamp": "16/09/2025, 11:34:28"
+  },
+  {
+    "Team": "INT vs BEN",
+    "scores": "2 - 1",
+    "probability": 0.7529,
+    "eventId": "250916103543uEvet2hdr6900",
+    "timestamp": "16/09/2025, 11:36:47"
   }
 ]
