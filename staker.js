@@ -157,7 +157,7 @@ async function runBetCycle(page, isFirstRun = false) {
   await page.goto(CHECK_URL, { waitUntil: 'domcontentloaded', timeout: 60000 });        
       
   // --- Loop for 5 min ---        
-  const runDuration = 50 * 60 * 1000; // 50 min in ms        
+  const runDuration = 55 * 60 * 1000; // 50 min in ms        
   const endTime = Date.now() + runDuration;        
   let isFirstRun = true;        
       
