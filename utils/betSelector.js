@@ -80,20 +80,29 @@ function selectBets(fixtureFile, statsFile) {
   candidates.sort((a, b) => parseInt(b.conf) - parseInt(a.conf));
 
   // Apply original "length / odd" logic
-  let validBets = [];  
-  if (candidates.length === 0) {  
-    //console.log('No bets found.');  
-  } else if (candidates.length === 1) {  
-    if (parseFloat(candidates[0].odd) >= 1.29) {  
-      validBets = candidates;  
-    } else {  
-      console.log(`Single bet found but odd <1.29 (${candidates[0].odd})`);  
-    }  
-  } else if (candidates.length >= 2) {  
-    validBets = candidates.slice(0, 2);  
-  }  
-  
-  return validBets;  
-} 
+  let validBets = [];
+  if (candidates.length === 0) {
+    //console.log('No bets found.');
+  } else if (candidates.length === 1) {
+    if (parseFloat(candidates[0].odd) >= 1.40) {
+      validBets = candidates;
+    } else {
+      console.log(`Single bet found but odd <1.40 (${candidates[0].odd})`);
+    }
+  } else if (candidates.length >= 2) {
+  const topTwo = candidates.slice(0, 2);
+
+  // Calculate combined odds (assuming multiplication for combo bets)
+  const combinedOdd = parseFloat(topTwo[0].odd) * parseFloat(topTwo[1].odd);
+
+  if (combinedOdd >= 1.50) {
+    validBets = topTwo;
+  } else {
+    console.log(`Two bets found but combined odd <1.50 (${combinedOdd})`);
+  }
+}
+
+return validBets;
+}
 
 module.exports = { selectBets };
