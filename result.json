@@ -869,9 +869,23 @@
   },
   {
     "Team": "ARS vs CHE",
-    "scores": "4 - 0",
+    "scores": "3 - 2",
     "probability": 0.7344,
-    "eventId": "250917134047uEvedxk6k7634",
-    "timestamp": "17/09/2025, 14:41:17"
+    "eventId": "250917143010uEvec8bbv7678",
+    "timestamp": "17/09/2025, 15:30:41"
+  },
+  {
+    "Team": "ARS vs CHE",
+    "scores": "3 - 0",
+    "probability": 0.7344,
+    "eventId": "250917145046uEve4726w1702",
+    "timestamp": "17/09/2025, 15:51:33"
+  },
+  {
+    "Team": "ARS vs CHE",
+    "scores": "5 - 2",
+    "probability": 0.7344,
+    "eventId": "250917150135uEve4ks5k3455",
+    "timestamp": "17/09/2025, 16:02:47"
   }
 ]
