@@ -824,5 +824,19 @@
     "probability": 0.7344,
     "eventId": "250917064210uEve4855q7306",
     "timestamp": "17/09/2025, 07:42:45"
+  },
+  {
+    "Team": "ARS vs CHE",
+    "scores": "1 - 0",
+    "probability": 0.7344,
+    "eventId": "250917090154uEvedq7z85819",
+    "timestamp": "17/09/2025, 10:02:39"
+  },
+  {
+    "Team": "MAR vs NAM",
+    "scores": "1 - 0",
+    "probability": 0.8163,
+    "eventId": "250917090154uEvedq7z85874",
+    "timestamp": "17/09/2025, 10:02:47"
   }
 ]
