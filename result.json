@@ -826,24 +826,45 @@
     "timestamp": "17/09/2025, 07:42:45"
   },
   {
-    "Team": "LIV vs TOT",
-    "scores": "0 - 0",
-    "probability": 0.8221,
-    "eventId": "250917105118uEvec8bbv9299",
-    "timestamp": "17/09/2025, 11:52:03"
-  },
-  {
-    "Team": "ARS vs CHE",
-    "scores": "0 - 2",
-    "probability": 0.7344,
-    "eventId": "250917105118uEvec8bbv9300",
-    "timestamp": "17/09/2025, 11:52:03"
-  },
-  {
     "Team": "ARS vs CHE",
     "scores": "1 - 0",
     "probability": 0.7344,
-    "eventId": "250917111013uEvesd45k8376",
-    "timestamp": "17/09/2025, 12:10:52"
+    "eventId": "250917114317uEvepn84l3363",
+    "timestamp": "17/09/2025, 12:43:56"
+  },
+  {
+    "Team": "ARS vs CHE",
+    "scores": "2 - 3",
+    "probability": 0.7344,
+    "eventId": "250917114828uEve4ckcv2052",
+    "timestamp": "17/09/2025, 12:48:57"
+  },
+  {
+    "Team": "ARS vs CHE",
+    "scores": "1 - 1",
+    "probability": 0.7344,
+    "eventId": "250917115001uEve74z470940",
+    "timestamp": "17/09/2025, 12:50:36"
+  },
+  {
+    "Team": "ARS vs CHE",
+    "scores": "0 - 1",
+    "probability": 0.7344,
+    "eventId": "250917115246uEve7z9xz4367",
+    "timestamp": "17/09/2025, 12:53:24"
+  },
+  {
+    "Team": "ARS vs CHE",
+    "scores": "2 - 1",
+    "probability": 0.7344,
+    "eventId": "250917115523uEvezqbh69212",
+    "timestamp": "17/09/2025, 12:55:51"
+  },
+  {
+    "Team": "ARS vs CHE",
+    "scores": "2 - 2",
+    "probability": 0.7344,
+    "eventId": "250917120820uEvezqbh66501",
+    "timestamp": "17/09/2025, 13:08:53"
   }
 ]
