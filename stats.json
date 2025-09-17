@@ -7,6 +7,7 @@
   { "teams": "LIV vs EVE", "probability": 0.7512, "confidence": "100" },
   { "teams": "TOT vs FUL", "probability": 0.8483, "confidence": "95" },
   { "teams": "MCI vs FUL", "probability": 0.8238, "confidence": "95" },
+  { "teams": "ARS vs CHE", "probability": 0.7344, "confidence": "95" },
   { "teams": "CRY vs AST", "probability": 0.7017, "confidence": "95" },
   { "teams": "AST vs NEW", "probability": 0.8554, "confidence": "95" },
   { "teams": "BRE vs FUL", "probability": 0.8452, "confidence": "95" },
