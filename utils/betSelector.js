@@ -84,10 +84,10 @@ function selectBets(fixtureFile, statsFile) {
   if (candidates.length === 0) {  
     //console.log('No bets found.');  
   } else if (candidates.length === 1) {  
-    if (parseFloat(candidates[0].odd) >= 1.40) {  
+    if (parseFloat(candidates[0].odd) >= 1.30) {  
       validBets = candidates;  
     } else {  
-      console.log(`Single bet found but odd <1.40 (${candidates[0].odd})`);  
+      console.log(`Single bet found but odd <1.30 (${candidates[0].odd})`);  
     }  
   } else if (candidates.length >= 2) {  
     validBets = candidates.slice(0, 2);  
