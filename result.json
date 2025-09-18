@@ -1167,5 +1167,40 @@
     "probability": 0.8323,
     "eventId": "250918065300uEvemnvk49799",
     "timestamp": "18/09/2025, 07:53:50"
+  },
+  {
+    "Team": "CRY vs MCI",
+    "scores": "0 - 3",
+    "probability": 0.7917,
+    "eventId": "250918084533uEvezf7zz4742",
+    "timestamp": "18/09/2025, 09:46:09"
+  },
+  {
+    "Team": "AST vs BOU",
+    "scores": "0 - 2",
+    "probability": 0.8193,
+    "eventId": "250918085257uEve2x74m3972",
+    "timestamp": "18/09/2025, 09:53:33"
+  },
+  {
+    "Team": "BAY vs SEA",
+    "scores": "0 - 4",
+    "probability": 0.8022,
+    "eventId": "250918085257uEve2x74m4046",
+    "timestamp": "18/09/2025, 09:53:44"
+  },
+  {
+    "Team": "NEW vs WHU",
+    "scores": "2 - 0",
+    "probability": 0.8246,
+    "eventId": "250918090716uEve8ws5f8914",
+    "timestamp": "18/09/2025, 10:07:51"
+  },
+  {
+    "Team": "INT vs ACM",
+    "scores": "4 - 0",
+    "probability": 0.8323,
+    "eventId": "250918090716uEve8ws5f8953",
+    "timestamp": "18/09/2025, 10:07:58"
   }
 ]
