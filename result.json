@@ -1293,5 +1293,33 @@
     "probability": 0.8022,
     "eventId": "250918145358uEvebntpx9633",
     "timestamp": "18/09/2025, 15:54:48"
+  },
+  {
+    "Team": "MCI vs FUL",
+    "scores": "2 - 2",
+    "probability": 0.8238,
+    "eventId": "250918153101uEver85fk8574",
+    "timestamp": "18/09/2025, 16:31:46"
+  },
+  {
+    "Team": "AST vs BOU",
+    "scores": "2 - 0",
+    "probability": 0.8193,
+    "eventId": "250918153222uEvewxmlj1771",
+    "timestamp": "18/09/2025, 16:32:57"
+  },
+  {
+    "Team": "TOT vs FUL",
+    "scores": "3 - 1",
+    "probability": 0.8483,
+    "eventId": "250918154018uEvedkrq92315",
+    "timestamp": "18/09/2025, 16:41:04"
+  },
+  {
+    "Team": "INT vs ACM",
+    "scores": "0 - 0",
+    "probability": 0.8323,
+    "eventId": "250918154018uEvedkrq92348",
+    "timestamp": "18/09/2025, 16:41:11"
   }
 ]
