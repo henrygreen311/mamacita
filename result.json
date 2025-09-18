@@ -1412,5 +1412,19 @@
     "probability": 0.8196,
     "eventId": "250918211120uEvek7vn53478",
     "timestamp": "18/09/2025, 22:12:12"
+  },
+  {
+    "Team": "TOT vs FUL",
+    "scores": "1 - 3",
+    "probability": 0.8483,
+    "eventId": "250918211355uEvehz2542011",
+    "timestamp": "18/09/2025, 23:16:03"
+  },
+  {
+    "Team": "BAY vs SEA",
+    "scores": "1 - 4",
+    "probability": 0.8022,
+    "eventId": "250918211355uEvehz2542144",
+    "timestamp": "18/09/2025, 23:16:14"
   }
 ]
