@@ -1244,5 +1244,33 @@
     "probability": 0.8022,
     "eventId": "250918100503uEvecssfv9736",
     "timestamp": "18/09/2025, 11:05:49"
+  },
+  {
+    "Team": "MCI vs FUL",
+    "scores": "4 - 0",
+    "probability": 0.8238,
+    "eventId": "250918102812uEvenv7xz2306",
+    "timestamp": "18/09/2025, 11:28:47"
+  },
+  {
+    "Team": "TOT vs FUL",
+    "scores": "2 - 1",
+    "probability": 0.8483,
+    "eventId": "250918104208uEve4xvqm7371",
+    "timestamp": "18/09/2025, 11:43:00"
+  },
+  {
+    "Team": "NEW vs WHU",
+    "scores": "1 - 0",
+    "probability": 0.8246,
+    "eventId": "250918105717uEvet5rtm9241",
+    "timestamp": "18/09/2025, 11:58:03"
+  },
+  {
+    "Team": "PSG vs BOT",
+    "scores": "3 - 1",
+    "probability": 0.8218,
+    "eventId": "250918105717uEvet5rtm9325",
+    "timestamp": "18/09/2025, 11:58:14"
   }
 ]
