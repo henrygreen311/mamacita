@@ -1377,5 +1377,40 @@
     "probability": 0.8193,
     "eventId": "250918200357uEveg4l4f8644",
     "timestamp": "18/09/2025, 21:04:55"
+  },
+  {
+    "Team": "NEW vs WHU",
+    "scores": "1 - 2",
+    "probability": 0.8246,
+    "eventId": "250918205119uEveldmfl5439",
+    "timestamp": "18/09/2025, 21:51:55"
+  },
+  {
+    "Team": "TOT vs FUL",
+    "scores": "2 - 0",
+    "probability": 0.8483,
+    "eventId": "250918205119uEveldmfl5447",
+    "timestamp": "18/09/2025, 21:51:55"
+  },
+  {
+    "Team": "INT vs ACM",
+    "scores": "1 - 1",
+    "probability": 0.8323,
+    "eventId": "250918205229uEvemhgzl1329",
+    "timestamp": "18/09/2025, 21:57:32"
+  },
+  {
+    "Team": "INT vs ACM",
+    "scores": "1 - 2",
+    "probability": 0.8323,
+    "eventId": "250918210651uEveb8gsd6356",
+    "timestamp": "18/09/2025, 22:07:37"
+  },
+  {
+    "Team": "MCI vs WHU",
+    "scores": "1 - 2",
+    "probability": 0.8196,
+    "eventId": "250918211120uEvek7vn53478",
+    "timestamp": "18/09/2025, 22:12:12"
   }
 ]
