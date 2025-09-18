@@ -1323,101 +1323,24 @@
     "timestamp": "18/09/2025, 16:41:11"
   },
   {
-    "Team": "CRY vs MCI",
-    "scores": "0 - 5",
-    "probability": 0.7917,
-    "eventId": "250918162524uEveggvfm4915",
-    "timestamp": "18/09/2025, 17:25:59"
-  },
-  {
-    "Team": "BAY vs SEA",
-    "scores": "0 - 2",
-    "probability": 0.8022,
-    "eventId": "250918162524uEveggvfm5004",
-    "timestamp": "18/09/2025, 17:26:10"
-  },
-  {
-    "Team": "BAY vs SEA",
-    "scores": "1 - 2",
-    "probability": 0.8022,
-    "eventId": "250918162737uEveq4hdf1385",
-    "timestamp": "18/09/2025, 17:28:22"
+    "Team": "INT vs ACM",
+    "scores": "4 - 4",
+    "probability": 0.8323,
+    "eventId": "250918172113uEveggvfm4826",
+    "timestamp": "18/09/2025, 18:21:56"
   },
   {
     "Team": "PSG vs BOT",
-    "scores": "3 - 2",
+    "scores": "2 - 0",
     "probability": 0.8218,
-    "eventId": "250918162737uEveq4hdf1391",
-    "timestamp": "18/09/2025, 17:28:22"
-  },
-  {
-    "Team": "MCI vs WHU",
-    "scores": "0 - 1",
-    "probability": 0.8196,
-    "eventId": "250918163438uEveb8gsd8698",
-    "timestamp": "18/09/2025, 17:35:26"
-  },
-  {
-    "Team": "LIV vs TOT",
-    "scores": "1 - 2",
-    "probability": 0.8221,
-    "eventId": "250918163438uEveb8gsd8702",
-    "timestamp": "18/09/2025, 17:35:26"
-  },
-  {
-    "Team": "NEW vs WHU",
-    "scores": "6 - 2",
-    "probability": 0.8246,
-    "eventId": "250918164037uEvehrw2q0945",
-    "timestamp": "18/09/2025, 17:41:15"
+    "eventId": "250918172113uEveggvfm4856",
+    "timestamp": "18/09/2025, 18:22:00"
   },
   {
     "Team": "TOT vs FUL",
-    "scores": "1 - 3",
+    "scores": "0 - 0",
     "probability": 0.8483,
-    "eventId": "250918164542uEvewxmlj4332",
-    "timestamp": "18/09/2025, 17:46:18"
-  },
-  {
-    "Team": "PSG vs BOT",
-    "scores": "2 - 1",
-    "probability": 0.8218,
-    "eventId": "250918164542uEvewxmlj4420",
-    "timestamp": "18/09/2025, 17:46:28"
-  },
-  {
-    "Team": "INT vs ACM",
-    "scores": "2 - 2",
-    "probability": 0.8323,
-    "eventId": "250918164809uEvelpf6t0608",
-    "timestamp": "18/09/2025, 17:49:23"
-  },
-  {
-    "Team": "AST vs BOU",
-    "scores": "1 - 1",
-    "probability": 0.8193,
-    "eventId": "250918165650uEvebntpx0060",
-    "timestamp": "18/09/2025, 17:57:26"
-  },
-  {
-    "Team": "NEW vs WHU",
-    "scores": "4 - 2",
-    "probability": 0.8246,
-    "eventId": "250918165650uEvebntpx0062",
-    "timestamp": "18/09/2025, 17:57:26"
-  },
-  {
-    "Team": "TOT vs FUL",
-    "scores": "0 - 2",
-    "probability": 0.8483,
-    "eventId": "250918170327uEveqpxp93362",
-    "timestamp": "18/09/2025, 18:04:02"
-  },
-  {
-    "Team": "INT vs ACM",
-    "scores": "1 - 4",
-    "probability": 0.8323,
-    "eventId": "250918170327uEveqpxp93401",
-    "timestamp": "18/09/2025, 18:04:08"
+    "eventId": "250918172415uEve5xlcb4880",
+    "timestamp": "18/09/2025, 18:24:59"
   }
 ]
