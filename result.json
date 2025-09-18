@@ -1090,5 +1090,82 @@
     "probability": 0.8238,
     "eventId": "250918054110uEvewxmlj6432",
     "timestamp": "18/09/2025, 06:42:04"
+  },
+  {
+    "Team": "NEW vs WHU",
+    "scores": "3 - 1",
+    "probability": 0.8246,
+    "eventId": "250918062851uEve899fh2071",
+    "timestamp": "18/09/2025, 07:29:26"
+  },
+  {
+    "Team": "CRY vs MCI",
+    "scores": "2 - 1",
+    "probability": 0.7917,
+    "eventId": "250918062851uEve899fh2075",
+    "timestamp": "18/09/2025, 07:29:26"
+  },
+  {
+    "Team": "TOT vs FUL",
+    "scores": "3 - 0",
+    "probability": 0.8483,
+    "eventId": "250918063232uEvebv8w97771",
+    "timestamp": "18/09/2025, 07:33:07"
+  },
+  {
+    "Team": "TOT vs FUL",
+    "scores": "3 - 2",
+    "probability": 0.8483,
+    "eventId": "250918063341uEvek29mj5967",
+    "timestamp": "18/09/2025, 07:34:18"
+  },
+  {
+    "Team": "INT vs ACM",
+    "scores": "3 - 1",
+    "probability": 0.8323,
+    "eventId": "250918063342uEvek29mj6004",
+    "timestamp": "18/09/2025, 07:34:27"
+  },
+  {
+    "Team": "AST vs BOU",
+    "scores": "2 - 1",
+    "probability": 0.8193,
+    "eventId": "250918063437uEve899fh2394",
+    "timestamp": "18/09/2025, 07:35:12"
+  },
+  {
+    "Team": "PSG vs BOT",
+    "scores": "3 - 0",
+    "probability": 0.8218,
+    "eventId": "250918063437uEve899fh2490",
+    "timestamp": "18/09/2025, 07:35:26"
+  },
+  {
+    "Team": "AST vs BOU",
+    "scores": "0 - 0",
+    "probability": 0.8193,
+    "eventId": "250918064553uEvepwwqw6238",
+    "timestamp": "18/09/2025, 07:46:40"
+  },
+  {
+    "Team": "PSG vs BOT",
+    "scores": "0 - 1",
+    "probability": 0.8218,
+    "eventId": "250918064553uEvepwwqw6310",
+    "timestamp": "18/09/2025, 07:47:00"
+  },
+  {
+    "Team": "CRY vs MCI",
+    "scores": "3 - 4",
+    "probability": 0.7917,
+    "eventId": "250918065300uEvemnvk49759",
+    "timestamp": "18/09/2025, 07:53:44"
+  },
+  {
+    "Team": "INT vs ACM",
+    "scores": "2 - 1",
+    "probability": 0.8323,
+    "eventId": "250918065300uEvemnvk49799",
+    "timestamp": "18/09/2025, 07:53:50"
   }
 ]
