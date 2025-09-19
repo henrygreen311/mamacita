@@ -2168,5 +2168,26 @@
     "probability": 0.7,
     "eventId": "250919194414uEveqnshh2603",
     "timestamp": "19/09/2025, 20:45:43"
+  },
+  {
+    "Team": "PSG vs PAC",
+    "scores": "0 - 2",
+    "probability": 0.7532,
+    "eventId": "250919202158uEver849j4121",
+    "timestamp": "19/09/2025, 21:22:44"
+  },
+  {
+    "Team": "EGY vs TZA",
+    "scores": "0 - 4",
+    "probability": 0.7,
+    "eventId": "250919203519uEveq64cw1746",
+    "timestamp": "19/09/2025, 21:35:55"
+  },
+  {
+    "Team": "MCI vs WHU",
+    "scores": "3 - 0",
+    "probability": 0.8196,
+    "eventId": "250919204154uEveq64cw5340",
+    "timestamp": "19/09/2025, 21:42:56"
   }
 ]
