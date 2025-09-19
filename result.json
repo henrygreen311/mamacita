@@ -1846,5 +1846,61 @@
     "probability": 0.7726,
     "eventId": "250919073313uEve8l27f7626",
     "timestamp": "19/09/2025, 08:33:41"
+  },
+  {
+    "Team": "MCI vs MUN",
+    "scores": "2 - 0",
+    "probability": 0.7726,
+    "eventId": "250919082721uEven9wvt1190",
+    "timestamp": "19/09/2025, 09:27:49"
+  },
+  {
+    "Team": "CRY vs SUN",
+    "scores": "3 - 0",
+    "probability": 0.7533,
+    "eventId": "250919083816uEvesrvl98824",
+    "timestamp": "19/09/2025, 09:38:54"
+  },
+  {
+    "Team": "CRY vs SUN",
+    "scores": "2 - 0",
+    "probability": 0.7533,
+    "eventId": "250919084053uEveggqsp8467",
+    "timestamp": "19/09/2025, 09:41:22"
+  },
+  {
+    "Team": "EGY vs TZA",
+    "scores": "3 - 3",
+    "probability": 0.7,
+    "eventId": "250919084136uEvedk8f45701",
+    "timestamp": "19/09/2025, 09:42:12"
+  },
+  {
+    "Team": "CRY vs SUN",
+    "scores": "3 - 2",
+    "probability": 0.7533,
+    "eventId": "250919084339uEveggqsp4855",
+    "timestamp": "19/09/2025, 09:44:15"
+  },
+  {
+    "Team": "CRY vs SUN",
+    "scores": "1 - 4",
+    "probability": 0.7533,
+    "eventId": "250919084624uEvesrvl90958",
+    "timestamp": "19/09/2025, 09:46:54"
+  },
+  {
+    "Team": "EGY vs TZA",
+    "scores": "2 - 2",
+    "probability": 0.7,
+    "eventId": "250919085347uEvej7df66583",
+    "timestamp": "19/09/2025, 09:54:35"
+  },
+  {
+    "Team": "MCI vs MUN",
+    "scores": "3 - 2",
+    "probability": 0.7726,
+    "eventId": "250919085531uEve7tnth6836",
+    "timestamp": "19/09/2025, 09:56:00"
   }
 ]
