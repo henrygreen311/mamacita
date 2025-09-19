@@ -1468,5 +1468,152 @@
     "probability": 0.8221,
     "eventId": "250918234741uEvedctlb9513",
     "timestamp": "19/09/2025, 00:48:16"
+  },
+  {
+    "Team": "MCI vs MUN",
+    "scores": "0 - 2",
+    "probability": 0.7726,
+    "eventId": "250919012414uEvezf7zz3421",
+    "timestamp": "19/09/2025, 02:24:50"
+  },
+  {
+    "Team": "MCI vs MUN",
+    "scores": "5 - 0",
+    "probability": 0.7726,
+    "eventId": "250919012605uEveldmzm7084",
+    "timestamp": "19/09/2025, 02:26:34"
+  },
+  {
+    "Team": "NED vs SVN",
+    "scores": "0 - 1",
+    "probability": 0.8036,
+    "eventId": "250919012859uEvemhgzl4571",
+    "timestamp": "19/09/2025, 02:29:53"
+  },
+  {
+    "Team": "CRY vs SUN",
+    "scores": "1 - 1",
+    "probability": 0.7533,
+    "eventId": "250919012957uEvefvmp65036",
+    "timestamp": "19/09/2025, 02:30:44"
+  },
+  {
+    "Team": "EGY vs TZA",
+    "scores": "0 - 0",
+    "probability": 0.7,
+    "eventId": "250919012957uEvefvmp65091",
+    "timestamp": "19/09/2025, 02:30:51"
+  },
+  {
+    "Team": "PSG vs MTY",
+    "scores": "1 - 1",
+    "probability": 0.776,
+    "eventId": "250919013237uEvefvmp69154",
+    "timestamp": "19/09/2025, 02:33:20"
+  },
+  {
+    "Team": "RMA vs FCB",
+    "scores": "1 - 1",
+    "probability": 0.6786,
+    "eventId": "250919013434uEvenb5pd4930",
+    "timestamp": "19/09/2025, 02:35:14"
+  },
+  {
+    "Team": "RMA vs FCB",
+    "scores": "1 - 0",
+    "probability": 0.6786,
+    "eventId": "250919013608uEvelrm6n6087",
+    "timestamp": "19/09/2025, 02:36:57"
+  },
+  {
+    "Team": "MCI vs MUN",
+    "scores": "1 - 1",
+    "probability": 0.7726,
+    "eventId": "250919013735uEvekwzzd9697",
+    "timestamp": "19/09/2025, 02:38:13"
+  },
+  {
+    "Team": "LIV vs EVE",
+    "scores": "4 - 3",
+    "probability": 0.7512,
+    "eventId": "250919014033uEvexxqjm1121",
+    "timestamp": "19/09/2025, 02:41:08"
+  },
+  {
+    "Team": "MCI vs WHU",
+    "scores": "2 - 0",
+    "probability": 0.8196,
+    "eventId": "250919014033uEvexxqjm1123",
+    "timestamp": "19/09/2025, 02:41:08"
+  },
+  {
+    "Team": "MCI vs MUN",
+    "scores": "1 - 3",
+    "probability": 0.7726,
+    "eventId": "250919014337uEvejx9hv3913",
+    "timestamp": "19/09/2025, 02:44:11"
+  },
+  {
+    "Team": "EGY vs TZA",
+    "scores": "1 - 0",
+    "probability": 0.7,
+    "eventId": "250919014708uEver85fk6112",
+    "timestamp": "19/09/2025, 02:48:02"
+  },
+  {
+    "Team": "EGY vs TZA",
+    "scores": "2 - 0",
+    "probability": 0.7,
+    "eventId": "250919014945uEveq4hdf1782",
+    "timestamp": "19/09/2025, 02:50:23"
+  },
+  {
+    "Team": "PSG vs PAC",
+    "scores": "2 - 1",
+    "probability": 0.7532,
+    "eventId": "250919015029uEveg4l4f9540",
+    "timestamp": "19/09/2025, 02:51:22"
+  },
+  {
+    "Team": "EGY vs TZA",
+    "scores": "2 - 1",
+    "probability": 0.7,
+    "eventId": "250919015135uEvek29mj7697",
+    "timestamp": "19/09/2025, 02:52:29"
+  },
+  {
+    "Team": "PSG vs MTY",
+    "scores": "0 - 1",
+    "probability": 0.776,
+    "eventId": "250919015235uEveftwc45428",
+    "timestamp": "19/09/2025, 02:53:48"
+  },
+  {
+    "Team": "PSG vs PAC",
+    "scores": "1 - 0",
+    "probability": 0.7532,
+    "eventId": "250919015842uEvehrfqm3420",
+    "timestamp": "19/09/2025, 03:00:05"
+  },
+  {
+    "Team": "MCI vs MUN",
+    "scores": "1 - 2",
+    "probability": 0.7726,
+    "eventId": "250919020016uEvefkmdf7340",
+    "timestamp": "19/09/2025, 03:00:45"
+  },
+  {
+    "Team": "RMA vs FCB",
+    "scores": "0 - 2",
+    "probability": 0.6786,
+    "eventId": "250919020859uEveggtcg2456",
+    "timestamp": "19/09/2025, 03:09:49"
+  },
+  {
+    "Team": "RMA vs FCB",
+    "scores": "2 - 1",
+    "probability": 0.6786,
+    "eventId": "250919021012uEvedctlb4731",
+    "timestamp": "19/09/2025, 03:11:04"
   }
 ]
