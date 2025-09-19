@@ -1965,5 +1965,89 @@
     "probability": 0.6786,
     "eventId": "250919095228uEve76svm1451",
     "timestamp": "19/09/2025, 10:53:39"
+  },
+  {
+    "Team": "PSG vs PAC",
+    "scores": "1 - 1",
+    "probability": 0.7532,
+    "eventId": "250919102240uEve6vmvv4139",
+    "timestamp": "19/09/2025, 11:23:20"
+  },
+  {
+    "Team": "EGY vs TZA",
+    "scores": "1 - 2",
+    "probability": 0.7,
+    "eventId": "250919102633uEven9wvt1288",
+    "timestamp": "19/09/2025, 11:27:10"
+  },
+  {
+    "Team": "CRY vs SUN",
+    "scores": "2 - 2",
+    "probability": 0.7533,
+    "eventId": "250919102837uEven9wvt4489",
+    "timestamp": "19/09/2025, 11:29:07"
+  },
+  {
+    "Team": "PSG vs MTY",
+    "scores": "5 - 2",
+    "probability": 0.776,
+    "eventId": "250919103004uEvegnd4x6677",
+    "timestamp": "19/09/2025, 11:30:51"
+  },
+  {
+    "Team": "LIV vs CHE",
+    "scores": "1 - 0",
+    "probability": 0.8402,
+    "eventId": "250919103645uEve7tnth7980",
+    "timestamp": "19/09/2025, 11:37:38"
+  },
+  {
+    "Team": "EGY vs TZA",
+    "scores": "3 - 0",
+    "probability": 0.7,
+    "eventId": "250919103826uEve76svm2372",
+    "timestamp": "19/09/2025, 11:39:14"
+  },
+  {
+    "Team": "PSG vs PAC",
+    "scores": "2 - 3",
+    "probability": 0.7532,
+    "eventId": "250919105655uEve62ptt2744",
+    "timestamp": "19/09/2025, 11:57:35"
+  },
+  {
+    "Team": "LIV vs EVE",
+    "scores": "2 - 2",
+    "probability": 0.7512,
+    "eventId": "250919105925uEvelldpq6835",
+    "timestamp": "19/09/2025, 11:59:53"
+  },
+  {
+    "Team": "MCI vs WHU",
+    "scores": "0 - 2",
+    "probability": 0.8196,
+    "eventId": "250919110058uEve7xc693872",
+    "timestamp": "19/09/2025, 12:01:33"
+  },
+  {
+    "Team": "RMA vs FCB",
+    "scores": "0 - 3",
+    "probability": 0.6786,
+    "eventId": "250919110146uEve76svm8619",
+    "timestamp": "19/09/2025, 12:02:20"
+  },
+  {
+    "Team": "EGY vs TZA",
+    "scores": "0 - 1",
+    "probability": 0.7,
+    "eventId": "250919111010uEvewn8hc7483",
+    "timestamp": "19/09/2025, 12:10:59"
+  },
+  {
+    "Team": "RMA vs FCB",
+    "scores": "0 - 0",
+    "probability": 0.6786,
+    "eventId": "250919111105uEveg4vmj7643",
+    "timestamp": "19/09/2025, 12:11:48"
   }
 ]
