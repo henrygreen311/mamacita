@@ -1811,5 +1811,40 @@
     "probability": 0.8221,
     "eventId": "250919055651uEvenb5pd9825",
     "timestamp": "19/09/2025, 06:57:35"
+  },
+  {
+    "Team": "RMA vs FCB",
+    "scores": "4 - 0",
+    "probability": 0.6786,
+    "eventId": "250919071918uEvesrvl97311",
+    "timestamp": "19/09/2025, 08:19:52"
+  },
+  {
+    "Team": "MCI vs WHU",
+    "scores": "2 - 2",
+    "probability": 0.8196,
+    "eventId": "250919072101uEvedk8f44936",
+    "timestamp": "19/09/2025, 08:21:36"
+  },
+  {
+    "Team": "NED vs SVN",
+    "scores": "1 - 2",
+    "probability": 0.8036,
+    "eventId": "250919072101uEvedk8f45001",
+    "timestamp": "19/09/2025, 08:21:46"
+  },
+  {
+    "Team": "PSG vs MTY",
+    "scores": "3 - 1",
+    "probability": 0.776,
+    "eventId": "250919072634uEve8kbg40288",
+    "timestamp": "19/09/2025, 08:27:22"
+  },
+  {
+    "Team": "MCI vs MUN",
+    "scores": "0 - 3",
+    "probability": 0.7726,
+    "eventId": "250919073313uEve8l27f7626",
+    "timestamp": "19/09/2025, 08:33:41"
   }
 ]
