@@ -2189,5 +2189,124 @@
     "probability": 0.8196,
     "eventId": "250919204154uEveq64cw5340",
     "timestamp": "19/09/2025, 21:42:56"
+  },
+  {
+    "Team": "BOU vs WHU",
+    "scores": "1 - 1",
+    "probability": 0.7772,
+    "eventId": "250920012145uEvefnht64967",
+    "timestamp": "20/09/2025, 02:22:14"
+  },
+  {
+    "Team": "BRE vs WOL",
+    "scores": "3 - 7",
+    "probability": 0.834,
+    "eventId": "250920012342uEveggqsp8920",
+    "timestamp": "20/09/2025, 02:24:16"
+  },
+  {
+    "Team": "NEW vs WHU",
+    "scores": "5 - 0",
+    "probability": 0.8246,
+    "eventId": "250920012835uEvetmzhd0361",
+    "timestamp": "20/09/2025, 02:29:18"
+  },
+  {
+    "Team": "INT vs BVB",
+    "scores": "2 - 0",
+    "probability": 0.6936,
+    "eventId": "250920012835uEvetmzhd0388",
+    "timestamp": "20/09/2025, 02:29:23"
+  },
+  {
+    "Team": "BOU vs WHU",
+    "scores": "2 - 2",
+    "probability": 0.7772,
+    "eventId": "250920012941uEvetkd6g6068",
+    "timestamp": "20/09/2025, 02:30:10"
+  },
+  {
+    "Team": "INT vs BVB",
+    "scores": "1 - 0",
+    "probability": 0.6936,
+    "eventId": "250920013757uEvetkd6g0466",
+    "timestamp": "20/09/2025, 02:38:40"
+  },
+  {
+    "Team": "BVB vs INT",
+    "scores": "1 - 1",
+    "probability": 0.6936,
+    "eventId": "250920013757uEvetkd6g0511",
+    "timestamp": "20/09/2025, 02:38:54"
+  },
+  {
+    "Team": "BOU vs WHU",
+    "scores": "1 - 0",
+    "probability": 0.7772,
+    "eventId": "250920014337uEvenc4jr2466",
+    "timestamp": "20/09/2025, 02:44:15"
+  },
+  {
+    "Team": "AST vs BOU",
+    "scores": "1 - 1",
+    "probability": 0.8193,
+    "eventId": "250920014530uEve7xc699546",
+    "timestamp": "20/09/2025, 02:46:05"
+  },
+  {
+    "Team": "BRE vs WOL",
+    "scores": "0 - 2",
+    "probability": 0.834,
+    "eventId": "250920014619uEve7lzm42476",
+    "timestamp": "20/09/2025, 02:47:03"
+  },
+  {
+    "Team": "INT vs BVB",
+    "scores": "0 - 1",
+    "probability": 0.6936,
+    "eventId": "250920014619uEve7lzm42499",
+    "timestamp": "20/09/2025, 02:47:13"
+  },
+  {
+    "Team": "BOU vs WHU",
+    "scores": "0 - 3",
+    "probability": 0.7772,
+    "eventId": "250920014815uEveggqsp0739",
+    "timestamp": "20/09/2025, 02:48:49"
+  },
+  {
+    "Team": "NED vs AUT",
+    "scores": "1 - 0",
+    "probability": 0.8263,
+    "eventId": "250920015011uEvetblqt2412",
+    "timestamp": "20/09/2025, 02:51:14"
+  },
+  {
+    "Team": "BOU vs WHU",
+    "scores": "2 - 0",
+    "probability": 0.7772,
+    "eventId": "250920020216uEveggqsp7213",
+    "timestamp": "20/09/2025, 03:02:51"
+  },
+  {
+    "Team": "INT vs BVB",
+    "scores": "2 - 3",
+    "probability": 0.6936,
+    "eventId": "250920020624uEvej7df61147",
+    "timestamp": "20/09/2025, 03:07:27"
+  },
+  {
+    "Team": "INT vs BVB",
+    "scores": "1 - 1",
+    "probability": 0.6936,
+    "eventId": "250920020736uEvetkd6g4445",
+    "timestamp": "20/09/2025, 03:08:09"
+  },
+  {
+    "Team": "INT vs BVB",
+    "scores": "0 - 2",
+    "probability": 0.6936,
+    "eventId": "250920020909uEvedmkk59909",
+    "timestamp": "20/09/2025, 03:10:25"
   }
 ]
