@@ -2308,5 +2308,54 @@
     "probability": 0.6936,
     "eventId": "250920020909uEvedmkk59909",
     "timestamp": "20/09/2025, 03:10:25"
+  },
+  {
+    "Team": "INT vs BVB",
+    "scores": "3 - 1",
+    "probability": 0.6936,
+    "eventId": "250920083735uEvep9rpd7388",
+    "timestamp": "20/09/2025, 09:38:10"
+  },
+  {
+    "Team": "BOU vs WHU",
+    "scores": "0 - 1",
+    "probability": 0.7772,
+    "eventId": "250920084537uEvedsxk56698",
+    "timestamp": "20/09/2025, 09:46:29"
+  },
+  {
+    "Team": "INT vs BVB",
+    "scores": "3 - 0",
+    "probability": 0.6936,
+    "eventId": "250920084807uEve7ltvs3080",
+    "timestamp": "20/09/2025, 09:48:43"
+  },
+  {
+    "Team": "BOU vs WHU",
+    "scores": "5 - 5",
+    "probability": 0.7772,
+    "eventId": "250920085028uEvetzsvl2972",
+    "timestamp": "20/09/2025, 09:50:57"
+  },
+  {
+    "Team": "BRE vs WOL",
+    "scores": "2 - 2",
+    "probability": 0.834,
+    "eventId": "250920085343uEvet7v6v9877",
+    "timestamp": "20/09/2025, 09:54:21"
+  },
+  {
+    "Team": "TOT vs CRY",
+    "scores": "4 - 1",
+    "probability": 0.8439,
+    "eventId": "250920085527uEvevdpbs6261",
+    "timestamp": "20/09/2025, 09:56:02"
+  },
+  {
+    "Team": "BRE vs WOL",
+    "scores": "3 - 2",
+    "probability": 0.834,
+    "eventId": "250920085527uEvevdpbs6268",
+    "timestamp": "20/09/2025, 09:56:02"
   }
 ]
