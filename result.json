@@ -2462,5 +2462,19 @@
     "probability": 0.8263,
     "eventId": "250920153150uEvecvdhj3104",
     "timestamp": "20/09/2025, 16:33:14"
+  },
+  {
+    "Team": "INT vs BVB",
+    "scores": "1 - 3",
+    "probability": 0.6936,
+    "eventId": "250920162141uEvetmzhd9860",
+    "timestamp": "20/09/2025, 17:22:14"
+  },
+  {
+    "Team": "BOU vs WHU",
+    "scores": "3 - 1",
+    "probability": 0.7772,
+    "eventId": "250920162730uEvef82gf4646",
+    "timestamp": "20/09/2025, 17:28:05"
   }
 ]
