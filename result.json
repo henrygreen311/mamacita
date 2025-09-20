@@ -2385,5 +2385,33 @@
     "probability": 0.6936,
     "eventId": "250920111458uEveg4vzt1907",
     "timestamp": "20/09/2025, 12:15:41"
+  },
+  {
+    "Team": "TOT vs CRY",
+    "scores": "3 - 1",
+    "probability": 0.8439,
+    "eventId": "250920123645uEvexc68b7439",
+    "timestamp": "20/09/2025, 13:37:20"
+  },
+  {
+    "Team": "NED vs AUT",
+    "scores": "2 - 0",
+    "probability": 0.8263,
+    "eventId": "250920123645uEvexc68b7563",
+    "timestamp": "20/09/2025, 13:37:29"
+  },
+  {
+    "Team": "INT vs BVB",
+    "scores": "1 - 2",
+    "probability": 0.6936,
+    "eventId": "250920130110uEvelldpq2477",
+    "timestamp": "20/09/2025, 14:02:41"
+  },
+  {
+    "Team": "BVB vs INT",
+    "scores": "3 - 1",
+    "probability": 0.6936,
+    "eventId": "250920130110uEvelldpq2531",
+    "timestamp": "20/09/2025, 14:03:05"
   }
 ]
